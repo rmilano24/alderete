@@ -1,6 +1,7 @@
 <script lang="ts">
 	import home_hero from '$lib/images/bg_home-hero.jpg';
 	import jim from '$lib/images/jim-alderete.jpg';
+	import cta from '$lib/images/cta.jpg';
 </script>
 
 <svelte:head>
@@ -52,7 +53,7 @@
 	
 </section>
 
-<section id="gallery" class="container mx-auto">
+<section id="gallery" class="container mx-auto my-24">
 	<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
 		<!-- image - start -->
 		<a href="#"
@@ -108,3 +109,6 @@
 	</div>
 </section>
 
+<section id="cta" class="h-screen bg-cover" style="background-image: url('{cta}')">
+	
+</section>
