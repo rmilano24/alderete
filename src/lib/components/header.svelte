@@ -1,10 +1,24 @@
 <script lang="ts">
-	import * as m from '$lib/paraglide/messages.js';
-	import LocaleSwitcher from '$components/locale-switcher.svelte';
+	
 </script>
 
 <header class="flex items-center justify-between">
-	<a href="/">{m.house_patchy_flamingo_link()}</a>
+	
+	<div class="flex w-full bg-cover bg-center bg-no-repeat bg-amber-200 m-8 fixed top-0 left-0 right-0 z-50" style="background-image: url('/home_hero.jpg');">
+		<div class="size-14 flex-none">Alderete</div>
 
-	<LocaleSwitcher />
+		<div class="size-14 grow">
+
+			<nav class="flex flex-row">
+				<ul class="flex flex-row">
+					<li><a href="/">Home</a></li>
+					<li><a href="/">About</a></li>
+					<li><a href="/">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="size-14 flex-none ...">CTA's</div>
+	  </div>
+
 </header>
