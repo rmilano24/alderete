@@ -9,9 +9,9 @@
 
 
 
-<section id="home-hero" class="h-screen bg-cover" style="background-image: url('{home_hero}')">
+<section id="home-hero" class="h-screen bg-cover bg-center" style="background-image: url('{home_hero}')">
 	<div class="flex">
-		hello
+		
 	</div>
 </section>
 
@@ -35,14 +35,19 @@
 <div class="seperator border-b border-white h-[1px] m-24"></div>
 
 <section id="expertise">
-	<div class="grid grid-cols-2 gap-4">
-		<div>Family & General Dentistry</div>
-		<div>Family & General Dentistry9</div>
-		<div>Family & General Dentistry</div>
-		<div>Family & General Dentistry9</div>
-		<div>Family & General Dentistry</div>
-		<div>Family & General Dentistry9</div>
-		<div>Family & General Dentistry</div>
-		<div>Family & General Dentistry9</div>
-	  </div>
+
+	<div class="container">
+		<div class="grid grid-cols-2 gap-4">
+			<div>Family & General Dentistry</div>
+			<div>Family & General Dentistry9</div>
+			<div>Family & General Dentistry</div>
+			<div>Family & General Dentistry9</div>
+			<div>Family & General Dentistry</div>
+			<div>Family & General Dentistry9</div>
+			<div>Family & General Dentistry</div>
+			<div>Family & General Dentistry9</div>
+		  </div>
+	</div>
+
+	
 </section>
