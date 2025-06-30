@@ -62,6 +62,8 @@
             </div>  
 
 
+          <div>©2025  •  <a href="https://www.nmbl.digital/" target="_blank">Website by</a></div>     
+
          </div> <!-- /#footer-info -->
 
         <div id="footer-map" class="h-screen bg-cover" style="background-image: url('{map}')"></div>

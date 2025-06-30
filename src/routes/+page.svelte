@@ -38,6 +38,9 @@
 <section id="expertise">
 
 	<div class="container m-auto">
+
+		<h5 class="text-white uppercase text">Our Areas of Expertise</h5>
+
 		<div class="grid grid-cols-2 gap-4">
 			<div>Family & General Dentistry</div>
 			<div>Family & General Dentistry9</div>
