@@ -24,8 +24,8 @@
 		</div>
 
 		<div class="mt-20">
-			<h5 class="text-white uppercase text font-matter tracking-widest">Get to know us</h5>
-			<h1 class="text-5xl font-reckless mt-8">Our goal is to leave you with a positive experience.</h1>
+			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:h-2 after:ml-8 after:w-4">Get to know us</h5>
+			<h1 class="text-5xl text-teal-100 font-reckless mt-8">Our goal is to leave you with a <span class="text-white italic">positive experience.</span></h1>
 			<p class="text-teal-100 mt-8">We strive to make our office unique by providing excellent clinical skills in a warm, friendly atmosphere. Establishing rewarding and lasting relationships with patients is important to us and we pledge excellence in all we do, and we look forward to helping you make the most of your smile.</p>
 			<a href="#" class="text-teal-400 mt-12 block">Learn more about us</a>
 		</div>
