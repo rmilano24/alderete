@@ -7,10 +7,9 @@
     <div class="grid grid-cols-2 gap-4">
         
         <div id="footer-info" class="p-24">
-            <h2>Ready to smile?</h2>
-            <a href="#" class="text-blue-400">Learn more about us</a>
-
-            <h5>Location</h5>
+            <h2 class="text-4xl font-reckless mt-8 text-teal-100">Ready to <span class="italic">smile?</span></h2>
+            <a href="#" class="text-teal-400 mt-8 block text-lg">Request an appointment</a>
+            <h5 class="text-teal-100 uppercase text font-matter tracking-widest mt-12">Location</h5>
 
             <address>
                 <svg class="inline-block" width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,7 +20,7 @@
                 2820 Daubenbiss Ave <br> Soquel, CA 95073
             </address>
 
-            <h5>Contact</h5>
+            <h5 class="text-teal-100 uppercase text font-matter tracking-widest mt-10">Contact</h5>
             
             <div id="phone">
                 <svg class="inline-block" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,7 +29,7 @@
                 <a href="tel:+18316883930">831-688-3930</a>
             </div>  
 
-            <div id="fax">
+            <div id="fax" class="teal">
                 <svg class="inline-block" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 17H19C19.5304 17 20.0391 16.7893 20.4142 16.4142C20.7893 16.0391 21 15.5304 21 15V11C21 10.4696 20.7893 9.96086 20.4142 9.58579C20.0391 9.21071 19.5304 9 19 9H5C4.46957 9 3.96086 9.21071 3.58579 9.58579C3.21071 9.96086 3 10.4696 3 11V15C3 15.5304 3.21071 16.0391 3.58579 16.4142C3.96086 16.7893 4.46957 17 5 17H7M9 21H15C15.5304 21 16.0391 20.7893 16.4142 20.4142C16.7893 20.0391 17 19.5304 17 19V15C17 14.4696 16.7893 13.9609 16.4142 13.5858C16.0391 13.2107 15.5304 13 15 13H9C8.46957 13 7.96086 13.2107 7.58579 13.5858C7.21071 13.9609 7 14.4696 7 15V19C7 19.5304 7.21071 20.0391 7.58579 20.4142C7.96086 20.7893 8.46957 21 9 21ZM17 9V5C17 4.46957 16.7893 3.96086 16.4142 3.58579C16.0391 3.21071 15.5304 3 15 3H9C8.46957 3 7.96086 3.21071 7.58579 3.58579C7.21071 3.96086 7 4.46957 7 5V9H17Z" stroke="#B6F3F2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -38,31 +37,31 @@
                 <a href="tel:+18316883930">831-662-0889</a>
             </div>  
 
-            <h5>Hours</h5>
+            <h5 class="text-teal-100 uppercase text font-matter tracking-widest mt-10">Hours</h5>
 
-            <div>Monday - Thursday:</div>
+            <div class="text-teal-100 mt-3">Monday - Thursday:</div>
 
-            <div id="hours">
+            <div id="hours" class="mt-2">
                 <svg class="inline-block" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10 6V10L13 13M19 10C19 11.1819 18.7672 12.3522 18.3149 13.4442C17.8626 14.5361 17.1997 15.5282 16.364 16.364C15.5282 17.1997 14.5361 17.8626 13.4442 18.3149C12.3522 18.7672 11.1819 19 10 19C8.8181 19 7.64778 18.7672 6.55585 18.3149C5.46392 17.8626 4.47177 17.1997 3.63604 16.364C2.80031 15.5282 2.13738 14.5361 1.68508 13.4442C1.23279 12.3522 1 11.1819 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z" stroke="#B6F3F2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     
-                <a href="tel:+18316883930">831-688-3930</a>
+                <span class="text-teal-100">831-688-3930</span>
             </div>  
 
-            <div>Friday:</div>
+            <div class="text-teal-100  mt-3">Friday:</div>
 
-            <div id="hours">
+            <div class="mt-2">
                 <svg class="inline-block" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 5V1M14 5V1M5 9H15M3 19H17C17.5304 19 18.0391 18.7893 18.4142 18.4142C18.7893 18.0391 19 17.5304 19 17V5C19 4.46957 18.7893 3.96086 18.4142 3.58579C18.0391 3.21071 17.5304 3 17 3H3C2.46957 3 1.96086 3.21071 1.58579 3.58579C1.21071 3.96086 1 4.46957 1 5V17C1 17.5304 1.21071 18.0391 1.58579 18.4142C1.96086 18.7893 2.46957 19 3 19Z" stroke="#B6F3F2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     
                     
-                <a href="tel:+18316883930">831-688-3930</a>
+                    <span class="text-teal-100">831-688-3930</span>
             </div>  
 
 
-          <div>©2025  •  <a href="https://www.nmbl.digital/" target="_blank">Website by</a></div>     
+          <div class="text-teal-100 mt-12 text-sm">©2025  •  <a href="https://www.nmbl.digital/" target="_blank">Website by</a></div>     
 
          </div> <!-- /#footer-info -->
 

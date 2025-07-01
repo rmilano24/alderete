@@ -16,40 +16,59 @@
 	</div>
 </section>
 
-<section id="get-to-know-us" class="container">
+<section id="get-to-know-us">
 
-	<div class="container grid grid-cols-2 gap-24 mx-16">
+	<div class="container grid grid-cols-2 gap-24 mx-auto">
 		<div>
 			<img class="mt-8" src={jim} alt="Jim Alderete" />
 		</div>
 
-		<div>
-			<h5 class="text-white uppercase text">Get to know us</h5>
-			<h1 class="text-5xl">Our goal is to leave you with a positive experience.</h1>
-			<p class="text-blue-200">We strive to make our office unique by providing excellent clinical skills in a warm, friendly atmosphere. Establishing rewarding and lasting relationships with patients is important to us and we pledge excellence in all we do, and we look forward to helping you make the most of your smile.</p>
-			<a href="#" class="text-blue-400">Learn more about us</a>
+		<div class="mt-20">
+			<h5 class="text-white uppercase text font-matter tracking-widest">Get to know us</h5>
+			<h1 class="text-5xl font-reckless mt-8">Our goal is to leave you with a positive experience.</h1>
+			<p class="text-teal-100 mt-8">We strive to make our office unique by providing excellent clinical skills in a warm, friendly atmosphere. Establishing rewarding and lasting relationships with patients is important to us and we pledge excellence in all we do, and we look forward to helping you make the most of your smile.</p>
+			<a href="#" class="text-teal-400 mt-12 block">Learn more about us</a>
 		</div>
 	</div>
 
 </section>
 
-<div class="container seperator border-b border-white h-[1px] my-24 mx-auto"></div>
+<div class="container seperator border-b border-teal-800 h-[1px] my-24 mx-auto"></div>
 
 <section id="expertise">
 
 	<div class="container m-auto">
 
-		<h5 class="text-white uppercase text">Our Areas of Expertise</h5>
+		<h5 class="text-white uppercase text font-matter tracking-widest mb-16">Our Areas of Expertise</h5>
 
-		<div class="grid grid-cols-2 gap-4">
-			<div>Family & General Dentistry</div>
-			<div>Family & General Dentistry9</div>
-			<div>Family & General Dentistry</div>
-			<div>Family & General Dentistry9</div>
-			<div>Family & General Dentistry</div>
-			<div>Family & General Dentistry9</div>
-			<div>Family & General Dentistry</div>
-			<div>Family & General Dentistry9</div>
+		<div class="grid grid-cols-2 gap-16">
+
+			<div class="border-b border-teal-800 pb-16">
+				<span class="block text-teal-100">01</span>
+				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Family & General Dentistry</h2>
+			</div>
+			<div class="border-b border-teal-800 pb-16">
+				<span class="block text-teal-100">01</span>
+				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Family & General Dentistry</h2>
+			</div>
+			<div class="border-b border-teal-800 pb-16">
+				<span class="block text-teal-100">01</span>
+				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Family & General Dentistry</h2>
+			</div>
+			<div class="border-b border-teal-800 pb-16">
+				<span class="block text-teal-100">01</span>
+				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Family & General Dentistry</h2>
+			</div>
+			<div class="border-b border-teal-800 pb-16">
+				<span class="block text-teal-100">01</span>
+				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Family & General Dentistry</h2>
+			</div>
+			<div class="border-b border-teal-800 pb-16">
+				<span class="block text-teal-100">01</span>
+				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Family & General Dentistry</h2>
+			</div>
+
+
 		  </div>
 	</div>
 
