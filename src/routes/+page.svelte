@@ -10,10 +10,14 @@
 
 
 
-<section id="home-hero" class="h-screen bg-cover bg-center" style="background-image: url('{home_hero}')">
-	<div class="flex">
-		
+<section id="home-hero" class="h-screen bg-cover bg-center flex items-end" style="background-image: url('{home_hero}')">
+	<div class="container mx-auto">
+		<div class="flex ml-4 mb-4">
+			<div class="bg-teal-400 p-8 mr-4">hello world</div>
+			<div class="bg-teal-400">hello world</div>
+		</div>
 	</div>
+	
 </section>
 
 <section id="get-to-know-us">
@@ -131,6 +135,10 @@
 	</div>
 </section>
 
-<section id="cta" class="h-screen bg-cover" style="background-image: url('{cta}')">
-	
+<section id="cta" class="h-[724px] bg-cover flex items-center justify-center" style="background-image: url('{cta}')">
+	<div class="flex w-96 bg-gray-400 flex-col items-center text-center">
+		<div><h1 class="text-5xl">We’re looking forward to meeting you.</h1></div>
+		<div><p class="text">Feel free to drop in or give us a call at 831.432.3231.</p></div>
+		<div><a href="">Request appointment</a></div>
+	  </div>
 </section>
