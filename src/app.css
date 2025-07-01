@@ -33,6 +33,42 @@
 	}
 }
 
+@layer base {
+	@font-face {
+		font-family: 'Matter';
+		src: url('/fonts/Matter-Regular.otf') format('otf');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'Matter-Semibold';
+		src: local('Matter Semibold'), local('Matter-Semibold'), local('matter semibold'),
+			local('matter-semibold'), url('styles/fonts/Matter-Semibold.otf');
+		font-weight: 500;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'Reckless';
+		src: url('/fonts/Reckless-Light.otf') format('otf');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'Reckless-Light';
+		src: local('Reckless Light'), local('Reckless-Light'), local('reckless light'),
+			local('reckless-light'), url('styles/fonts/Reckless-Light.otf');
+		font-weight: 300;
+		font-display: swap;
+	}
+	
+}
+
 body {
 	background-color: #113B49;
-}
+	color: #fff;
+    font-family: 'Matter';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
