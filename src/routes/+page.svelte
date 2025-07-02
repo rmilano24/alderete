@@ -40,10 +40,19 @@
 		</div>
 
 		<div class="mt-20">
-			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:h-2 after:ml-8 after:w-4">Get to know us</h5>
+			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Get to know us</h5>
 			<h1 class="text-5xl text-teal-100 font-reckless mt-8">Our goal is to leave you with a <span class="text-white italic">positive experience.</span></h1>
 			<p class="text-teal-100 mt-8">We strive to make our office unique by providing excellent clinical skills in a warm, friendly atmosphere. Establishing rewarding and lasting relationships with patients is important to us and we pledge excellence in all we do, and we look forward to helping you make the most of your smile.</p>
-			<a href="#" class="text-teal-400 mt-12 block">Learn more about us</a>
+			<a href="#" class="text-teal-400 mt-12 inline-block">
+				<div class="flex flex-row items-center">
+					<div>Learn more about us</div>
+					<div class="ml-4"> 
+						<svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15 1.5L19 5.5M19 5.5L15 9.5M19 5.5H1" stroke="#1AD2D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
+				</div>
+			</a>
 		</div>
 	</div>
 
@@ -55,7 +64,7 @@
 
 	<div class="container m-auto">
 
-		<h5 class="text-white uppercase text font-matter tracking-widest mb-16">Our Areas of Expertise</h5>
+		<h5 class="text-white uppercase text font-matter tracking-widest mb-16 after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Our Areas of Expertise</h5>
 
 		<div class="grid grid-cols-2 gap-16">
 
