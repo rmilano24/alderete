@@ -13,11 +13,18 @@
 <section id="home-hero" class="h-screen bg-cover bg-center flex items-end" style="background-image: url('{home_hero}')">
 	<div class="container mx-auto">
 		<div class="flex ml-4 mb-4">
-			<div class="bg-teal-400 p-8 mr-4">hello world</div>
-			<div class="bg-teal-400">hello world</div>
+			<div class="glass rounded-2xl border border-white/20 p-8 mr-4">
+				<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:h-2 after:ml-8 after:w-4">A trusted santa cruz dentist, since 2009</h5>
+				<h1 class="text-5xl text-teal-100 font-reckless mt-8 max-w-xl">Exceptional care for <span class="text-white italic">all ages</span></h1>
+			</div>
+			<div class="glass rounded-2xl border border-white/20 min-w-64">
+				831.432.3231
+			</div>
 		</div>
 	</div>
 	
+
+
 </section>
 
 <section id="get-to-know-us">

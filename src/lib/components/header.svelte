@@ -2,9 +2,9 @@
 	import logo from '$lib/images/logo-alderete.svg';
 </script>
 
-<header class="container mx-auto">
+<header class="container mx-auto rounded-2xl">
 
-	<div class="container bg-amber-600 fixed top-8 flex">
+	<div class="glass rounded-2xl container fixed top-8 flex border border-white/20">
 		<div id="logo" class="w-48 m-8 flex-none">
 			<img src={logo} alt="Alderete DDS" />
 		</div>
