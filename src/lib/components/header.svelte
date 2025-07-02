@@ -4,7 +4,7 @@
 
 <header class="rounded-2xl fixed w-[96%] m-8">
 
-	<div class="glass rounded-2xl border border-white/20 flex h-[81px] w-full shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)]">
+	<div class="glass rounded-2xl border border-white/20 flex h-[81px] w-full shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] -z-50">
 		<div id="logo" class="w-48 m-7 flex-none">
 			<img src={logo} alt="Alderete DDS" />
 		</div>
