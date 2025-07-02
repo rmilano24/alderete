@@ -4,8 +4,8 @@
 
 <header class="container mx-auto rounded-2xl">
 
-	<div class="glass rounded-2xl container fixed top-8 flex border border-white/20">
-		<div id="logo" class="w-48 m-8 flex-none">
+	<div class="glass rounded-2xl border border-white/20 container fixed top-8 flex">
+		<div id="logo" class="w-48 m-8 flex-none border-r border-white/20">
 			<img src={logo} alt="Alderete DDS" />
 		</div>
 
