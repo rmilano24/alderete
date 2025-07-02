@@ -59,24 +59,28 @@
 				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Family & General Dentistry</h2>
 			</div>
 			<div class="border-b border-teal-800 pb-16">
-				<span class="block text-teal-100">01</span>
-				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Family & General Dentistry</h2>
+				<span class="block text-teal-100">02</span>
+				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Restorative Dentistry</h2>
 			</div>
 			<div class="border-b border-teal-800 pb-16">
-				<span class="block text-teal-100">01</span>
-				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Family & General Dentistry</h2>
+				<span class="block text-teal-100">03</span>
+				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Cosmetic Dentistry</h2>
 			</div>
 			<div class="border-b border-teal-800 pb-16">
-				<span class="block text-teal-100">01</span>
-				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Family & General Dentistry</h2>
+				<span class="block text-teal-100">04</span>
+				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Periodontal Services</h2>
 			</div>
 			<div class="border-b border-teal-800 pb-16">
-				<span class="block text-teal-100">01</span>
-				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Family & General Dentistry</h2>
+				<span class="block text-teal-100">05</span>
+				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Surgical & Endodontic Services</h2>
 			</div>
 			<div class="border-b border-teal-800 pb-16">
-				<span class="block text-teal-100">01</span>
-				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Family & General Dentistry</h2>
+				<span class="block text-teal-100">06</span>
+				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Digital x-rays and Panorex x-rays</h2>
+			</div>
+			<div class="border-b border-teal-800 pb-16">
+				<span class="block text-teal-100">07</span>
+				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Intra-oral Camera</h2>
 			</div>
 
 
