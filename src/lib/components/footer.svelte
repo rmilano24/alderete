@@ -8,7 +8,16 @@
         
         <div id="footer-info" class="p-24">
             <h2 class="text-4xl font-reckless mt-8 text-teal-100">Ready to <span class="italic">smile?</span></h2>
-            <a href="#" class="text-teal-400 mt-8 block text-lg">Request an appointment</a>
+            <a href="/about-us" class="text-teal-400 mt-12 inline-block text-lg">
+				<div class="flex flex-row items-center">
+					<div>Learn more about us</div>
+					<div class="ml-4"> 
+						<svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15 1.5L19 5.5M19 5.5L15 9.5M19 5.5H1" stroke="#1AD2D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
+				</div>
+			</a>
             <h5 class="text-teal-100 uppercase text font-matter tracking-widest mt-12">Location</h5>
 
             <address class="mt-3">

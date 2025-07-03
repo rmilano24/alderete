@@ -2,6 +2,9 @@
 	import home_hero from '$lib/images/bg_home-hero.jpg';
 	import jim from '$lib/images/jim-alderete.jpg';
 	import cta from '$lib/images/cta.jpg';
+	import garden from '$lib/images/gallery/garden.jpg';
+	import roomleft from '$lib/images/gallery/patient-room-left.jpg';
+	import awards from '$lib/images/gallery/readers-choice-award.jpg';
 </script>
 
 <svelte:head>
@@ -43,7 +46,7 @@
 			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Get to know us</h5>
 			<h1 class="text-5xl text-teal-100 font-reckless mt-8">Our goal is to leave you with a <span class="text-white italic">positive experience.</span></h1>
 			<p class="text-teal-100 mt-8">We strive to make our office unique by providing excellent clinical skills in a warm, friendly atmosphere. Establishing rewarding and lasting relationships with patients is important to us and we pledge excellence in all we do, and we look forward to helping you make the most of your smile.</p>
-			<a href="#" class="text-teal-400 mt-12 inline-block">
+			<a href="/about-us" class="text-teal-400 mt-12 inline-block">
 				<div class="flex flex-row items-center">
 					<div>Learn more about us</div>
 					<div class="ml-4"> 
@@ -105,59 +108,15 @@
 </section>
 
 <section id="gallery" class="container mx-auto my-24">
-	<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
-		<!-- image - start -->
-		<a href="#"
-			class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-			<img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Minh Pham" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-	
-			<div
-				class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-			</div>
-	
-			<span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">VR</span>
-		</a>
-		<!-- image - end -->
-	
-		<!-- image - start -->
-		<a href="#"
-			class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-			<img src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=1000" loading="lazy" alt="Photo by Magicle" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-	
-			<div
-				class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-			</div>
-	
-			<span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Tech</span>
-		</a>
-		<!-- image - end -->
-	
-		<!-- image - start -->
-		<a href="#"
-			class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-			<img src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000" loading="lazy" alt="Photo by Martin Sanchez" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-	
-			<div
-				class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-			</div>
-	
-			<span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Dev</span>
-		</a>
-		<!-- image - end -->
-	
-		<!-- image - start -->
-		<a href="#"
-			class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-			<img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Lorenzo Herrera" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-	
-			<div
-				class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-			</div>
-	
-			<span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Retro</span>
-		</a>
-		<!-- image - end -->
-	</div>
+	<div class="grid grid-cols-3 gap-8">
+		<div><img class="rounded-4xl" src={awards} alt="Alderete DDS" /></div>
+		<div class="col-span-2 ..."><img class="rounded-4xl" src={garden} alt="Alderete DDS" /></div>
+		<div class="col-span-2 ..."><img class="rounded-4xl" src={roomleft} alt="Alderete DDS" /></div>
+		<div class="glass border border-white/20 rounded-4xl flex items-center justify-center">
+			<a class="text-center text-3xl" href="/gallery"><span class="italic">Explore</span> our office</a>
+		</div>
+		
+	  </div>
 </section>
 
 <section id="cta" class="h-[724px] bg-cover flex items-center justify-center" style="background-image: url('{cta}')">
