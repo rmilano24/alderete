@@ -8,7 +8,7 @@
         
         <div id="footer-info" class="p-24">
             <h2 class="text-4xl font-reckless mt-8 text-teal-100">Ready to <span class="italic">smile?</span></h2>
-            <a href="/about-us" class="text-teal-400 mt-12 inline-block text-lg">
+            <a href="/about-us" class="text-teal-400 mt-4 inline-block text-lg">
 				<div class="flex flex-row items-center">
 					<div>Learn more about us</div>
 					<div class="ml-4"> 

@@ -35,12 +35,24 @@
 
 </section>
 
-<section id="get-to-know-us">
+<section id="get-to-know-us" class="mt-24">
 
 	<div class="container grid grid-cols-2 gap-24 mx-auto">
-		<div>
+
+		<div class="grid relative rounded-4xl"> <!-- Container with grid and relative positioning -->
+			<img src={jim} alt="Description of image" class="col-start-1 row-start-1 rounded-4xl"> <!-- Image as first grid item -->
+			<div class="col-start-1 row-start-1 flex justify-center items-end"> <!-- Text as second grid item -->
+				<div class="flex w-full glass rounded-2xl border border-white/20 m-4 p-8 flex-col">
+					<div><h3 class="text-2xl text-white">Dr. Jim Alderete</h3></div>
+					<div><h4 class="text-white uppercase text font-matter tracking-widest">Owner and General Dentist</h4></div>
+				</div>
+			  
+			</div>
+		  </div>
+
+		<!-- <div>
 			<img class="mt-8" src={jim} alt="Jim Alderete" />
-		</div>
+		</div> -->
 
 		<div class="mt-20">
 			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Get to know us</h5>
@@ -61,7 +73,7 @@
 
 </section>
 
-<div class="container seperator border-b border-teal-800 h-[1px] my-24 mx-auto"></div>
+<div class="container seperator border-b border-teal-800 h-[1px] my-30 mx-auto"></div>
 
 <section id="expertise">
 
