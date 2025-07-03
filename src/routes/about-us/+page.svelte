@@ -76,7 +76,7 @@
 			<img class="mt-8" src={jim} alt="Jim Alderete" />
 		</div> -->
 
-		<a href="#open-modal2">
+		<a href="#ryan-reyes">
 		<div class="grid relative rounded-4xl"> <!-- Container with grid and relative positioning -->
 			<img src={jim} alt="Description of image" class="col-start-1 row-start-1 rounded-4xl"> <!-- Image as first grid item -->
 			<div class="col-start-1 row-start-1 flex justify-center items-end"> <!-- Text as second grid item -->
@@ -96,19 +96,78 @@
 
   <div id="jim-alderete" class="modal-window glass">
 	<div class="glass">
-	  <a href="#!" title="Close" class="modal-close">Close</a>
+	  <a href="#!" title="Close" class="modal-close glass rounded-2xl border border-white/20 p-6 m-8">
+		<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M1 13L13 1M1 1L13 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		</svg>			
+	  </a>
 
 	  <div class="grid grid-cols-2 gap-4 ">
-		<div>
+		<div class="p-24">
 			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Get to know us</h5>
-			<h1 class="text-5xl text-teal-100 font-reckless mt-8">Our goal is to leave you with a <span class="text-white italic">positive experience.</span></h1>
-			<p class="text-teal-100 mt-8">We strive to make our office unique by providing excellent clinical skills in a warm, friendly atmosphere. Establishing rewarding and lasting relationships with patients is important to us and we pledge excellence in all we do, and we look forward to helping you make the most of your smile.</p>
+			<h1 class="text-5xl text-teal-100 font-reckless mt-8">Dr. Jim Alderete</h1>
+			<p class="text-teal-100 mt-8 text-lg">Dr Jim Alderete grew up in Santa Clara, attended Bellarmine College Preparatory, and graduated from UC Santa Barbara where he played Division 1 baseball for the Gauchos. He completed his DDS degree from the University of Pacific, Arthur A. Dugoni School of Dentistry in 2006.  Upon completion, Dr. Alderete served as an active duty US Naval Officer for 6 years where he completed a residency program in General Dentistry at Camp Pendleton Naval Hospital.</p> 
+			<p class="text-teal-100 mt-8 text-lg">
+				In 2012 Dr. Alderete entered his private practice, returning to the community of Santa Cruz he has enjoyed since childhood with the skill and integrity gained from the Navy.  Together with his caring staff they take pride in providing quality dental care at the highest level. </p>
+			<p class="text-teal-100 mt-8 text-lg">
+			In his free time Dr. Alderete enjoys fishing, hiking the redwoods with his family, and coaching youth sports.
+			</p>
+
+			<h5 class="mt-10 text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Affiliates</h5>
+
+			<ul class="mt-4 text-teal-100 text-lg">
+				<li>American Dental Association</li>
+				<li class="mt-2">California Dental Association </li>
+				<li class="mt-2">Monterey Bay Dental Society</li>
+				<li class="mt-2">2019, 2024 Santa Cruz County Best Dentist <br> <span class="text-sm">(Readers Choice Awards Santa Cruz Sentinel)</span></li>
+			</ul>
+
 		</div>
 		<div class="h-screen bg-center bg-cover bg-no-repeat" style="background-image: url('{jimlg}')"></div>
 	  </div>
 	 
 	</div>
   </div>
+
+
+
+  <div id="ryan-reyes" class="modal-window glass">
+	<div class="glass">
+	  <a href="#!" title="Close" class="modal-close glass rounded-2xl border border-white/20 p-6 m-8">
+		<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M1 13L13 1M1 1L13 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		</svg>			
+	  </a>
+
+	  <div class="grid grid-cols-2 gap-4 ">
+		<div class="p-24">
+			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Get to know us</h5>
+			<h1 class="text-5xl text-teal-100 font-reckless mt-8">Dr. Ryan Reyes</h1>
+			<p class="text-teal-100 mt-8 text-lg">Dr Jim Alderete grew up in Santa Clara, attended Bellarmine College Preparatory, and graduated from UC Santa Barbara where he played Division 1 baseball for the Gauchos. He completed his DDS degree from the University of Pacific, Arthur A. Dugoni School of Dentistry in 2006.  Upon completion, Dr. Alderete served as an active duty US Naval Officer for 6 years where he completed a residency program in General Dentistry at Camp Pendleton Naval Hospital.</p> 
+			<p class="text-teal-100 mt-8 text-lg">
+				In 2012 Dr. Alderete entered his private practice, returning to the community of Santa Cruz he has enjoyed since childhood with the skill and integrity gained from the Navy.  Together with his caring staff they take pride in providing quality dental care at the highest level. </p>
+			<p class="text-teal-100 mt-8 text-lg">
+			In his free time Dr. Alderete enjoys fishing, hiking the redwoods with his family, and coaching youth sports.
+			</p>
+
+			<h5 class="mt-10 text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Affiliates</h5>
+
+			<ul class="mt-4 text-teal-100 text-lg">
+				<li>American Dental Association</li>
+				<li class="mt-2">California Dental Association </li>
+				<li class="mt-2">Monterey Bay Dental Society</li>
+				<li class="mt-2">2019, 2024 Santa Cruz County Best Dentist <br> <span class="text-sm">(Readers Choice Awards Santa Cruz Sentinel)</span></li>
+			</ul>
+
+		</div>
+		<div class="h-screen bg-center bg-cover bg-no-repeat" style="background-image: url('{jimlg}')"></div>
+	  </div>
+	 
+	</div>
+  </div>
+
+
+
   
 <div class="container seperator border-b border-teal-800 h-[1px] my-30 mx-auto"></div>
 
@@ -230,21 +289,15 @@
   header {
     font-weight: bold;
   }
-  h1 {
-    font-size: 150%;
-    margin: 0 0 15px;
-  }
+ 
 }
 
 .modal-close {
-  color: #aaa;
-  line-height: 50px;
-  font-size: 80%;
   position: absolute;
+  border-radius: 100%;
   right: 0;
   text-align: center;
   top: 0;
-  width: 70px;
   text-decoration: none;
   &:hover {
     color: black;
@@ -261,11 +314,6 @@
   height: 100vh;
 }
 
-.modal-window {
-  & > div {
-    border-radius: 1rem;
-  }
-}
 
 .modal-window div:not(:last-of-type) {
   margin-bottom: 15px;
