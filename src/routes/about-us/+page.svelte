@@ -137,8 +137,159 @@
 
 <section id="cta" class="h-[724px] bg-cover flex items-center justify-center" style="background-image: url('{cta}')">
 	<div class="glass rounded-2xl border border-white/20 flex w-4xl flex-col items-center text-center py-16 px-32">
-		<div><h1 class="text-6xl">We’re looking forward to <span class="italic">meeting you.</span></h1></div>
+		<div><h1 class="text-6xl">We're looking forward to <span class="italic">meeting you.</span></h1></div>
 		<div class="mt-6"><p class="text">Feel free to drop in or give us a call at 831.432.3231.</p></div>
 		<div class="mt-8"><a class="glass rounded-2xl border border-white/20 p-4 block" href="/contact">Request appointment</a></div>
 	  </div>
 </section>
+
+
+
+<div class="container">
+	<div class="interior">
+	  <a class="btn" href="#open-modal">👋 Basic CSS-Only Modal</a>
+	</div>
+  </div>
+  <div id="open-modal" class="modal-window">
+	<div>
+	  <a href="#!" title="Close" class="modal-close">Close</a>
+	  <h1>
+		Voilà!
+	  </h1>
+	  <div>
+		A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.
+	  </div>
+	  <br>
+	  <div>
+		<small>Check out 👇</small>
+	  </div>
+	  <br>
+	  <a href="https://periphery.app?utm_source=codepen&utm_medium=web&utm_campaign=modal-pen" target="_blank">
+  
+		<img src="https://periphery.app/assets/wordmark-7b7617b2.svg" style="width: 120px">
+  
+		<div>
+		  <small>
+		  Build your ultimate wishlist while browsing the web.
+		  </small>
+		</div>
+	</div>
+  </div>
+
+  <div class="container">
+	<div class="interior">
+	  <a class="btn" href="#open-modal2">👋 Basic CSS-Only Modal2</a>
+	</div>
+  </div>
+  <div id="open-modal2" class="modal-window">
+	<div>
+	  <a href="#!" title="Close" class="modal-close">Close</a>
+	  <h1>
+		Voilà2!
+	  </h1>
+	  <div>
+		A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.
+	  </div>
+	  <br>
+	  <div>
+		<small>Check out 👇</small>
+	  </div>
+	  <br>
+	  <a href="https://periphery.app?utm_source=codepen&utm_medium=web&utm_campaign=modal-pen" target="_blank">
+  
+		<img src="https://periphery.app/assets/wordmark-7b7617b2.svg" style="width: 120px">
+  
+		<div>
+		  <small>
+		  Build your ultimate wishlist while browsing the web.
+		  </small>
+		</div>
+	</div>
+  </div>
+
+  <style>
+.modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  &:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  & > div {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+  }
+  header {
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+  }
+}
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+  &:hover {
+    color: black;
+  }
+}
+
+/* Demo Styles */
+
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.modal-window {
+  & > div {
+    border-radius: 1rem;
+  }
+}
+
+.modal-window div:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.logo {
+  max-width: 150px;
+  display: block;
+}
+
+.btn {
+  background-color: white;
+  padding: 1em 1.5em;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  i {
+    padding-right: 0.3em;
+  }
+}
+  </style>
