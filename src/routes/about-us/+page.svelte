@@ -1,4 +1,5 @@
 <script lang="ts">
+	import home_hero from '$lib/images/bg_home-hero.jpg';
 	import jim from '$lib/images/jim-alderete.jpg';
 	import cta from '$lib/images/cta.jpg';
 	import jimlg from '$lib/images/about/jim-alderete-lg.jpg';
@@ -8,52 +9,20 @@
 	<title>NMBL | Branding and Design Studio in Santa Cruz, California</title>
 	<meta name="description" content="NMBL | UX Design, Branding, Web Design & Development Studio in Santa Cruz | San Francisco Bay Area" />
 </svelte:head>
-"
-<div class="bg-gray-900">
-	<div class="mx-auto max-w-7xl px-6 lg:px-8 bg-red-300">
-	  <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-		<div class="lg:pt-4 lg:pr-8 ">
-		  <div class="lg:max-w-lg">
-			<h2 class="text-base/7 font-semibold text-indigo-400">Deploy faster</h2>
-			<p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">A better workflow</p>
-			<p class="mt-6 text-lg/8 text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
-			<dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-400 lg:max-w-none">
-			  <div class="relative pl-9">
-				<dt class="inline font-semibold text-white">
-				  <svg class="absolute top-1 left-1 size-5 text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-					<path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z" clip-rule="evenodd" />
-				  </svg>
-				  Push to deploy.
-				</dt>
-				<dd class="inline">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
-			  </div>
-			  <div class="relative pl-9">
-				<dt class="inline font-semibold text-white">
-				  <svg class="absolute top-1 left-1 size-5 text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-					<path fill-rule="evenodd" d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z" clip-rule="evenodd" />
-				  </svg>
-				  SSL certificates.
-				</dt>
-				<dd class="inline">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</dd>
-			  </div>
-			  <div class="relative pl-9">
-				<dt class="inline font-semibold text-white">
-				  <svg class="absolute top-1 left-1 size-5 text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-					<path d="M4.632 3.533A2 2 0 0 1 6.577 2h6.846a2 2 0 0 1 1.945 1.533l1.976 8.234A3.489 3.489 0 0 0 16 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234Z" />
-					<path fill-rule="evenodd" d="M4 13a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Zm11.24 2a.75.75 0 0 1 .75-.75H16a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75h-.01a.75.75 0 0 1-.75-.75V15Zm-2.25-.75a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75h-.01Z" clip-rule="evenodd" />
-				  </svg>
-				  Database backups.
-				</dt>
-				<dd class="inline">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</dd>
-			  </div>
-			</dl>
-		  </div>
-		</div>
-		<img src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png" alt="Product screenshot" class="w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-228 md:-ml-4 lg:-ml-0" width="2432" height="1442" />
-	  </div>
-	</div>
-  </div>
 
+
+<section id="hero">
+	<div class="grid grid-cols-2 gap-4 ">
+		<div class="p-24 mt-40">
+			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Get to know us</h5>
+			<h1 class="text-5xl text-teal-100 font-reckless mt-8">About us</h1>
+			<p class="text-teal-100 mt-8 text-lg">At our office you'll find a friendly and professional staff, each dedicated to providing your family with quality care and personal attention. They are trained professionals with many years of experience, and a desire to share their knowledge so that you may achieve a healthy, attractive and comfortable mouth.</p> 
+			
+
+		</div>
+		<div class="h-[900px] bg-center bg-cover bg-no-repeat rounded-bl-4xl" style="background-image: url('{home_hero}')"></div>
+	  </div>
+</section>
 
 
   <section id="get-to-know-us" class="mt-24">
@@ -95,7 +64,7 @@
 
 
   <div id="jim-alderete" class="modal-window glass">
-	<div class="glass">
+	<div>
 	  <a href="#!" title="Close" class="modal-close glass rounded-2xl border border-white/20 p-6 m-8">
 		<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M1 13L13 1M1 1L13 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -225,39 +194,7 @@
 </section>
 
 
-
-
-
-  <div class="modal-container">
-	<div class="interior">
-	  <a class="btn" href="#open-modal2">👋 Basic CSS-Only Modal2</a>
-	</div>
-  </div>
-  <div id="open-modal2" class="modal-window">
-	<div>
-	  <a href="#!" title="Close" class="modal-close">Close</a>
-	  <h1>
-		Voilà2!
-	  </h1>
-	  <div>
-		A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.
-	  </div>
-	  <br>
-	  <div>
-		<small>Check out 👇</small>
-	  </div>
-	  <br>
-	  <a href="https://periphery.app?utm_source=codepen&utm_medium=web&utm_campaign=modal-pen" target="_blank">
-  
-		<img src="https://periphery.app/assets/wordmark-7b7617b2.svg" style="width: 120px">
-  
-		<div>
-		  <small>
-		  Build your ultimate wishlist while browsing the web.
-		  </small>
-		</div>
-	</div>
-  </div>
+ 
 
   <style>
 .modal-window {
