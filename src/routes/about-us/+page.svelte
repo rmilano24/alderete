@@ -1,6 +1,7 @@
 <script lang="ts">
 	import jim from '$lib/images/jim-alderete.jpg';
 	import cta from '$lib/images/cta.jpg';
+	import jimlg from '$lib/images/about/jim-alderete-lg.jpg';
 </script>
 
 <svelte:head>
@@ -58,7 +59,7 @@
   <section id="get-to-know-us" class="mt-24">
 
 	<div class="container grid grid-cols-2 gap-24 mx-auto">
-
+		<a href="#jim-alderete">
 		<div class="grid relative rounded-4xl"> <!-- Container with grid and relative positioning -->
 			<img src={jim} alt="Description of image" class="col-start-1 row-start-1 rounded-4xl"> <!-- Image as first grid item -->
 			<div class="col-start-1 row-start-1 flex justify-center items-end"> <!-- Text as second grid item -->
@@ -69,11 +70,13 @@
 			  
 			</div>
 		  </div>
+		</a> 
 
 		<!-- <div>
 			<img class="mt-8" src={jim} alt="Jim Alderete" />
 		</div> -->
 
+		<a href="#open-modal2">
 		<div class="grid relative rounded-4xl"> <!-- Container with grid and relative positioning -->
 			<img src={jim} alt="Description of image" class="col-start-1 row-start-1 rounded-4xl"> <!-- Image as first grid item -->
 			<div class="col-start-1 row-start-1 flex justify-center items-end"> <!-- Text as second grid item -->
@@ -84,9 +87,28 @@
 			  
 			</div>
 		  </div>
+		</a>  
 	</div>
 
 </section>
+
+
+
+  <div id="jim-alderete" class="modal-window glass">
+	<div class="glass">
+	  <a href="#!" title="Close" class="modal-close">Close</a>
+
+	  <div class="grid grid-cols-2 gap-4 ">
+		<div>
+			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Get to know us</h5>
+			<h1 class="text-5xl text-teal-100 font-reckless mt-8">Our goal is to leave you with a <span class="text-white italic">positive experience.</span></h1>
+			<p class="text-teal-100 mt-8">We strive to make our office unique by providing excellent clinical skills in a warm, friendly atmosphere. Establishing rewarding and lasting relationships with patients is important to us and we pledge excellence in all we do, and we look forward to helping you make the most of your smile.</p>
+		</div>
+		<div class="h-screen bg-center bg-cover bg-no-repeat" style="background-image: url('{jimlg}')"></div>
+	  </div>
+	 
+	</div>
+  </div>
   
 <div class="container seperator border-b border-teal-800 h-[1px] my-30 mx-auto"></div>
 
@@ -101,7 +123,7 @@
 			<div class="border-b border-teal-800 pb-16">
 				<span class="block text-teal-100">01</span>
 				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Family & General Dentistry</h2>
-			</div>
+			</div>	
 			<div class="border-b border-teal-800 pb-16">
 				<span class="block text-teal-100">02</span>
 				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Restorative Dentistry</h2>
@@ -145,38 +167,9 @@
 
 
 
-<div class="container">
-	<div class="interior">
-	  <a class="btn" href="#open-modal">👋 Basic CSS-Only Modal</a>
-	</div>
-  </div>
-  <div id="open-modal" class="modal-window">
-	<div>
-	  <a href="#!" title="Close" class="modal-close">Close</a>
-	  <h1>
-		Voilà!
-	  </h1>
-	  <div>
-		A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.
-	  </div>
-	  <br>
-	  <div>
-		<small>Check out 👇</small>
-	  </div>
-	  <br>
-	  <a href="https://periphery.app?utm_source=codepen&utm_medium=web&utm_campaign=modal-pen" target="_blank">
-  
-		<img src="https://periphery.app/assets/wordmark-7b7617b2.svg" style="width: 120px">
-  
-		<div>
-		  <small>
-		  Build your ultimate wishlist while browsing the web.
-		  </small>
-		</div>
-	</div>
-  </div>
 
-  <div class="container">
+
+  <div class="modal-container">
 	<div class="interior">
 	  <a class="btn" href="#open-modal2">👋 Basic CSS-Only Modal2</a>
 	</div>
@@ -232,7 +225,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
+    background: #113B49;
   }
   header {
     font-weight: bold;
@@ -261,7 +254,7 @@
 /* Demo Styles */
 
 
-.container {
+.modal-container {
   display: grid;
   justify-content: center;
   align-items: center;
