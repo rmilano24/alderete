@@ -3,6 +3,10 @@
 	import jim from '$lib/images/jim-alderete.jpg';
 	import cta from '$lib/images/cta.jpg';
 	import jimlg from '$lib/images/about/jim-alderete-lg.jpg';
+	import belermine from '$lib/images/about/seals/seal-belermine.png';
+	import ucsb from '$lib/images/about/seals/seal-ucsb.png';
+	import uop from '$lib/images/about/seals/seal-uop.png';
+	import navy from '$lib/images/about/seals/seal-navy.png';
 </script>
 
 <svelte:head>
@@ -53,7 +57,6 @@
 					<div><h3 class="text-2xl text-white">Dr. Jim Alderete</h3></div>
 					<div><h4 class="text-white uppercase text font-matter tracking-widest">Owner and General Dentist</h4></div>
 				</div>
-			  
 			</div>
 		  </div>
 		</a>  
@@ -92,7 +95,27 @@
 			</ul>
 
 		</div>
-		<div class="h-screen bg-center bg-cover bg-no-repeat" style="background-image: url('{jimlg}')"></div>
+		<div class="h-screen bg-center bg-cover bg-no-repeat" style="background-image: url('{jimlg}')">
+			<div class="flex flex-col h-full">
+				<div id="credentials" class="glass rounded-2xl border border-white/20 mt-auto m-6 p-6">
+					<h5 class="text-white uppercase text font-matter tracking-widest">Credentials</h5>
+					<div class="grid grid-cols-4 gap-12 ">
+						<div class="seal">
+							<img src={belermine} alt="Belermine Preparatory School">
+						</div>
+						<div class="seal">
+							<img src={ucsb} alt="University California Santa Barbara">
+						</div>
+						<div class="seal">
+							<img src={uop} alt="University of Pacific">
+						</div>
+						<div class="seal">
+							<img src={navy} alt="Navy">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	  </div>
 	 
 	</div>
