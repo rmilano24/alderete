@@ -158,12 +158,9 @@
 	</div>
   </div>
 
-
-
-  
 <div class="container seperator border-b border-teal-800 h-[1px] my-30 mx-auto"></div>
 
-<section id="expertise">
+<section id="values">
 
 	<div class="container m-auto">
 
