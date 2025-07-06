@@ -167,38 +167,65 @@
 
 	<div class="container m-auto">
 
-		<h5 class="text-white uppercase text font-matter tracking-widest mb-16 after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Our Areas of Expertise</h5>
+		<h5 class="text-white uppercase text font-matter tracking-widest mb-16 after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Our values</h5>
 
-		<div class="grid grid-cols-2 gap-16">
+		<div class="grid grid-cols-1 gap-16">
 
 			<div class="border-b border-teal-800 pb-16">
-				<span class="block text-teal-100">01</span>
-				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Family & General Dentistry</h2>
+				<div class="flex flex-row justify-between">
+					<div class="w-1/2">
+						<span class="block text-teal-100">01</span>
+						<h2 class="text-3xl font-reckless mt-1 text-teal-100">Create good vibes</h2>
+					</div>
+					<div class="w-1/2">
+						<p class="text-teal-100 text-lg mt-9">Short text about creating good vibes. We can use AI to help us generate content. A little more text would look better here.</p>
+					</div>
+				</div>
 			</div>	
 			<div class="border-b border-teal-800 pb-16">
-				<span class="block text-teal-100">02</span>
-				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Restorative Dentistry</h2>
-			</div>
+				<div class="flex flex-row justify-between">
+					<div class="w-1/2">
+						<span class="block text-teal-100">01</span>
+						<h2 class="text-3xl font-reckless mt-1 text-teal-100">Create good vibes</h2>
+					</div>
+					<div class="w-1/2">
+						<p class="text-teal-100 text-lg mt-9">Short text about creating good vibes. We can use AI to help us generate content. A little more text would look better here.</p>
+					</div>
+				</div>
+			</div>	
 			<div class="border-b border-teal-800 pb-16">
-				<span class="block text-teal-100">03</span>
-				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Cosmetic Dentistry</h2>
-			</div>
+				<div class="flex flex-row justify-between">
+					<div class="w-1/2">
+						<span class="block text-teal-100">01</span>
+						<h2 class="text-3xl font-reckless mt-1 text-teal-100">Create good vibes</h2>
+					</div>
+					<div class="w-1/2">
+						<p class="text-teal-100 text-lg mt-9">Short text about creating good vibes. We can use AI to help us generate content. A little more text would look better here.</p>
+					</div>
+				</div>
+			</div>	
 			<div class="border-b border-teal-800 pb-16">
-				<span class="block text-teal-100">04</span>
-				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Periodontal Services</h2>
-			</div>
-			<div class="border-b border-teal-800 pb-16">
-				<span class="block text-teal-100">05</span>
-				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Surgical & Endodontic Services</h2>
-			</div>
-			<div class="border-b border-teal-800 pb-16">
-				<span class="block text-teal-100">06</span>
-				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Digital x-rays and Panorex x-rays</h2>
-			</div>
-			<div class="border-b border-teal-800 pb-16">
-				<span class="block text-teal-100">07</span>
-				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Intra-oral Camera</h2>
-			</div>
+				<div class="flex flex-row justify-between">
+					<div class="w-1/2">
+						<span class="block text-teal-100">01</span>
+						<h2 class="text-3xl font-reckless mt-1 text-teal-100">Create good vibes</h2>
+					</div>
+					<div class="w-1/2">
+						<p class="text-teal-100 text-lg mt-9">Short text about creating good vibes. We can use AI to help us generate content. A little more text would look better here.</p>
+					</div>
+				</div>
+			</div>	
+			<div class="pb-16">
+				<div class="flex flex-row justify-between">
+					<div class="w-1/2">
+						<span class="block text-teal-100">01</span>
+						<h2 class="text-3xl font-reckless mt-1 text-teal-100">Create good vibes</h2>
+					</div>
+					<div class="w-1/2">
+						<p class="text-teal-100 text-lg mt-9">Short text about creating good vibes. We can use AI to help us generate content. A little more text would look better here.</p>
+					</div>
+				</div>
+			</div>	
 
 
 		  </div>
@@ -208,7 +235,7 @@
 </section>
 
 
-<section id="cta" class="h-[724px] bg-cover flex items-center justify-center" style="background-image: url('{cta}')">
+<section id="cta" class="h-[724px] bg-cover flex items-center justify-center mt-32" style="background-image: url('{cta}')">
 	<div class="glass rounded-2xl border border-white/20 flex w-4xl flex-col items-center text-center py-16 px-32">
 		<div><h1 class="text-6xl">We're looking forward to <span class="italic">meeting you.</span></h1></div>
 		<div class="mt-6"><p class="text">Feel free to drop in or give us a call at 831.432.3231.</p></div>
