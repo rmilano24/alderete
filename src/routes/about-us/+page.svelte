@@ -7,6 +7,8 @@
 	import ucsb from '$lib/images/about/seals/seal-ucsb.png';
 	import uop from '$lib/images/about/seals/seal-uop.png';
 	import navy from '$lib/images/about/seals/seal-navy.png';
+
+	import Value from '$components/value.svelte';
 </script>
 
 <svelte:head>
@@ -188,63 +190,12 @@
 
 		<div class="grid grid-cols-1 gap-16">
 
-			<div class="border-b border-teal-800 pb-16">
-				<div class="flex flex-row justify-between">
-					<div class="w-1/2">
-						<span class="block text-teal-100">01</span>
-						<h2 class="text-3xl font-reckless mt-1 text-teal-100">Create good vibes</h2>
-					</div>
-					<div class="w-1/2">
-						<p class="text-teal-100 text-lg mt-9">Short text about creating good vibes. We can use AI to help us generate content. A little more text would look better here.</p>
-					</div>
-				</div>
-			</div>	
-			<div class="border-b border-teal-800 pb-16">
-				<div class="flex flex-row justify-between">
-					<div class="w-1/2">
-						<span class="block text-teal-100">01</span>
-						<h2 class="text-3xl font-reckless mt-1 text-teal-100">Create good vibes</h2>
-					</div>
-					<div class="w-1/2">
-						<p class="text-teal-100 text-lg mt-9">Short text about creating good vibes. We can use AI to help us generate content. A little more text would look better here.</p>
-					</div>
-				</div>
-			</div>	
-			<div class="border-b border-teal-800 pb-16">
-				<div class="flex flex-row justify-between">
-					<div class="w-1/2">
-						<span class="block text-teal-100">01</span>
-						<h2 class="text-3xl font-reckless mt-1 text-teal-100">Create good vibes</h2>
-					</div>
-					<div class="w-1/2">
-						<p class="text-teal-100 text-lg mt-9">Short text about creating good vibes. We can use AI to help us generate content. A little more text would look better here.</p>
-					</div>
-				</div>
-			</div>	
-			<div class="border-b border-teal-800 pb-16">
-				<div class="flex flex-row justify-between">
-					<div class="w-1/2">
-						<span class="block text-teal-100">01</span>
-						<h2 class="text-3xl font-reckless mt-1 text-teal-100">Create good vibes</h2>
-					</div>
-					<div class="w-1/2">
-						<p class="text-teal-100 text-lg mt-9">Short text about creating good vibes. We can use AI to help us generate content. A little more text would look better here.</p>
-					</div>
-				</div>
-			</div>	
-			<div class="pb-16">
-				<div class="flex flex-row justify-between">
-					<div class="w-1/2">
-						<span class="block text-teal-100">01</span>
-						<h2 class="text-3xl font-reckless mt-1 text-teal-100">Create good vibes</h2>
-					</div>
-					<div class="w-1/2">
-						<p class="text-teal-100 text-lg mt-9">Short text about creating good vibes. We can use AI to help us generate content. A little more text would look better here.</p>
-					</div>
-				</div>
-			</div>	
-
-
+			<Value />
+			<Value number="02" value="Be one team" valuetext="Short text about being one team. We can use AI to help us generate content. A little more text would look better here." />
+			<Value number="03" value="Be one team" valuetext="Short text about being one team. We can use AI to help us generate content. A little more text would look better here." />
+			<Value number="04" value="Put the patient first" valuetext="Short text about being one team. We can use AI to help us generate content. A little more text would look better here." />
+			<Value number="05" value="Transparency" valuetext="Short text about being one team. We can use AI to help us generate content. A little more text would look better here." />
+			<Value number="06" value="Be exceptional" valuetext="Short text about being one team. We can use AI to help us generate content. A little more text would look better here." />
 		  </div>
 	</div>
 

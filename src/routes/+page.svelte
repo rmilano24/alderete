@@ -8,7 +8,6 @@
 
 	import Expertise from '$components/expertise.svelte';
 
-	let { children } = $props();
 </script>
 
 <svelte:head>
