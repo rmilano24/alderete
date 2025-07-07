@@ -1,5 +1,18 @@
 <script lang="ts">
 	import logo from '$lib/images/logo-alderete.svg';
+	let showDropdown = false;
+	let hideTimeout: ReturnType<typeof setTimeout>;
+
+	function handleMouseEnter() {
+		clearTimeout(hideTimeout);
+		showDropdown = true;
+	}
+
+	function handleMouseLeave() {
+		hideTimeout = setTimeout(() => {
+			showDropdown = false;
+		}, 100);
+	}
 </script>
 
 <header class="rounded-2xl fixed w-[96%] m-8">
@@ -15,7 +28,19 @@
 				<ul class="flex flex-row">
 					<li class="uppercase font-bold"><a href="/about-us">About us</a></li>
 					<li class="ml-12 uppercase font-bold"><a href="/services">Services</a></li>
-					<li class="ml-12 uppercase font-bold"><a href="#">Patient Resources</a></li>
+					<li class="ml-12 uppercase font-bold">
+						<div class="relative" on:mouseenter={handleMouseEnter} on:mouseleave={handleMouseLeave}>
+							<a href="#" class="flex items-center">Patient Resources
+								<svg class="ml-2 w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+							</a>
+							{#if showDropdown}
+								<ul class="absolute left-0 mt-2 w-48 glass text-white rounded-lg shadow-lg z-50 py-2 rounded-2xl border border-white/20 ">
+									<li><a href="/patient-resources/payment-and-insurance" class="block px-4 py-2">Payment + Insurance</a></li>
+									<li><a href="/patient-resources/forms" class="block px-4 py-2">Forms</a></li>
+								</ul>
+							{/if}
+						</div>
+					</li>
 					<li class="ml-12 uppercase font-bold"><a href="/contact">Contact</a></li>
 				</ul>
 			</nav>

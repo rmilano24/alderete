@@ -2,7 +2,7 @@
 	import map from '$lib/images/ph_map.jpg';
 </script>
 
-<footer class="h-screen">
+<footer class="h-screen border-t border-teal-800">
 	
     <div class="grid grid-cols-2 gap-4">
         
