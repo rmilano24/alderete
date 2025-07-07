@@ -16,7 +16,7 @@
 			<p class="text-teal-100 mt-8 text-lg">Our Office Manager will work with you to create an individualized plan to meet your specific needs.</p>
 			<p class="text-teal-100 mt-8 text-lg">
 				Our fees are based on the quality materials we use and our experience performing your treatment. To facilitate our goals, we have developed the following financial options: VISA, MasterCard, CareCredit, personal check and cash. We will assist you in getting the dental care you want, and fit it into your budget. Whether you have dental insurance or not, let us help you find a way to get the smile you dream of.
-				</p> 
+			</p> 
 			
 		</div>
 		<div class="h-[900px] bg-center bg-cover bg-no-repeat rounded-bl-4xl" style="background-image: url('{home_hero}')"></div>
@@ -82,8 +82,5 @@
 				</div>
 			</div>	
 
-			
-
-			
 	
 </section>
