@@ -5,6 +5,10 @@
 	import garden from '$lib/images/gallery/garden.jpg';
 	import roomleft from '$lib/images/gallery/patient-room-left.jpg';
 	import awards from '$lib/images/gallery/readers-choice-award.jpg';
+
+	import Expertise from '$components/expertise.svelte';
+
+	let { children } = $props();
 </script>
 
 <svelte:head>
@@ -83,34 +87,20 @@
 
 		<div class="grid grid-cols-2 gap-16">
 
-			<div class="border-b border-teal-800 pb-16">
-				<span class="block text-teal-100">01</span>
-				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Family & General Dentistry</h2>
-			</div>
-			<div class="border-b border-teal-800 pb-16">
-				<span class="block text-teal-100">02</span>
-				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Restorative Dentistry</h2>
-			</div>
-			<div class="border-b border-teal-800 pb-16">
-				<span class="block text-teal-100">03</span>
-				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Cosmetic Dentistry</h2>
-			</div>
-			<div class="border-b border-teal-800 pb-16">
-				<span class="block text-teal-100">04</span>
-				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Periodontal Services</h2>
-			</div>
-			<div class="border-b border-teal-800 pb-16">
-				<span class="block text-teal-100">05</span>
-				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Surgical & Endodontic Services</h2>
-			</div>
-			<div class="border-b border-teal-800 pb-16">
-				<span class="block text-teal-100">06</span>
-				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Digital x-rays and Panorex x-rays</h2>
-			</div>
-			<div class="border-b border-teal-800 pb-16">
-				<span class="block text-teal-100">07</span>
-				<h2 class="text-3xl font-reckless mt-1 text-teal-100">Intra-oral Camera</h2>
-			</div>
+			<Expertise number="01" skill="Family & General Dentistry"/>
+
+			<Expertise number="02" skill="Restorative Dentistry"/>
+
+			<Expertise number="03" skill="Cosmetic Dentistry"/>
+
+			<Expertise number="04" skill="Periodontal Services"/>
+
+			<Expertise number="05" skill="Surgical & Endodontic Services"/>
+
+			<Expertise number="06" skill="Digital x-rays and Panorex x-rays"/>
+
+			<Expertise number="07" skill="Intra-oral Camera"/>
+
 
 
 		  </div>
