@@ -15,16 +15,16 @@
 	}
 </script>
 
-<header class="rounded-2xl fixed w-[96%] m-8">
+<header class="rounded-2xl fixed w-[96%] m-8 z-50">
 
 	<div class="glass rounded-2xl border border-white/20 flex h-[77px] w-full shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] -z-50">
-		<div id="logo" class="w-48 m-7 flex-none">
+		<div id="logo" class="w-48 m-7 mt-[26px] flex-none">
 			<a href="/"><img src={logo} alt="Alderete DDS" /></a>
 		</div>
 
 		<div class="grow border-l border-white/20">
 
-			<nav class="flex flex-row ml-8 mt-6">
+			<nav class="flex flex-row ml-8 mt-[26px]">
 				<ul class="flex flex-row">
 					<li class="uppercase font-bold"><a href="/about-us">About us</a></li>
 					<li class="ml-12 uppercase font-bold"><a href="/services">Services</a></li>
@@ -33,8 +33,7 @@
 							<a href="#" class="flex items-center">Patient Resources
 								<svg class="ml-2"  width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path fill-rule="evenodd" clip-rule="evenodd" d="M5.9998 1.7998C6.15893 1.7998 6.31155 1.86302 6.42407 1.97554C6.53659 2.08806 6.5998 2.24067 6.5998 2.3998V5.3998H9.5998C9.75893 5.3998 9.91155 5.46302 10.0241 5.57554C10.1366 5.68806 10.1998 5.84067 10.1998 5.9998C10.1998 6.15893 10.1366 6.31155 10.0241 6.42407C9.91155 6.53659 9.75893 6.5998 9.5998 6.5998H6.5998V9.5998C6.5998 9.75893 6.53659 9.91155 6.42407 10.0241C6.31155 10.1366 6.15893 10.1998 5.9998 10.1998C5.84067 10.1998 5.68806 10.1366 5.57554 10.0241C5.46302 9.91155 5.3998 9.75893 5.3998 9.5998V6.5998H2.3998C2.24067 6.5998 2.08806 6.53659 1.97554 6.42407C1.86302 6.31155 1.7998 6.15893 1.7998 5.9998C1.7998 5.84067 1.86302 5.68806 1.97554 5.57554C2.08806 5.46302 2.24067 5.3998 2.3998 5.3998H5.3998V2.3998C5.3998 2.24067 5.46302 2.08806 5.57554 1.97554C5.68806 1.86302 5.84067 1.7998 5.9998 1.7998Z" fill="white"/>
-									</svg>
-									
+								</svg>	
 							</a>
 							{#if showDropdown}
 								<ul class="absolute left-[-20px] mt-1 w-48 glass text-white rounded-lg shadow-lg z-50 py-2 rounded-2xl border border-white/20 min-w-54">
