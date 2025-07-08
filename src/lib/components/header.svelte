@@ -2,6 +2,8 @@
 	import logo from '$lib/images/logo-alderete.svg';
 	let showDropdown = false;
 	let hideTimeout: ReturnType<typeof setTimeout>;
+	let overlayOpen = false;
+	let scrollY = 0;
 
 	function handleMouseEnter() {
 		clearTimeout(hideTimeout);
@@ -12,6 +14,26 @@
 		hideTimeout = setTimeout(() => {
 			showDropdown = false;
 		}, 100);
+	}
+
+	$: {
+		if (typeof window !== 'undefined') {
+			if (overlayOpen) {
+				scrollY = window.scrollY;
+				document.body.style.position = 'fixed';
+				document.body.style.top = `-${scrollY}px`;
+				document.body.style.width = '100vw';
+				document.body.style.overflow = 'hidden';
+				document.documentElement.classList.add('no-scroll');
+			} else {
+				document.body.style.position = '';
+				document.body.style.top = '';
+				document.body.style.width = '';
+				document.body.style.overflow = '';
+				document.documentElement.classList.remove('no-scroll');
+				window.scrollTo(0, scrollY);
+			}
+		}
 	}
 </script>
 
@@ -25,7 +47,7 @@
 		<div class="grow border-l border-white/20">
 
 			<nav class="flex flex-row ml-8 mt-[25px]">
-				<ul class="flex flex-row">
+				<ul class="flex flex-row max-[1082px]:hidden">
 					<li class="uppercase font-bold"><a href="/about-us">About us</a></li>
 					<li class="ml-12 max-xl:ml-8 uppercase font-bold"><a href="/services">Services</a></li>
 					<li class="ml-12 max-xl:ml-8 uppercase font-bold">
@@ -63,4 +85,128 @@
 		</div>
 	</div>
 
+
 </header>
+
+	<!-- start mobile-nav -->
+
+	
+		<input  type="checkbox" id="overlay-input" bind:checked={overlayOpen} />
+		<label class="min-[1082px]:hidden" for="overlay-input" id="overlay-button"><span></span></label>
+
+
+	
+
+  <div id="overlay" class="glass">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+
+	
+
+<style>
+
+
+@keyframes bugfix { from {padding:0;} to {padding:0;}}
+@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;}}
+
+#overlay-button {
+  position: absolute;
+  right: 3em;
+  top: 2.4em;
+  padding: 26px 11px;
+  z-index: 99999999999;
+  cursor: pointer;
+  user-select: none;
+  span {
+      height: 1.5px;
+      width: 35px;
+      border-radius: 2px;
+      background-color: white;
+      position: relative;
+      display: block;
+      transition: all .2s ease-in-out;
+     
+      &:after {
+        top: 10px;
+      }
+      &:before, &:after {
+          height: 1.5px;
+          width: 35px;
+          border-radius: 2px;
+          background-color: white;
+          position: absolute;
+          content: "";
+          transition: all .2s ease-in-out;
+      }
+    }
+    &:hover span, &:hover span:before, &:hover span:after {
+      background: #333332;
+    }
+}
+
+input[type=checkbox] {
+  display: none;
+  
+  &:checked ~ #overlay {
+    visibility: visible;
+  }
+  
+  &:checked ~ #overlay-button {
+    &:hover span, span{
+      background: transparent;
+    }
+    span {
+      &:before {
+        transform: rotate(45deg) translate(7px, 7px);
+        opacity: 1;
+      }
+      &:after {
+        transform: rotate(-45deg) translate(0px, 0px);
+      }
+    }
+  }
+}
+
+#overlay {
+  height: 100vh;
+  width: 100vw;
+  z-index: 999999999;
+  visibility: hidden;
+  position: fixed;
+  &.active {
+    visibility: visible;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    padding-left: 0;
+    list-style-type: none;
+    li {
+      padding: 1em;
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+        &:hover {
+          color: #333332;
+        }
+      }
+    }
+  }
+}
+
+.no-scroll {
+  overflow: hidden !important;
+  height: 100vh !important;
+}
+
+</style>
