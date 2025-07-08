@@ -37,7 +37,7 @@
 	}
 </script>
 
-<header class="rounded-2xl fixed w-full p-8 z-50">
+<header class="rounded-2xl fixed w-full p-8 max-md:p-3 z-50">
 
 	<div class="glass rounded-2xl border border-white/20 flex h-[77px] w-full shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] -z-50">
 		<div id="logo" class="w-48 m-7 mt-[26px] flex-none">
@@ -98,11 +98,38 @@
 	
 
   <div id="overlay" class="glass">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+
+	<div class="flex flex-col p-12">
+		<div class="flex border-b border-white/20">
+			<div>logo</div>
+			<div>controls</div>
+		</div>
+		<div class="mt-16">
+			<ul class="text-4xl">
+			<li><a href="#">About us</a></li>
+			<li class="mt-8"><a href="#">Services</a></li>
+			<li class="mt-8"><a href="#">Patient Resources +</a></li>
+			<li class="mt-8"><a href="#">Contact</a></li>
+		  </ul>
+		</div>
+
+		 <div>
+		<a href="/about-us" class="text-teal-400 mt-12 inline-block">
+			<div class="flex flex-row items-center">
+				<div>Learn more about us</div>
+				<div class="ml-4"> 
+					<svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M15 1.5L19 5.5M19 5.5L15 9.5M19 5.5H1" stroke="#1AD2D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</div>
+			</div>
+		</a>
+	  </div>
+	  </div>
+	 
+
+
+   
   </div>
 
 
@@ -115,7 +142,7 @@
 @-webkit-keyframes bugfix { from {padding:0;} to {padding:0;}}
 
 #overlay-button {
-  position: absolute;
+  position: fixed;
   right: 3em;
   top: 2.4em;
   padding: 26px 11px;
@@ -144,9 +171,9 @@
           transition: all .2s ease-in-out;
       }
     }
-    &:hover span, &:hover span:before, &:hover span:after {
+    /* &:hover span, &:hover span:before, &:hover span:after {
       background: #333332;
-    }
+    } */
 }
 
 input[type=checkbox] {
@@ -181,27 +208,7 @@ input[type=checkbox] {
   &.active {
     visibility: visible;
   }
-  ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    height: 100vh;
-    padding-left: 0;
-    list-style-type: none;
-    li {
-      padding: 1em;
-      a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.5em;
-        &:hover {
-          color: #333332;
-        }
-      }
-    }
-  }
+  
 }
 
 .no-scroll {
