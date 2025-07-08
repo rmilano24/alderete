@@ -4,9 +4,9 @@
 
 <footer class="h-screen border-t border-teal-800">
 	
-    <div class="grid grid-cols-2 gap-4">
+    <div class="grid grid-cols-2 max-md:grid-cols-1 gap-4">
         
-        <div id="footer-info" class="p-24 text-teal-100">
+        <div id="footer-info" class="p-24 text-teal-100 max-md:order-2">
             <h2 class="text-4xl font-reckless mt-8 text-teal-100">Ready to <span class="italic">smile?</span></h2>
             <a href="/about-us" class="text-teal-400 mt-4 inline-block text-lg">
 				<div class="flex flex-row items-center">
@@ -100,7 +100,7 @@
 <div class="text-teal-700 mt-12 text-sm">©2025  •  <a href="https://www.nmbl.digital/" target="_blank">Website by</a></div>     
 </div> <!-- /#footer-info -->
 
-<div id="footer-map" class="h-screen bg-cover" style="background-image: url('{map}')"></div>
+<div id="footer-map" class="h-screen bg-cover max-md:order-1" style="background-image: url('{map}')"></div>
 
 </div>
 
