@@ -2,6 +2,7 @@
 	import garden from '$lib/images/gallery/garden.jpg';
 	import roomleft from '$lib/images/gallery/patient-room-left.jpg';
 	import awards from '$lib/images/gallery/readers-choice-award.jpg';
+	import HeroInner from '$components/hero-inner.svelte';
 </script>
 
 <svelte:head>
@@ -9,7 +10,7 @@
 	<meta name="description" content="NMBL | UX Design, Branding, Web Design & Development Studio in Santa Cruz | San Francisco Bay Area" />
 </svelte:head>
 
-<h1 class="text-5xl">Hello world</h1>
+<HeroInner eyebrow="A warm and friendly environment" header="Our office" text="At our office you'll find a friendly and professional staff, each dedicated to providing your family with quality care and personal attention. They are trained professionals with many years of experience, and a desire to share their knowledge so that you may achieve a healthy, attractive and comfortable mouth."/>
 
 <section id="gallery" class="container mx-auto my-24">
 	<div class="grid grid-cols-3 gap-8">

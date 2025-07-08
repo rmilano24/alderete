@@ -9,6 +9,7 @@
 	const XrayServices = ["x-rays"];
 	const CameraServices = ["Modern Camera"];
 	const PeriodontalServices = ["Full check up"];
+	import HeroInner from '$components/hero-inner.svelte';
 </script>
 
 <svelte:head>
@@ -16,18 +17,7 @@
 	<meta name="description" content="NMBL | UX Design, Branding, Web Design & Development Studio in Santa Cruz | San Francisco Bay Area" />
 </svelte:head>
 
-<section id="hero">
-	<div class="grid grid-cols-2 gap-4 ">
-		<div class="p-24 mt-40">
-			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">What we’re good at</h5>
-			<h1 class="text-5xl text-teal-100 font-reckless mt-8">Our services</h1>
-			<p class="text-teal-100 mt-8 text-lg">You want your smile to be the best it can be, and we are here to help. Dr Alderete and his caring, friendly team of dental professionals are committed to providing a comfortable dental experience. Our goal is to provide dental care for you and your family in a compassionate, caring and professional environment.</p> 
-
-		</div>
-		<div class="h-[900px] bg-center bg-cover bg-no-repeat rounded-bl-4xl" style="background-image: url('{home_hero}')"></div>
-	  </div>
-</section>
-
+<HeroInner eyebrow="What we’re good at" header="Our services" text="You want your smile to be the best it can be, and we are here to help. Dr Alderete and his caring, friendly team of dental professionals are committed to providing a comfortable dental experience. Our goal is to provide dental care for you and your family in a compassionate, caring and professional environment." />
 
 
 <section id="services">

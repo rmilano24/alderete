@@ -1,6 +1,7 @@
 <script lang="ts">
 	import home_hero from '$lib/images/bg_home-hero.jpg';
 	import creditcare from '$lib/images/credit-care.png';
+	import HeroInner from '$components/hero-inner.svelte';
 </script>
 
 <svelte:head>
@@ -8,20 +9,8 @@
 	<meta name="description" content="NMBL | UX Design, Branding, Web Design & Development Studio in Santa Cruz | San Francisco Bay Area" />
 </svelte:head>
 
-<section id="hero">
-	<div class="grid grid-cols-2 gap-4 ">
-		<div class="p-24 mt-40">
-			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">We’ll find a way to work with you</h5>
-			<h1 class="text-5xl text-teal-100 font-reckless mt-8">Payments and insurance</h1>
-			<p class="text-teal-100 mt-8 text-lg">Our Office Manager will work with you to create an individualized plan to meet your specific needs.</p>
-			<p class="text-teal-100 mt-8 text-lg">
-				Our fees are based on the quality materials we use and our experience performing your treatment. To facilitate our goals, we have developed the following financial options: VISA, MasterCard, CareCredit, personal check and cash. We will assist you in getting the dental care you want, and fit it into your budget. Whether you have dental insurance or not, let us help you find a way to get the smile you dream of.
-			</p> 
-			
-		</div>
-		<div class="h-[900px] bg-center bg-cover bg-no-repeat rounded-bl-4xl" style="background-image: url('{home_hero}')"></div>
-	  </div>
-</section>
+
+<HeroInner eyebrow="We’ll find a way to work with you" header="Payments and insurance" text="<b>Our Office Manager will work with you to create an individualized plan to meet your specific needs.</b> <br><br>Our fees are based on the quality materials we use and our experience performing your treatment. To facilitate our goals, we have developed the following financial options: VISA, MasterCard, CareCredit, personal check and cash. We will assist you in getting the dental care you want, and fit it into your budget. Whether you have dental insurance or not, let us help you find a way to get the <b>smile you dream of.</b>" />
 
 
 <section id="payment-insurance">
