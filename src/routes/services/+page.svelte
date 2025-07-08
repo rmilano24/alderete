@@ -13,8 +13,8 @@
 </script>
 
 <svelte:head>
-	<title>NMBL | Branding and Design Studio in Santa Cruz, California</title>
-	<meta name="description" content="NMBL | UX Design, Branding, Web Design & Development Studio in Santa Cruz | San Francisco Bay Area" />
+	<title>Jim Alderete DDS | Dentist in Santa Cruz, Ca</title>
+	<meta name="description" content="Jim Alderete DDS | Dentist in Santa Cruz, Ca" />
 </svelte:head>
 
 <HeroInner eyebrow="What we’re good at" header="Our services" text="You want your smile to be the best it can be, and we are here to help. Dr Alderete and his caring, friendly team of dental professionals are committed to providing a comfortable dental experience. Our goal is to provide dental care for you and your family in a compassionate, caring and professional environment." />

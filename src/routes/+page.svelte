@@ -11,7 +11,8 @@
 </script>
 
 <svelte:head>
-	<title>SvelteKit + TypeScript + TailwindCSS starter</title>
+	<title>Jim Alderete DDS | Dentist in Santa Cruz, Ca</title>
+	<meta name="description" content="Jim Alderete DDS | Dentist in Santa Cruz, Ca" />
 </svelte:head>
 
 
