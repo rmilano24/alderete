@@ -4,6 +4,10 @@
 	import cta from '$lib/images/cta.jpg';
 	const restorativeDentistry = ["Tooth Colored Composite Fillings", "Amalgam Fillings", "Crowns and Bridges", "Removable Bridges and Dentures", "TMD Treatment and Appliances", "Implant Restorations"];
 	const CosmeticDentistry = ["White Composite Bonding", "All-Porcelain Crowns and Bridges", "Professional Whitening", "Veneers"];
+	const SergicalServices = ["Extractions", "Root Canal Therapy"];
+	const XrayServices = ["x-rays"];
+	const CameraServices = ["Modern Camera"];
+	const PeriodontalServices = ["Full check up"];
 </script>
 
 <svelte:head>
@@ -37,6 +41,14 @@
 			<Service serviceitems={restorativeDentistry} />
 
 			<Service number="02" service="Cosmetic Dentistry" servicetext="Short text about Cosmetic Dentistry. We can use AI to help us generate content. A little more text would look better here as a brief description." serviceitems={CosmeticDentistry} />
+
+			<Service number="03" service="Surgical & Endodontic Services" servicetext="Short text about Surgical & Endodontic Services. We can use AI to help us generate content. A little more text would look better here as a brief description." serviceitems={SergicalServices} />
+
+			<Service number="04" service="Digital x-rays and Panorex x-rays" servicetext="Short text about Digital x-rays and Panorex x-rays. We can use AI to help us generate content. A little more text would look better here as a brief description." serviceitems={XrayServices} />
+
+			<Service number="05" service="Intra-oral Camera" servicetext="Short text about Intra-oral Camera. We can use AI to help us generate content. A little more text would look better here as a brief description." serviceitems={CameraServices} />
+
+			<Service number="06" service="Periodontal Services" servicetext="Short text about Periodontal Services. We can use AI to help us generate content. A little more text would look better here as a brief description." serviceitems={PeriodontalServices} />
 			
 		
 				</div>
