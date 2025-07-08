@@ -13,8 +13,8 @@
 </script>
 
 <svelte:head>
-	<title>NMBL | Branding and Design Studio in Santa Cruz, California</title>
-	<meta name="description" content="NMBL | UX Design, Branding, Web Design & Development Studio in Santa Cruz | San Francisco Bay Area" />
+	<title>Jim Alderete DDS | Dentist in Santa Cruz, Ca</title>
+	<meta name="description" content="Jim Alderete DDS | Dentist in Santa Cruz, Ca" />
 </svelte:head>
 
 
