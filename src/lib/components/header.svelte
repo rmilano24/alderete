@@ -146,9 +146,16 @@
   right: 3em;
   top: 2.4em;
   padding: 26px 11px;
+  
   z-index: 99999999999;
   cursor: pointer;
   user-select: none;
+  
+  @media (max-width: 768px) {
+    right: 2em;
+    top: 1.5em;
+    padding: 20px 8px;
+  }
   span {
       height: 1.5px;
       width: 35px;
