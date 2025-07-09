@@ -100,9 +100,11 @@
   <div id="overlay" class="glass">
 
 	<div class="flex flex-col p-12">
-		<div class="flex border-b border-white/20">
-			<div>logo</div>
-			<div>controls</div>
+		<div class="flex border-b pb-8 border-white/20">
+			<div id="logo" class="w-48 mt-[26px] flex-none">
+				<a href="/"><img src={logo} alt="Alderete DDS" /></a>
+			</div>
+			
 		</div>
 		<div class="mt-16">
 			<ul class="text-4xl">
@@ -114,12 +116,12 @@
 		</div>
 
 		 <div>
-		<a href="/about-us" class="text-teal-400 mt-12 inline-block">
+		<a href="/about-us" class="white font-bold mt-12 inline-block">
 			<div class="flex flex-row items-center">
 				<div>Learn more about us</div>
 				<div class="ml-4"> 
 					<svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M15 1.5L19 5.5M19 5.5L15 9.5M19 5.5H1" stroke="#1AD2D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M15 1.5L19 5.5M19 5.5L15 9.5M19 5.5H1" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 					</svg>
 				</div>
 			</div>

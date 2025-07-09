@@ -10,10 +10,10 @@
 
 <HeroInner eyebrow="Call us or fill out the form below" header="Request appointment" text="At our office you'll find a friendly and professional staff, each dedicated to providing your family with quality care and personal attention. They are trained professionals with many years of experience, and a desire to share their knowledge so that you may achieve a healthy, attractive and comfortable mouth." />
 
-<div id="cta-boxes">
-	<div class="grid grid-cols-3 max-lg:grid-cols-2  gap-8 container mx-auto mb-30">
+<div id="cta-boxes" class="mt-40">
+	<div class="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1  gap-8 container mx-auto mb-30">
 
-		<div class="mt-40">
+		<div>
 			<a target="_blank" href="tel:18314323231">
 			<div class="glass rounded-2xl border border-white/20 shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] flex flex-col justify-between p-8 w-full h-96">
 				<div>
@@ -25,7 +25,7 @@
 			</div>
 			</a>
 		</div>
-		<div class="mt-40">
+		<div>
 			<a target="_blank" href="https://www.google.com/maps/place/2820+Daubenbiss+Ave,+Soquel,+CA+95073/@36.987048,-121.9580871,16z/data=!3m1!4b1!4m6!3m5!1s0x808e157cb0b7d091:0x835af43a238a0650!8m2!3d36.987048!4d-121.9580871!16s%2Fg%2F11b8v7vzjt?entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D">
 			<div class="glass rounded-2xl border border-white/20 shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] flex flex-col justify-between p-8 h-96">
 				<div>
@@ -39,7 +39,7 @@
 			</div>
 		</a>
 		</div>
-		<div class="mt-40">
+		<div>
 			<a href="mailto:dr.alderete@drconnect.net">
 			<div class="glass rounded-2xl border border-white/20 shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] flex flex-col justify-between p-8 h-96">
 				<div>

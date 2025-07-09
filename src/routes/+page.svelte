@@ -18,7 +18,7 @@
 
 
 <section id="home-hero" class="h-screen bg-cover bg-center flex items-end" style="background-image: url('{home_hero}')">
-	<div class="w-full m-12 max-md:m-3">
+	<div class="w-full m-6 max-md:m-3">
 		<div class="flex ml-4 mb-4 max-md:ml-0 max-md:mb-0">
 			<div class="glass rounded-2xl border border-white/20 p-8 mr-6 max-md:mr-0 max-w-[532px] max-md:min-w-full shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)]">
 				<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">A trusted santa cruz dentist, since 2009</h5>
@@ -41,7 +41,7 @@
 
 <section id="get-to-know-us" class="mt-24">
 
-	<div class="container grid grid-cols-2 gap-24 mx-auto">
+	<div class="container grid grid-cols-2 max-lg:grid-cols-1 gap-24 mx-auto">
 
 		<div class="grid relative rounded-4xl"> <!-- Container with grid and relative positioning -->
 			<img src={jim} alt="Description of image" class="col-start-1 row-start-1 rounded-4xl"> <!-- Image as first grid item -->
@@ -58,7 +58,7 @@
 			<img class="mt-8" src={jim} alt="Jim Alderete" />
 		</div> -->
 
-		<div class="mt-20">
+		<div class="mt-16">
 			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Get to know us</h5>
 			<h1 class="text-5xl text-teal-100 font-reckless mt-8">Our goal is to leave you with a <span class="text-white italic">positive experience.</span></h1>
 			<p class="text-teal-100 mt-8">We strive to make our office unique by providing excellent clinical skills in a warm, friendly atmosphere. Establishing rewarding and lasting relationships with patients is important to us and we pledge excellence in all we do, and we look forward to helping you make the most of your smile.</p>
@@ -85,7 +85,7 @@
 
 		<h5 class="text-white uppercase text font-matter tracking-widest mb-16 after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Our Areas of Expertise</h5>
 
-		<div class="grid grid-cols-2 gap-16">
+		<div class="grid grid-cols-2 max-lg:grid-cols-1 gap-16">
 
 			<Expertise number="01" skill="Family & General Dentistry"/>
 
@@ -100,8 +100,6 @@
 			<Expertise number="06" skill="Digital x-rays and Panorex x-rays"/>
 
 			<Expertise number="07" skill="Intra-oral Camera"/>
-
-
 
 		  </div>
 	</div>

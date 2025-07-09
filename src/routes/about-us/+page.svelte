@@ -1,5 +1,6 @@
 <script lang="ts">
 	import jim from '$lib/images/jim-alderete.jpg';
+	import ryan from '$lib/images/about/ryan-reyes.jpg';
 	import cta from '$lib/images/cta.jpg';
 	import jimlg from '$lib/images/about/jim-alderete-lg.jpg';
 	import belermine from '$lib/images/about/seals/seal-belermine.png';
@@ -23,7 +24,7 @@
 
   <section id="get-to-know-us" class="mt-24">
 
-	<div class="container grid grid-cols-2 gap-24 mx-auto">
+	<div class="container grid grid-cols-2 max-md:grid-cols-1 gap-24 max-md:gap-12 mx-auto">
 		<a href="#jim-alderete">
 		<div class="grid relative rounded-4xl"> <!-- Container with grid and relative positioning -->
 			<img src={jim} alt="Description of image" class="col-start-1 row-start-1 rounded-4xl"> <!-- Image as first grid item -->
@@ -37,13 +38,9 @@
 		  </div>
 		</a> 
 
-		<!-- <div>
-			<img class="mt-8" src={jim} alt="Jim Alderete" />
-		</div> -->
-
 		<a href="#ryan-reyes">
 		<div class="grid relative rounded-4xl"> <!-- Container with grid and relative positioning -->
-			<img src={jim} alt="Description of image" class="col-start-1 row-start-1 rounded-4xl"> <!-- Image as first grid item -->
+			<img src={ryan} alt="Description of image" class="col-start-1 row-start-1 rounded-4xl"> <!-- Image as first grid item -->
 			<div class="col-start-1 row-start-1 flex justify-center items-end"> <!-- Text as second grid item -->
 				<div class="flex w-full glass rounded-2xl border border-white/20 m-4 p-8 flex-col">
 					<div><h3 class="text-2xl text-white">Dr. Jim Alderete</h3></div>
@@ -164,7 +161,7 @@
 			</ul>
 
 		</div>
-		<div class="h-screen bg-center bg-cover bg-no-repeat" style="background-image: url('{jimlg}')"></div>
+		<div class="h-screen bg-center bg-cover bg-no-repeat" style="background-image: url('{ryan}')"></div>
 	  </div>
 	 
 	</div>

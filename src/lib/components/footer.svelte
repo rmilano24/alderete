@@ -6,7 +6,7 @@
 	
     <div class="grid grid-cols-2 max-md:grid-cols-1 gap-4">
         
-        <div id="footer-info" class="p-24 text-teal-100 max-md:order-2">
+        <div id="footer-info" class="p-24 text-teal-100 max-md:order-2 max-lg:p-8">
             <h2 class="text-4xl font-reckless mt-8 text-teal-100">Ready to <span class="italic">smile?</span></h2>
             <a href="/contact" class="text-teal-400 mt-4 inline-block text-lg">
 				<div class="flex flex-row items-center">
