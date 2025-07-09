@@ -7,8 +7,8 @@
 </script>
 
 <div class="border-b border-teal-800 pb-16 last:border-0">
-    <div class="flex flex-row justify-between">
-        <div class="w-3/4">
+    <div class="flex flex-row max-lg:flex-col justify-between">
+        <div class="w-3/4 max-lg:w-full">
             <span class="block text-teal-100">{number}</span>
             <h2 class="text-3xl font-reckless mt-1 text-teal-100">{service}</h2>
             <p class="text-teal-100 text-xl mt-5 max-w-3/4">{servicetext}</p>
@@ -23,7 +23,7 @@
                 </div>
             </a>
         </div>
-        <div class="w-1/4">
+        <div class="w-1/4 max-lg:w-full">
             <ul class="mt-21 text-teal-100 text-lg">
                 {#each serviceitems as item}
                     <li class="mt-6 first:mt-0"><svg class="inline mr-2" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -7,7 +7,7 @@
 
 <section id="hero">
 	<div class="grid grid-cols-2 gap-4 max-lg:grid-cols-1">
-		<div class="p-24 mt-40 max-md:p-12 max-md:mt-24">
+		<div class="p-24 mt-40 max-lg:p-12 max-lg:mt-24">
 			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">{eyebrow}</h5>
 			<h1 class="text-5xl text-teal-100 font-reckless mt-8">{header}</h1>
 			<p class="text-teal-100 mt-8 text-lg">{@html text}</p> 

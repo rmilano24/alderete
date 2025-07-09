@@ -24,7 +24,7 @@
 
   <section id="get-to-know-us" class="mt-24">
 
-	<div class="container grid grid-cols-2 max-md:grid-cols-1 gap-24 max-md:gap-12 mx-auto">
+	<div class="container grid grid-cols-2 max-md:grid-cols-1 gap-24 max-lg:gap-12 mx-auto">
 		<a href="#jim-alderete">
 		<div class="grid relative rounded-4xl"> <!-- Container with grid and relative positioning -->
 			<img src={jim} alt="Description of image" class="col-start-1 row-start-1 rounded-4xl"> <!-- Image as first grid item -->
