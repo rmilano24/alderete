@@ -8,9 +8,9 @@
         
         <div id="footer-info" class="p-24 text-teal-100 max-md:order-2">
             <h2 class="text-4xl font-reckless mt-8 text-teal-100">Ready to <span class="italic">smile?</span></h2>
-            <a href="/about-us" class="text-teal-400 mt-4 inline-block text-lg">
+            <a href="/contact" class="text-teal-400 mt-4 inline-block text-lg">
 				<div class="flex flex-row items-center">
-					<div>Learn more about us</div>
+					<div>Request an appointment</div>
 					<div class="ml-4"> 
 						<svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M15 1.5L19 5.5M19 5.5L15 9.5M19 5.5H1" stroke="#1AD2D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -29,7 +29,8 @@
                 </div>
                 
                 <div class="flex items-center">
-                    2820 Daubenbiss Ave <br> Soquel, CA 95073
+                    <a href="https://www.google.com/maps/place/2820+Daubenbiss+Ave,+Soquel,+CA+95073/@36.987048,-121.9580871,16z/data=!3m1!4b1!4m6!3m5!1s0x808e157cb0b7d091:0x835af43a238a0650!8m2!3d36.987048!4d-121.9580871!16s%2Fg%2F11b8v7vzjt?entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                        2820 Daubenbiss Ave <br> Soquel, CA 95073</a>   
                 </div>
                 
             
@@ -100,8 +101,9 @@
 <div class="text-teal-700 mt-12 text-sm">©2025  •  <a href="https://www.nmbl.digital/" target="_blank">Website by</a></div>     
 </div> <!-- /#footer-info -->
 
+<a href="https://www.google.com/maps/place/2820+Daubenbiss+Ave,+Soquel,+CA+95073/@36.987048,-121.9580871,16z/data=!3m1!4b1!4m6!3m5!1s0x808e157cb0b7d091:0x835af43a238a0650!8m2!3d36.987048!4d-121.9580871!16s%2Fg%2F11b8v7vzjt?entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
 <div id="footer-map" class="h-screen bg-cover max-md:order-1" style="background-image: url('{map}')"></div>
-
+</a>
 </div>
 
 </footer>
