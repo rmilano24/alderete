@@ -113,7 +113,10 @@
 		<div class="col-span-2 ..."><img class="rounded-4xl" src={garden} alt="Alderete DDS" /></div>
 		<div class="col-span-2 ..."><img class="rounded-4xl" src={roomleft} alt="Alderete DDS" /></div>
 		<div class="glass border border-white/20 rounded-4xl flex items-center justify-center">
-			<a class="text-center text-3xl" href="/gallery"><span class="italic">Explore</span> our office</a>
+			<a class="inline-flex items-center justify-center w-full h-full text-center text-3xl gap-x-1" href="/gallery">
+				<span class="italic">Explore</span>
+				<span>our office</span>
+			</a>
 		</div>
 		
 	  </div>
