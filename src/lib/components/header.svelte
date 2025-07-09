@@ -106,10 +106,10 @@
 		</div>
 		<div class="mt-16">
 			<ul class="text-4xl">
-			<li><a href="#">About us</a></li>
-			<li class="mt-8"><a href="#">Services</a></li>
+			<li><a href="/about-us" on:click={() => overlayOpen = false}>About us</a></li>
+			<li class="mt-8"><a href="/services" on:click={() => overlayOpen = false}>Services</a></li>
 			<li class="mt-8"><a href="#">Patient Resources +</a></li>
-			<li class="mt-8"><a href="#">Contact</a></li>
+			<li class="mt-8"><a href="/contact" on:click={() => overlayOpen = false}>Contact</a></li>
 		  </ul>
 		</div>
 
