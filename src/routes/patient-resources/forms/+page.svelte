@@ -5,7 +5,7 @@
 
 <section id="forms" class="container py-50 mx-auto">
 
-	<div class="grid grid-cols-3 gap-48">
+	<div class="grid grid-cols-3 max-lg:grid-cols-1 gap-48 max-xl:gap-24 max-lg:gap-8">
 		<div id="left-col">
 			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Please fill this out</h5>
 			<h1 class="text-4xl text-teal-100 font-reckless mt-8">New patient forms</h1>
@@ -13,7 +13,7 @@
 			
 		</div>
 
-		<div id="right-col" class="col-span-2 border-b border-teal-800">
+		<div id="right-col" class="col-span-2">
 			<span class="block text-teal-100">01</span>
 			<div><h2 class="text-3xl font-reckless mt-1 text-teal-100 block">New patient registration form</h2></div>
 			<div class="mt-13">

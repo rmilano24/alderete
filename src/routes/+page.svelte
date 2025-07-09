@@ -108,14 +108,13 @@
 </section>
 
 <section id="gallery" class="container mx-auto my-24">
-	<div class="grid grid-cols-3 gap-8">
-		<div><img class="rounded-4xl" src={awards} alt="Alderete DDS" /></div>
-		<div class="col-span-2 ..."><img class="rounded-4xl" src={garden} alt="Alderete DDS" /></div>
-		<div class="col-span-2 ..."><img class="rounded-4xl" src={roomleft} alt="Alderete DDS" /></div>
-		<div class="glass border border-white/20 rounded-4xl flex items-center justify-center">
-			<a class="inline-flex items-center justify-center w-full h-full text-center text-3xl gap-x-1" href="/gallery">
-				<span class="italic">Explore</span>
-				<span>our office</span>
+	<div class="grid grid-cols-3 gap-8 max-lg:gap-6 max-md:gap-4">
+		<div><img class="rounded-4xl max-md:rounded-2xl" src={awards} alt="Alderete DDS" /></div>
+		<div class="col-span-2"><img class="rounded-4xl max-md:rounded-2xl" src={garden} alt="Alderete DDS" /></div>
+		<div class="col-span-2"><img class="rounded-4xl max-md:rounded-2xl" src={roomleft} alt="Alderete DDS" /></div>
+		<div class="glass border border-white/20 rounded-4xl max-md:rounded-2xl flex items-center justify-center">
+			<a class="flex items-center justify-center w-full h-full text-center text-3xl" href="/gallery">
+				<span class="italic mr-2">Explore</span>our office
 			</a>
 		</div>
 		

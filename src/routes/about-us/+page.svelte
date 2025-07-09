@@ -183,6 +183,7 @@
 			<Value number="04" value="Put the patient first" valuetext="Short text about being one team. We can use AI to help us generate content. A little more text would look better here." />
 			<Value number="05" value="Transparency" valuetext="Short text about being one team. We can use AI to help us generate content. A little more text would look better here." />
 			<Value number="06" value="Be exceptional" valuetext="Short text about being one team. We can use AI to help us generate content. A little more text would look better here." />
+			
 		  </div>
 	</div>
 
