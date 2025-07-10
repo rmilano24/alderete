@@ -1,8 +1,14 @@
 <script>
   import { Alert } from 'flowbite-svelte';
+  import { onMount } from "svelte";
+  import { gsap } from "gsap";
+
+  onMount(() => {
+    gsap.from("h1", { y: 50, opacity: 0, duration: 1, ease: "power2.out" });
+  });
 </script>
 
-<section id="home-hero" class="h-screen bg-cover bg-center flex items-end">
+<section id="home-hero" class="h-screen bg-cover bg-center flex items-end bg-amber-900">
 	<div class="w-full m-6 max-md:m-3">
 		<div class="flex ml-4 mb-4 max-md:ml-0 max-md:mb-0">
 			<div class="glass rounded-2xl border border-white/20 p-8 mr-6 max-md:mr-0 max-w-[532px] max-md:min-w-full shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)]">
