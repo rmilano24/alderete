@@ -5,6 +5,21 @@
 @source "../node_modules/flowbite-svelte/dist";
 @source "../node_modules/flowbite-svelte-icons/dist";
 
+body {
+	background-color: #113B49;
+	color: #fff;
+    font-family: 'Matter';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+
+  .glass {
+  background-image: linear-gradient(273deg, rgba(217, 217, 217, 0.25) 107%, rgba(217, 217, 217, 0) 97.04%);
+  background-color: rgba(0,0,0,0.3); /* fallback for better blur */
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
 @theme {
 	--z-index-100: 100;
 
