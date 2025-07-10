@@ -1,7 +1,7 @@
 <script lang="ts">
 	import home_hero from '$lib/images/bg_home-hero.jpg';
 	import creditcare from '$lib/images/credit-care.png';
-	import HeroInner from '$components/hero-inner.svelte';
+	import HeroInner from '$lib/components/hero-inner.svelte';
 </script>
 
 <svelte:head>

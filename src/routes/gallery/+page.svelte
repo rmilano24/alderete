@@ -2,7 +2,7 @@
 	import garden from '$lib/images/gallery/garden.jpg';
 	import roomleft from '$lib/images/gallery/patient-room-left.jpg';
 	import awards from '$lib/images/gallery/readers-choice-award.jpg';
-	import HeroInner from '$components/hero-inner.svelte';
+	import HeroInner from '$lib/components/hero-inner.svelte';
 </script>
 
 <svelte:head>

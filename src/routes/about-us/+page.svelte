@@ -8,9 +8,9 @@
 	import uop from '$lib/images/about/seals/seal-uop.png';
 	import navy from '$lib/images/about/seals/seal-navy.png';
 
-	import Value from '$components/value.svelte';
-	import BottomCta from '$components/bottom-cta.svelte';
-	import HeroInner from '$components/hero-inner.svelte';
+	import Value from '$lib/components/value.svelte';
+	import BottomCta from '$lib/components/bottom-cta.svelte';
+	import HeroInner from '$lib/components/hero-inner.svelte';
 </script>
 
 <svelte:head>

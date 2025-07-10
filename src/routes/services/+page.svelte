@@ -1,15 +1,15 @@
 <script lang="ts">
-	import Service from '$components/service.svelte';
+	import Service from '$lib/components/service.svelte';
 	import home_hero from '$lib/images/bg_home-hero.jpg';
 	import cta from '$lib/images/cta.jpg';
-	import BottomCta from '$components/bottom-cta.svelte';
+	import BottomCta from '$lib/components/bottom-cta.svelte';
 	const restorativeDentistry = ["Tooth Colored Composite Fillings", "Amalgam Fillings", "Crowns and Bridges", "Removable Bridges and Dentures", "TMD Treatment and Appliances", "Implant Restorations"];
 	const CosmeticDentistry = ["White Composite Bonding", "All-Porcelain Crowns and Bridges", "Professional Whitening", "Veneers"];
 	const SergicalServices = ["Extractions", "Root Canal Therapy"];
 	const XrayServices = ["x-rays"];
 	const CameraServices = ["Modern Camera"];
 	const PeriodontalServices = ["Full check up"];
-	import HeroInner from '$components/hero-inner.svelte';
+	import HeroInner from '$lib/components/hero-inner.svelte';
 </script>
 
 <svelte:head>
