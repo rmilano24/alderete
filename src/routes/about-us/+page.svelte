@@ -78,7 +78,7 @@
 >
   <!-- Custom close button -->
   <button 
-    class="absolute top-4 right-4 z-50 text-white hover:text-teal-200 transition-colors duration-200"
+    class="absolute top-4 right-4 z-50 text-white p-4 rounded-full glass border border-white/20 transition-colors duration-200 cursor-pointer"
     on:click={() => defaultModal = false}
   >
     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -178,7 +178,7 @@
 	<Modal size="xl" bind:open={defaultModal2} class="bg-primary-400 w-full h-full max-w-none !rounded-none max-h-screen">
 		<!-- Custom close button -->
 		<button 
-			class="absolute top-4 right-4 z-50 text-white hover:text-teal-200 transition-colors duration-200"
+			class="absolute top-4 right-4 z-50 text-white p-4 rounded-full glass border border-white/20 transition-colors duration-200 cursor-pointer"
 			on:click={() => defaultModal2 = false}
 		>
 			<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -223,7 +223,7 @@
 				</ul>
 	
 			</div>
-			<div class="h-screen bg-center bg-cover bg-no-repeat" style="background-image: url('{jimlg}')">
+			<div class="h-screen bg-center bg-cover bg-no-repeat" style="background-image: url('{ryan}')">
 				<div class="flex flex-col h-full">
 					<div id="credentials" class="glass rounded-2xl border border-white/20 mt-auto m-6">
 						<h5 class="text-white uppercase text font-matter tracking-widest border-b  border-white/20 px-6 py-4">Credentials</h5>
