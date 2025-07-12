@@ -3,6 +3,25 @@
 	let defaultModal = $state(false);
 	let defaultModal2 = $state(false);
 
+	// Function to remove padding from overscroll-contain elements
+	function removeModalPadding() {
+		// Immediate removal
+		const overscrollElements = document.querySelectorAll('.overscroll-contain');
+		overscrollElements.forEach(element => {
+			(element as HTMLElement).style.padding = '0';
+			(element as HTMLElement).style.border = '0';
+		});
+		
+		// Also try after a short delay to catch any late-rendered elements
+		setTimeout(() => {
+			const overscrollElements = document.querySelectorAll('.overscroll-contain');
+			overscrollElements.forEach(element => {
+				(element as HTMLElement).style.padding = '0';
+				(element as HTMLElement).style.border = '0';
+			});
+		}, 10);
+	}
+
 	import jim from '$lib/images/jim-alderete.jpg';
 	import ryan from '$lib/images/about/ryan-reyes.jpg';
 	import cta from '$lib/images/cta.jpg';
@@ -36,7 +55,10 @@
   href=""
   role="button"
   tabindex="0"
-  on:click|preventDefault={() => (defaultModal = true)}
+  on:click|preventDefault={() => {
+    defaultModal = true;
+    removeModalPadding();
+  }}
 >
 		<div class="grid relative rounded-4xl"> <!-- Container with grid and relative positioning -->
 			<img src={jim} alt="Description of image" class="col-start-1 row-start-1 rounded-4xl"> <!-- Image as first grid item -->
@@ -45,17 +67,29 @@
 					<div><h3 class="text-2xl text-white">Dr. Jim Alderete</h3></div>
 					<div><h4 class="text-white uppercase text font-matter tracking-widest">Owner and General Dentist</h4></div>
 				</div>
-			  
 			</div>
 		  </div>
 		</a> 
 
-
-
-		<Modal size="xl" bind:open={defaultModal} class="glass w-full h-full max-w-none !rounded-none max-h-screen">
-			<div class="grid grid-cols-2 gap-4 ">
-				<div class="p-24">
-					<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Get to know us</h5>
+		<Modal 
+  size="xl" 
+  bind:open={defaultModal} 
+  class="bg-primary-400 w-full h-full max-w-none !rounded-none max-h-screen !p-0 !m-0"
+>
+  <!-- Custom close button -->
+  <button 
+    class="absolute top-4 right-4 z-50 text-white hover:text-teal-200 transition-colors duration-200"
+    on:click={() => defaultModal = false}
+  >
+    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+    </svg>
+  </button>
+  
+  <!-- Your existing modal content -->
+  <div class="grid grid-cols-2 gap-4 !p-0 !m-0">
+				<div class="p-24 left-col">
+					<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Test</h5>
 					<h1 class="text-5xl text-teal-100 font-reckless mt-8">Dr. Jim Alderete</h1>
 					<p class="text-teal-100 mt-8 text-lg">Dr Jim Alderete grew up in Santa Clara, attended Bellarmine College Preparatory, and graduated from UC Santa Barbara where he played Division 1 baseball for the Gauchos. He completed his DDS degree from the University of Pacific, Arthur A. Dugoni School of Dentistry in 2006.  Upon completion, Dr. Alderete served as an active duty US Naval Officer for 6 years where he completed a residency program in General Dentistry at Camp Pendleton Naval Hospital.</p> 
 					<p class="text-teal-100 mt-8 text-lg">
@@ -90,7 +124,7 @@
 					</ul>
 		
 				</div>
-				<div class="h-screen bg-center bg-cover bg-no-repeat" style="background-image: url('{jimlg}')">
+				<div class="h-screen bg-center bg-cover bg-no-repeat right-col" style="background-image: url('{jimlg}')">
 					<div class="flex flex-col h-full">
 						<div id="credentials" class="glass rounded-2xl border border-white/20 mt-auto m-6">
 							<h5 class="text-white uppercase text font-matter tracking-widest border-b  border-white/20 px-6 py-4">Credentials</h5>
@@ -115,13 +149,19 @@
 			  
 			</Modal>
 
+		
+
 
 			<a
 			href=""
 			role="button"
 			tabindex="0"
-			on:click|preventDefault={() => (defaultModal2 = true)}
+			on:click|preventDefault={() => {
+				defaultModal2 = true;
+				removeModalPadding();
+			}}
 		  >
+		  
 		<div class="grid relative rounded-4xl"> <!-- Container with grid and relative positioning -->
 			<img src={ryan} alt="Description of image" class="col-start-1 row-start-1 rounded-4xl"> <!-- Image as first grid item -->
 			<div class="col-start-1 row-start-1 flex justify-center items-end"> <!-- Text as second grid item -->
@@ -135,7 +175,17 @@
 	</div>
 
 
-	<Modal size="xl" bind:open={defaultModal2} class="glass w-full h-full max-w-none !rounded-none max-h-screen">
+	<Modal size="xl" bind:open={defaultModal2} class="bg-primary-400 w-full h-full max-w-none !rounded-none max-h-screen">
+		<!-- Custom close button -->
+		<button 
+			class="absolute top-4 right-4 z-50 text-white hover:text-teal-200 transition-colors duration-200"
+			on:click={() => defaultModal2 = false}
+		>
+			<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+			</svg>
+		</button>
+		
 		<div class="grid grid-cols-2 gap-4 ">
 			<div class="p-24">
 				<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Get to know us</h5>
@@ -199,6 +249,48 @@
 		</Modal>
 
 </section>
+
+<style>
+	/* Target the specific div with overscroll-contain class */
+	.overscroll-contain {
+		padding: 0 !important;
+	}
+	
+	/* More specific selector to override any conflicting styles */
+	div.overscroll-contain {
+		padding: 0 !important;
+	}
+	
+	/* Even more specific - target any element with this class */
+	*[class*="overscroll-contain"] {
+		padding: 0 !important;
+	}
+	
+	/* Make left column scrollable */
+	.left-col {
+		overflow-y: auto;
+		max-height: 100vh;
+	}
+	
+	/* Prevent right column from scrolling */
+	.right-col {
+		overflow: hidden;
+	}
+	
+	/* Hide the default close button */
+	:global(.modal-close-button),
+	:global([data-modal-hide]) {
+		display: none !important;
+	}
+	
+	/* Alternative selectors to hide default close button */
+	:global(button[aria-label*="Close"]),
+	:global(button[aria-label*="close"]),
+	:global(.close-button),
+	:global(.modal-close) {
+		display: none !important;
+	}
+</style>
 
 
 
