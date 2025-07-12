@@ -46,7 +46,7 @@
 
 		<div class="grow border-l border-white/20">
 
-			<nav class="flex flex-row ml-8 mt-[25px]">
+			<nav class="flex flex-row ml-8 mt-[26px]">
 				<ul class="flex flex-row max-[1082px]:hidden">
 					<li class="uppercase font-bold"><a href="/about-us">About us</a></li>
 					<li class="ml-12 max-xl:ml-8 uppercase font-bold"><a href="/services">Services</a></li>
