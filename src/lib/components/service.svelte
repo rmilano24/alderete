@@ -6,7 +6,7 @@
    export let serviceitems = [];
 </script>
 
-<div class="border-b border-teal-800 pb-16 last:border-0">
+<div class="border-b border-primary-300 pb-16 last:border-0">
     <div class="flex flex-row max-lg:flex-col justify-between">
         <div class="w-3/4 max-lg:w-full">
             <span class="block text-teal-100">{number}</span>

@@ -89,7 +89,7 @@
   <!-- Your existing modal content -->
   <div class="grid grid-cols-2 gap-4 !p-0 !m-0">
 				<div class="p-24 left-col">
-					<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Test</h5>
+					<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Owner and General Dentist</h5>
 					<h1 class="text-5xl text-teal-100 font-reckless mt-8">Dr. Jim Alderete</h1>
 					<p class="text-teal-100 mt-8 text-lg">Dr Jim Alderete grew up in Santa Clara, attended Bellarmine College Preparatory, and graduated from UC Santa Barbara where he played Division 1 baseball for the Gauchos. He completed his DDS degree from the University of Pacific, Arthur A. Dugoni School of Dentistry in 2006.  Upon completion, Dr. Alderete served as an active duty US Naval Officer for 6 years where he completed a residency program in General Dentistry at Camp Pendleton Naval Hospital.</p> 
 					<p class="text-teal-100 mt-8 text-lg">
@@ -295,7 +295,7 @@
 
 
   
-<div class="container seperator border-b border-teal-800 h-[1px] my-30 mx-auto"></div>
+<div class="container seperator border-b border-primary-300 h-[1px] my-30 mx-auto"></div>
 
 <section id="values">
 

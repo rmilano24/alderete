@@ -85,7 +85,7 @@
 
 </section>
 
-<div class="container seperator border-b border-teal-800 h-[1px] my-30 max-lg:my-20 mx-auto"></div>
+<div class="container seperator border-b border-primary-300 h-[1px] my-30 max-lg:my-20 mx-auto"></div>
 
 <section id="expertise">
 

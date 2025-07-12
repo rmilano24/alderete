@@ -19,13 +19,13 @@
 
 		<div class="grid grid-cols-1 gap-16">
 
-			<div class="border-b border-teal-800 pb-16">
+			<div class="border-b border-primary-300 pb-16">
 				<div class="flex flex-row justify-between">
-					<div class="w-3/4 md:max-lg:w-full">
+					<div class="w-3/4 pr-80">
 						<h5 class="text-white uppercase text font-matter tracking-widest mb-16 after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Dental insurance</h5>
 						<h2 class="text-3xl font-reckless mt-1 text-teal-100">We accept all major insurance's.</h2>
-						<p class="text-teal-100 text-xl mt-5 max-w-3/4 md:max-lg:max-w-full">Please note: All estimates are based on the benefit information we retrieve from your insurance company. It is not a guarantee of payment or coverage. We strive to give you the closest estimate as possible. Sorry, we do not participate with HMO's or reduced fee schedule plans.</p>
-						<p class="text-teal-100 text-xl mt-5 max-w-3/4 md:max-lg:max-w-full">Please call our office, and Sonya will be more than happy to assist you with estimating the benefits as determined by your insurance carrier.</p>
+						<p class="text-teal-100 text-xl mt-5">Please note: All estimates are based on the benefit information we retrieve from your insurance company. It is not a guarantee of payment or coverage. We strive to give you the closest estimate as possible. Sorry, we do not participate with HMO's or reduced fee schedule plans.</p>
+						<p class="text-teal-100 text-xl mt-5">Please call our office, and Sonya will be more than happy to assist you with estimating the benefits as determined by your insurance carrier.</p>
 						<a href="/contact" class="text-teal-400 mt-12 inline-block">
 							<div class="flex flex-row items-center">
 								<div>Get in touch</div>
@@ -43,12 +43,12 @@
 				</div>
 			</div>	
 			
-			<div class="border-b border-teal-800 pb-16">
+			<div class="border-b border-primary-300 pb-16">
 				<div class="flex flex-row justify-between">
-					<div class="w-3/4">
+					<div class="w-3/4 pr-80">
 						<h5 class="text-white uppercase text font-matter tracking-widest mb-16 after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">CareCredit® FOR making payments:</h5>
-						<h2 class="text-3xl font-reckless mt-1 text-teal-100 max-w-3/4">We’re pleased to offer our patients the CareCredit® card, North America's leading patient payment program.</h2>
-						<p class="text-teal-100 text-xl mt-5 max-w-3/4">CareCredit works like a credit card, but is exclusive for healthcare services. With no up-front costs and no pre-payment penalties, CareCredit lets you pay over time and frees up cash and credit cards for the other things you want or need. You'll get low monthly payments for healthcare procedures not commonly covered by insurance, including dental procedures. Plus, you can use your card over and over for follow-up appointments.</p>
+						<h2 class="text-3xl font-reckless mt-1 text-teal-100">We’re pleased to offer our patients the CareCredit® card, North America's leading patient payment program.</h2>
+						<p class="text-teal-100 text-xl mt-5">CareCredit works like a credit card, but is exclusive for healthcare services. With no up-front costs and no pre-payment penalties, CareCredit lets you pay over time and frees up cash and credit cards for the other things you want or need. You'll get low monthly payments for healthcare procedures not commonly covered by insurance, including dental procedures. Plus, you can use your card over and over for follow-up appointments.</p>
 						
 						<a target="_blank" href="https://www.carecredit.com/Pay/NHH727/" class="text-teal-400 mt-12 inline-block">
 							<div class="flex flex-row items-center">
@@ -62,10 +62,10 @@
 						</a>
 					</div>
 					<div class="w-1/4">
-						<div class="glass rounded-2xl border border-white/20 p-8 mr-6 max-w-[500px]">
+						<div class="glass rounded-2xl border border-white/20 p-8 max-w-[500px]">
 							<h3 class="text-2xl font-reckless text-teal-100">Financing available</h3>
 							<img class="shadow-xl mt-6" src={creditcare} alt="Credit Care">
-							<a class="glass rounded-2xl border border-white/20 p-4 block text-center mt-8" href="/contact">Request appointment</a>
+							<a target="_blank" href="https://www.carecredit.com/Pay/NHH727/" class="glass rounded-2xl border border-white/20 p-4 block text-center mt-8">Pay your bill</a>
 						</div>
 					</div>
 				</div>
