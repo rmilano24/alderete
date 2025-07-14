@@ -98,7 +98,7 @@
 </div>  
 
 
-<div class="text-teal-700 mt-12 text-sm">©2025  •  <a href="https://www.nmbl.digital/" target="_blank">Website by</a></div>     
+<div class="text-[#5A7B8F] mt-12 text-sm">©2025  •  <a href="https://www.nmbl.digital/" target="_blank">Website by</a></div>     
 </div> <!-- /#footer-info -->
 
 <a href="https://www.google.com/maps/place/2820+Daubenbiss+Ave,+Soquel,+CA+95073/@36.987048,-121.9580871,16z/data=!3m1!4b1!4m6!3m5!1s0x808e157cb0b7d091:0x835af43a238a0650!8m2!3d36.987048!4d-121.9580871!16s%2Fg%2F11b8v7vzjt?entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
