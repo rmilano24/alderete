@@ -1,9 +1,23 @@
 @import 'tailwindcss';
+@import './lib/fonts.css';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @source "../node_modules/flowbite-svelte/dist";
 @source "../node_modules/flowbite-svelte-icons/dist";
+
+@theme {
+	--z-index-100: 100;
+
+	--color-primary-100: #B6F3F2; /* text */
+	--color-primary-200: #1AD2D4; /* cta */
+	--color-primary-300: #195B71; /* divider */
+	--color-primary-400: #113B49; /* background */
+  
+	--font-family-matter: 'Matter', sans-serif;
+	--font-family-reckless: 'Reckless', serif;
+	--font-family-reckless-light: 'Reckless-Light', serif;
+}
 
 body {
 	background-color: #113B49;
@@ -12,6 +26,21 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   }
+
+/* Custom Font Classes */
+.font-matter {
+  font-family: var(--font-family-matter);
+}
+
+.font-reckless {
+  font-family: var(--font-family-reckless);
+}
+
+.font-reckless-light {
+  font-family: var(--font-family-reckless-light);
+}
+
+  
 
   .glass {
   background-image: linear-gradient(273deg, rgba(217, 217, 217, 0.25) 107%, rgba(217, 217, 217, 0) 97.04%);
