@@ -15,7 +15,7 @@
 
 		<div>
 			<a target="_blank" href="tel:18314323231">
-			<div class="glass rounded-2xl border border-white/20 shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] flex flex-col justify-between p-8 w-full h-96">
+			<div class="glass rounded-2xl border border-white/20 shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] flex flex-col justify-between p-8 w-full h-56">
 				<div>
 					<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M1 4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H10.3867C10.7596 1.00028 11.1231 1.11786 11.4255 1.33609C11.728 1.55432 11.9541 1.86214 12.072 2.216L14.7351 10.2036C14.87 10.6095 14.8541 11.0505 14.6902 11.4456C14.5262 11.8407 14.2253 12.1635 13.8427 12.3547L9.83022 14.3636C11.797 18.7165 15.2835 22.203 19.6364 24.1698L21.6453 20.1573C21.8365 19.7747 22.1593 19.4738 22.5544 19.3098C22.9495 19.1459 23.3905 19.13 23.7964 19.2649L31.784 21.928C32.1381 22.046 32.4462 22.2724 32.6644 22.5752C32.8827 22.878 33.0001 23.2418 33 23.6151V29.4444C33 30.3874 32.6254 31.2918 31.9586 31.9586C31.2918 32.6254 30.3874 33 29.4444 33H27.6667C12.9396 33 1 21.0604 1 6.33333V4.55556Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -27,7 +27,7 @@
 		</div>
 		<div>
 			<a target="_blank" href="https://www.google.com/maps/place/2820+Daubenbiss+Ave,+Soquel,+CA+95073/@36.987048,-121.9580871,16z/data=!3m1!4b1!4m6!3m5!1s0x808e157cb0b7d091:0x835af43a238a0650!8m2!3d36.987048!4d-121.9580871!16s%2Fg%2F11b8v7vzjt?entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D">
-			<div class="glass rounded-2xl border border-white/20 shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] flex flex-col justify-between p-8 h-96">
+			<div class="glass rounded-2xl border border-white/20 shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] flex flex-col justify-between p-8 h-56">
 				<div>
 					<svg width="34" height="39" viewBox="0 0 34 39" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M23 16.9995C23 18.5908 22.3679 20.1169 21.2426 21.2421C20.1174 22.3674 18.5913 22.9995 17 22.9995C15.4087 22.9995 13.8826 22.3674 12.7574 21.2421C11.6321 20.1169 11 18.5908 11 16.9995C11 15.4082 11.6321 13.8821 12.7574 12.7569C13.8826 11.6317 15.4087 10.9995 17 10.9995C18.5913 10.9995 20.1174 11.6317 21.2426 12.7569C22.3679 13.8821 23 15.4082 23 16.9995Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -41,7 +41,7 @@
 		</div>
 		<div>
 			<a href="mailto:dr.alderete@drconnect.net">
-			<div class="glass rounded-2xl border border-white/20 shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] flex flex-col justify-between p-8 h-96">
+			<div class="glass rounded-2xl border border-white/20 shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] flex flex-col justify-between p-8 h-56">
 				<div>
 					<svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M1 6.389L15.0267 15.7401C15.611 16.1299 16.2976 16.338 17 16.338C17.7024 16.338 18.389 16.1299 18.9733 15.7401L33 6.389M4.55556 25.9446H29.4444C30.3874 25.9446 31.2918 25.5699 31.9586 24.9032C32.6254 24.2364 33 23.332 33 22.389V4.61122C33 3.66823 32.6254 2.76386 31.9586 2.09706C31.2918 1.43027 30.3874 1.05566 29.4444 1.05566H4.55556C3.61256 1.05566 2.70819 1.43027 2.0414 2.09706C1.3746 2.76386 1 3.66823 1 4.61122V22.389C1 23.332 1.3746 24.2364 2.0414 24.9032C2.70819 25.5699 3.61256 25.9446 4.55556 25.9446Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
