@@ -1,9 +1,17 @@
-<script>
-   export let number = "01"
-   export let skill = "Family & General Dentistry"
+<script lang="ts">
+  export let number: string;
+  export let skill: string;
+  export let noBorder: boolean = false;
+  export let neverBorder: boolean = false; // new prop
 </script>
 
-<div class="border-b border-primary-300 pb-16">
-    <span class="block text-teal-100">{number}</span>
-    <h2 class="text-4xl font-reckless mt-1 text-teal-100">{skill}</h2>
+<div class={`pb-16 ${
+  neverBorder
+    ? ''
+    : noBorder
+      ? 'border-b border-primary-300 lg:border-b-0'
+      : 'border-b border-primary-300'
+}`}>
+  <span class="block text-teal-100">{number}</span>
+  <h2 class="text-4xl font-reckless mt-1 text-teal-100">{skill}</h2>
 </div>

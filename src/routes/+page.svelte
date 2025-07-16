@@ -105,9 +105,9 @@
 
 			<Expertise number="05" skill="Surgical & Endodontic Services"/>
 
-			<Expertise number="06" skill="Digital x-rays and Panorex x-rays"/>
+			<Expertise number="06" skill="Digital x-rays and Panorex x-rays" noBorder={true}/>
 
-			<Expertise number="07" skill="Intra-oral Camera"/>
+			<Expertise number="07" skill="Intra-oral Camera" neverBorder={true}/>
 
 		  </div>
 	</div>
