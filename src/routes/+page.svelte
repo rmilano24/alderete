@@ -69,7 +69,7 @@
 		<div class="mt-16 max-lg:mt-0">
 			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Get to know us</h5>
 			<h1 class="text-5xl text-teal-100 font-reckless mt-8">Our goal is to leave you with a <span class="text-white italic">positive experience.</span></h1>
-			<p class="text-teal-100 mt-8">We strive to make our office unique by providing excellent clinical skills in a warm, friendly atmosphere. Establishing rewarding and lasting relationships with patients is important to us and we pledge excellence in all we do, and we look forward to helping you make the most of your smile.</p>
+			<p class="text-teal-100 mt-8 text-lg">We strive to make our office unique by providing excellent clinical skills in a warm, friendly atmosphere. Establishing rewarding and lasting relationships with patients is important to us and we pledge excellence in all we do, and we look forward to helping you make the most of your smile.</p>
 			<a href="/about-us" class="text-teal-400 mt-12 inline-block">
 				<div class="flex flex-row items-center">
 					<div>Learn more about us</div>
@@ -93,7 +93,7 @@
 
 		<h5 class="text-white uppercase text font-matter tracking-widest mb-16 after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Our Areas of Expertise</h5>
 
-		<div class="grid grid-cols-2 max-lg:grid-cols-1 gap-16">
+		<div class="grid grid-flow-col max-lg:grid-flow-row grid-rows-4 max-lg:grid-cols-1 gap-16">
 
 			<Expertise number="01" skill="Family & General Dentistry"/>
 
@@ -101,11 +101,11 @@
 
 			<Expertise number="03" skill="Cosmetic Dentistry"/>
 
-			<Expertise number="04" skill="Periodontal Services"/>
+			<Expertise number="04" skill="Periodontal Services" noBorder={true}/>
 
 			<Expertise number="05" skill="Surgical & Endodontic Services"/>
 
-			<Expertise number="06" skill="Digital x-rays and Panorex x-rays" noBorder={true}/>
+			<Expertise number="06" skill="Digital x-rays and Panorex x-rays"/>
 
 			<Expertise number="07" skill="Intra-oral Camera" neverBorder={true}/>
 
@@ -121,8 +121,8 @@
 		<div class="col-span-2"><img class="rounded-4xl max-md:rounded-2xl" src={garden} alt="Alderete DDS" /></div>
 		<div class="col-span-2"><img class="rounded-4xl max-md:rounded-2xl" src={roomleft} alt="Alderete DDS" /></div>
 		<div class="glass border border-white/20 rounded-4xl max-md:rounded-2xl flex items-center justify-center">
-			<a class="flex items-center justify-center w-full h-full text-center text-3xl" href="/gallery">
-				<span class="italic mr-2">Explore</span>our office
+			<a class="flex items-center font-reckless justify-center w-full h-full text-center text-4xl" href="/gallery">
+				<span class="italic mr-2 ">Explore</span>our office
 			</a>
 		</div>
 		

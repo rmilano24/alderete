@@ -13,5 +13,5 @@
       : 'border-b border-primary-300'
 }`}>
   <span class="block text-teal-100">{number}</span>
-  <h2 class="text-4xl font-reckless mt-1 text-teal-100">{skill}</h2>
+  <h2 class="text-4xl font-reckless mt-2 text-teal-100">{skill}</h2>
 </div>
