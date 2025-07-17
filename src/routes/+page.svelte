@@ -70,7 +70,7 @@
 			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Get to know us</h5>
 			<h1 class="text-5xl text-teal-100 font-reckless mt-8 max-w-[570px] leading-[56px]">Our goal is to leave you with a <span class="text-white italic">positive experience.</span></h1>
 			<p class="text-teal-100 mt-8 text-lg leading-[32px] max-w-[524px]">We strive to make our office unique by providing excellent clinical skills in a warm, friendly atmosphere. Establishing rewarding and lasting relationships with patients is important to us and we pledge excellence in all we do, and we look forward to helping you make the most of your smile.</p>
-			<a href="/about-us" class="text-teal-400 mt-12 inline-block">
+			<a href="/about-us" class="text-teal-400 mt-12 inline-block font-family-matter font-semibold">
 				<div class="flex flex-row items-center">
 					<div>Learn more about us</div>
 					<div class="ml-4"> 

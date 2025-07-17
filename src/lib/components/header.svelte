@@ -64,12 +64,14 @@
 
 <header class="rounded-2xl fixed w-full p-8 max-md:p-3 z-50">
 
-	<div class="glass rounded-2xl border border-white/20 flex h-[77px] max-md:h-[55px] w-full shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] -z-50">
+	<div
+		class="rounded-2xl flex h-[77px] max-md:h-[55px] w-full -z-50 {menuOpen ? '' : 'glass border border-white/20 shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)]'}"
+	>
 		<div id="logo" class="w-48 m-7 max-md:m-4 mt-[26px] max-md:mt-[20px] flex-none z-100]">
 			<a href="/"><img class="max-md:max-w-[126px]" src={logo} alt="Alderete DDS" /></a>
 		</div>
 
-		<div class="grow border-l max-md:border-0 border-white/20">
+		<div class="grow border-l max-[1082px]:border-0 border-white/20">
 
 			<nav class="flex flex-row ml-8 mt-[26px]">
 				<ul class="flex flex-row max-[1082px]:hidden">
@@ -126,14 +128,28 @@
   </div>
   
   <div class="menu-overlay glass" class:open={menuOpen}>
-	<nav class="overlay-menu">
+	<nav class="overlay-menu pl-6 min-[768px]:pl-14">
   
-	  <ul class="one">
-		<li><a class="nav-links" href="/" on:click={() => { menuOpen = false; overlayOpen = false; }}>Home</a></li>
-		<li><a class="nav-links" href="/about-us" on:click={() => { menuOpen = false; overlayOpen = false; }}>About</a></li>
-		<li><a class="nav-links" href="/services" on:click={() => { menuOpen = false; overlayOpen = false; }}>Services</a></li>
-		<li><a class="nav-links" href="/contact" on:click={() => { menuOpen = false; overlayOpen = false; }}>Contact</a></li>
+	  <ul class="text-left">
+		<li class="font-family-reckless text-4xl tracking-tight"><a class="nav-links" href="/about-us" on:click={() => { menuOpen = false; overlayOpen = false; }}>About</a></li>
+		<li class="mt-6 font-family-reckless text-4xl tracking-tight"><a class="nav-links" href="/services" on:click={() => { menuOpen = false; overlayOpen = false; }}>Services</a></li>
+		<li class="mt-6 font-family-reckless text-4xl tracking-tight"><a class="nav-links" href="/services" on:click={() => { menuOpen = false; overlayOpen = false; }}>Patient Resources</a></li>
+		<li class="mt-6 font-family-reckless text-4xl tracking-tight"><a class="nav-links" href="/contact" on:click={() => { menuOpen = false; overlayOpen = false; }}>Contact</a></li>
+		<li>
+			<a href="/contact" on:click={() => { menuOpen = false; overlayOpen = false; }} class="text-white font-family-matter font-semibold mt-12 inline-block">
+				<div class="flex flex-row items-center">
+					<div>Request appointment</div>
+					<div class="ml-4"> 
+						<svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15 1.5L19 5.5M19 5.5L15 9.5M19 5.5H1" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
+				</div>
+			</a>
+		</li>
 	  </ul>
+
+	
 	 
 	</nav>
   </div>
@@ -231,7 +247,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 
 .menu-overlay.open {
