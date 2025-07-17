@@ -1,9 +1,34 @@
 <script lang="ts">
 	import logo from '$lib/images/logo-alderete.svg';
+	import { onMount } from 'svelte';
+	
 	let showDropdown = false;
 	let hideTimeout: ReturnType<typeof setTimeout>;
 	let overlayOpen = false;
 	let scrollY = 0;
+	let menuOpen = false;
+
+	function toggleMenu() {
+		menuOpen = !menuOpen;
+		overlayOpen = menuOpen; // Use the existing overlayOpen variable to control scroll
+	}
+
+	// Handle window resize to close mobile menu when screen becomes wider
+	function handleResize() {
+		if (window.innerWidth > 1081 && menuOpen) {
+			menuOpen = false;
+			overlayOpen = false;
+		}
+	}
+
+	onMount(() => {
+		if (typeof window !== 'undefined') {
+			window.addEventListener('resize', handleResize);
+			return () => {
+				window.removeEventListener('resize', handleResize);
+			};
+		}
+	});
 
 	function handleMouseEnter() {
 		clearTimeout(hideTimeout);
@@ -39,12 +64,12 @@
 
 <header class="rounded-2xl fixed w-full p-8 max-md:p-3 z-50">
 
-	<div class="glass rounded-2xl border border-white/20 flex h-[77px] w-full shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] -z-50">
-		<div id="logo" class="w-48 m-7 mt-[26px] flex-none">
-			<a href="/"><img src={logo} alt="Alderete DDS" /></a>
+	<div class="glass rounded-2xl border border-white/20 flex h-[77px] max-md:h-[55px] w-full shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] -z-50">
+		<div id="logo" class="w-48 m-7 max-md:m-4 mt-[26px] max-md:mt-[20px] flex-none z-100]">
+			<a href="/"><img class="max-md:max-w-[126px]" src={logo} alt="Alderete DDS" /></a>
 		</div>
 
-		<div class="grow border-l border-white/20">
+		<div class="grow border-l max-md:border-0 border-white/20">
 
 			<nav class="flex flex-row ml-8 mt-[26px]">
 				<ul class="flex flex-row max-[1082px]:hidden">
@@ -88,141 +113,132 @@
 
 </header>
 
-	<!-- start mobile-nav -->
 
-	
-		<input  type="checkbox" id="overlay-input" bind:checked={overlayOpen} />
-		<label class="min-[1082px]:hidden" for="overlay-input" id="overlay-button"><span></span></label>
+<!-- START MOBILE NAV -->
 
-
-	
-
-  <div id="overlay" class="glass">
-
-	<div class="flex flex-col p-12">
-		<div class="flex border-b pb-8 border-white/20">
-			<div id="logo" class="w-48 mt-[26px] flex-none">
-				<a href="/"><img src={logo} alt="Alderete DDS" /></a>
-			</div>
-			
-		</div>
-		<div class="mt-16">
-			<ul class="text-4xl">
-			<li><a href="/about-us" on:click={() => overlayOpen = false}>About us</a></li>
-			<li class="mt-8"><a href="/services" on:click={() => overlayOpen = false}>Services</a></li>
-			<li class="mt-8"><a href="#">Patient Resources +</a></li>
-			<li class="mt-8"><a href="/contact" on:click={() => overlayOpen = false}>Contact</a></li>
-		  </ul>
-		</div>
-
-		 <div>
-		<a href="/about-us" class="white font-bold mt-12 inline-block">
-			<div class="flex flex-row items-center">
-				<div>Learn more about us</div>
-				<div class="ml-4"> 
-					<svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M15 1.5L19 5.5M19 5.5L15 9.5M19 5.5H1" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-					</svg>
-				</div>
-			</div>
-		</a>
-	  </div>
-	  </div>
+<div class="menu" class:open={menuOpen}>
+	<button on:click={toggleMenu} class="menu-link">
+	  <span class="hamburger-icon">
+		<span class="hamburger-bar hamburger-bar-1"></span>
+		<span class="hamburger-bar hamburger-bar-3"></span>
+	  </span>
+	</button>
+  </div>
+  
+  <div class="menu-overlay glass" class:open={menuOpen}>
+	<nav class="overlay-menu">
+  
+	  <ul class="one">
+		<li><a class="nav-links" href="/" on:click={() => { menuOpen = false; overlayOpen = false; }}>Home</a></li>
+		<li><a class="nav-links" href="/about-us" on:click={() => { menuOpen = false; overlayOpen = false; }}>About</a></li>
+		<li><a class="nav-links" href="/services" on:click={() => { menuOpen = false; overlayOpen = false; }}>Services</a></li>
+		<li><a class="nav-links" href="/contact" on:click={() => { menuOpen = false; overlayOpen = false; }}>Contact</a></li>
+	  </ul>
 	 
-
-
-   
+	</nav>
   </div>
 
-
+<!-- END MOBILE NAV -->
 	
 
 <style>
 
-
-@keyframes bugfix { from {padding:0;} to {padding:0;}}
-@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;}}
-
-#overlay-button {
+.menu {
   position: fixed;
-  right: 3em;
-  top: 2.4em;
-  padding: 26px 11px;
-  
-  z-index: 99999999999;
-  cursor: pointer;
-  user-select: none;
-  
-  @media (max-width: 768px) {
-    right: 2em;
-    top: 1.5em;
-    padding: 20px 8px;
-  }
-  span {
-      height: 1.5px;
-      width: 35px;
-      border-radius: 2px;
-      background-color: white;
-      position: relative;
-      display: block;
-      transition: all .2s ease-in-out;
-     
-      &:after {
-        top: 10px;
-      }
-      &:before, &:after {
-          height: 1.5px;
-          width: 35px;
-          border-radius: 2px;
-          background-color: white;
-          position: absolute;
-          content: "";
-          transition: all .2s ease-in-out;
-      }
-    }
-    /* &:hover span, &:hover span:before, &:hover span:after {
-      background: #333332;
-    } */
-}
-
-input[type=checkbox] {
+  top: 48px;
+  right: 47px;
+  height: 46px;
+  width: 46px;
+  z-index: 1000;
   display: none;
-  
-  &:checked ~ #overlay {
-    visibility: visible;
-  }
-  
-  &:checked ~ #overlay-button {
-    &:hover span, span{
-      background: transparent;
-    }
-    span {
-      &:before {
-        transform: rotate(45deg) translate(7px, 7px);
-        opacity: 1;
-      }
-      &:after {
-        transform: rotate(-45deg) translate(0px, 0px);
-      }
-    }
+}
+
+@media (max-width: 1081px) {
+  .menu {
+    display: block;
   }
 }
 
-#overlay {
+@media (max-width: 767px) {
+  .menu {
+    top: 17px;
+ 	right: 24px;
+  }
+}
+
+.menu-link {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.hamburger-icon {
+  position: absolute;
+  width: 24px;
+  height: 8px;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 1px;
+}
+
+.hamburger-bar {
+  background-color: #ffffff;
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.hamburger-bar-2 {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.hamburger-bar-3 {
+  bottom: 0;
+}
+
+.menu.open .hamburger-bar-1 {
+  transform: translateY(2px) translateY(-50%) rotate(45deg);
+}
+
+.menu.open .hamburger-bar-2 {
+  opacity: 0;
+}
+
+.menu.open .hamburger-bar-3 {
+  transform: translateY(-6px) translateY(50%) rotate(-45deg);
+}
+
+.menu-overlay {
+  color: #ffffff;
   height: 100vh;
   width: 100vw;
-  z-index: 999999999;
-  visibility: hidden;
   position: fixed;
-  &.active {
-    visibility: visible;
-  }
-  
+  top: 0;
+  left: 0;
+  text-align: center;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.no-scroll {
-  overflow: hidden !important;
-  height: 100vh !important;
+.menu-overlay.open {
+  opacity: 1;
+  visibility: visible;
 }
+
+
 
 </style>
