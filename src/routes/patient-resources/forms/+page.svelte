@@ -17,10 +17,10 @@
 			<span class="block text-teal-100">01</span>
 			<div><h2 class="text-3xl font-reckless mt-1 text-teal-100 block">New patient registration form</h2></div>
 			<div class="mt-13">
-			<!-- <ul class="inline-block">
-				<li class="inline-block"><a href="/forms?file=info_hh_co_pr_fi.pdf" class="py-5 px-8 bg-teal-400 text-blue-950 rounded-4xl" download>Download PDF</a></li>
-				<li class="inline-block ml-3"><a href="/forms?file=info_hh_co_pr_fi.doc" class="py-5 px-8 border border-teal-400 rounded-4xl text-teal-400" download>Download Word</a></li>
-			</ul> -->
+			<ul class="inline-block">
+				<li class="inline-block"><a href="/forms/info_hh_co_pr_fi.pdf" class="py-5 px-8 bg-teal-400 text-blue-950 rounded-4xl" download>Download PDF</a></li>
+				<li class="inline-block ml-3"><a href="/forms/info_hh_co_pr_fi.doc" class="py-5 px-8 border border-teal-400 rounded-4xl text-teal-400" download>Download Word</a></li>
+			</ul>
 			</div>
 						
 		</div>
