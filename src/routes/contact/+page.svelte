@@ -10,7 +10,7 @@
 
 <HeroInner eyebrow="Call us or fill out the form below" header="Request appointment" text="At our office you'll find a friendly and professional staff, each dedicated to providing your family with quality care and personal attention. They are trained professionals with many years of experience, and a desire to share their knowledge so that you may achieve a healthy, attractive and comfortable mouth." />
 
-<div id="cta-boxes" class="mt-40">
+<div id="cta-boxes" class="mt-30 container px-10 max-xl:max-w-full mx-auto">
 	<div class="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1  gap-8 container mx-auto mb-30">
 
 		<div>

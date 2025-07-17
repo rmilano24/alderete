@@ -3,7 +3,7 @@
 	<meta name="description" content="Jim Alderete DDS | Dentist in Santa Cruz, Ca" />
 </svelte:head>
 
-<section id="forms" class="container py-50 mx-auto">
+<section id="forms" class="container px-10 max-xl:max-w-full py-50 mx-auto">
 
 	<div class="grid grid-cols-3 max-lg:grid-cols-1 gap-48 max-xl:gap-24 max-lg:gap-8">
 		<div id="left-col">

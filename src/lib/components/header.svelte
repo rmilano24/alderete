@@ -131,7 +131,7 @@
 	<nav class="overlay-menu pl-6 min-[768px]:pl-14">
   
 	  <ul class="text-left">
-		<li class="font-family-reckless text-4xl tracking-tight"><a class="nav-links" href="/about-us" on:click={() => { menuOpen = false; overlayOpen = false; }}>test</a></li>
+		<li class="font-family-reckless text-4xl tracking-tight"><a class="nav-links" href="/about-us" on:click={() => { menuOpen = false; overlayOpen = false; }}>About us</a></li>
 		<li class="mt-6 font-family-reckless text-4xl tracking-tight"><a class="nav-links" href="/services" on:click={() => { menuOpen = false; overlayOpen = false; }}>Services</a></li>
 		<li class="mt-6 font-family-reckless text-4xl tracking-tight"><a class="nav-links" href="/services" on:click={() => { menuOpen = false; overlayOpen = false; }}>Patient Resources</a></li>
 		<li class="mt-6 font-family-reckless text-4xl tracking-tight"><a class="nav-links" href="/contact" on:click={() => { menuOpen = false; overlayOpen = false; }}>Contact</a></li>

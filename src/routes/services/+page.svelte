@@ -20,9 +20,9 @@
 <HeroInner eyebrow="What we’re good at" header="Our services" text="You want your smile to be the best it can be, and we are here to help. Dr Alderete and his caring, friendly team of dental professionals are committed to providing a comfortable dental experience. Our goal is to provide dental care for you and your family in a compassionate, caring and professional environment." />
 
 
-<section id="services">
+<section id="services" class="mt-30">
 
-	<div class="container m-auto">
+	<div class="container px-10 max-xl:max-w-full m-auto">
 
 		<h5 class="text-white uppercase text font-matter tracking-widest mb-16 after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Areas of expertise</h5>
 

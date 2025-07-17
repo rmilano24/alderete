@@ -50,7 +50,7 @@
 
 
 
-	<div class="container grid grid-cols-2 max-md:grid-cols-1 gap-24 max-lg:gap-12 mx-auto">
+	<div class="container px-10 max-xl:max-w-full grid grid-cols-2 max-md:grid-cols-1 gap-24 max-lg:gap-12 mx-auto">
 		<a
   href=""
   role="button"
@@ -295,11 +295,11 @@
 
 
   
-<div class="container seperator border-b border-primary-300 h-[1px] my-30 mx-auto"></div>
+<div class="container seperator mx-auto px-10 max-xl:max-w-full max-xl:mx-12 border-b border-primary-300 h-[1px] my-30 "></div>
 
 <section id="values">
 
-	<div class="container m-auto">
+	<div class="container px-10 max-xl:max-w-full m-auto">
 
 		<h5 class="text-white uppercase text font-matter tracking-widest mb-16 after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Our values</h5>
 
