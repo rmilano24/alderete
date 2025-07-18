@@ -5,7 +5,7 @@
 
 <section id="forms" class="container px-10 max-xl:max-w-full py-50 mx-auto">
 
-	<div class="grid grid-cols-3 max-lg:grid-cols-1 gap-48 max-xl:gap-24 max-lg:gap-8">
+	<div class="grid grid-cols-3 max-lg:grid-cols-1 gap-38 max-xl:gap-24 max-lg:gap-8">
 		<div id="left-col">
 			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Please fill this out</h5>
 			<h1 class="text-4xl text-teal-100 font-reckless mt-8">New patient forms</h1>

@@ -15,8 +15,9 @@
   import { gsap } from "gsap";
 
   onMount(() => {
-    gsap.from("h1", { y: 50, opacity: 0, duration: 1, ease: "power2.out" });
+    // gsap.from("h1", { y: 50, opacity: 0, duration: 1, ease: "power2.out" });
   });
+
 </script>
 <svelte:head>
 	<title>Jim Alderete DDS | Dentist in Santa Cruz, Ca</title>
@@ -70,10 +71,10 @@
 			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Get to know us</h5>
 			<h1 class="text-5xl text-teal-100 font-reckless mt-8 max-w-[570px] max-lg:max-w-[80%] leading-[56px]">Our goal is to leave you with a <span class="text-white italic">positive experience.</span></h1>
 			<p class="text-teal-100 mt-8 text-lg leading-[32px] max-w-[524px] max-lg:max-w-[80%]">We strive to make our office unique by providing excellent clinical skills in a warm, friendly atmosphere. Establishing rewarding and lasting relationships with patients is important to us and we pledge excellence in all we do, and we look forward to helping you make the most of your smile.</p>
-			<a href="/about-us" class="text-teal-400 mt-12 inline-block font-family-matter font-semibold">
+			<a href="/about-us" class="text-teal-400 mt-12 inline-block font-family-matter font-semibold group">
 				<div class="flex flex-row items-center">
 					<div>Learn more about us</div>
-					<div class="ml-4"> 
+					<div class="ml-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1"> 
 						<svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M15 1.5L19 5.5M19 5.5L15 9.5M19 5.5H1" stroke="#1AD2D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>

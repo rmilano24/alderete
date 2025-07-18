@@ -9,10 +9,10 @@
         
         <div id="footer-info" class="p-24 text-teal-100 max-md:order-2 max-lg:p-8">
             <h2 class="text-5xl font-reckless mt-8 text-teal-100">Ready to <span class="italic">smile?</span></h2>
-            <a href="/contact" class="text-teal-400 mt-4 inline-block text-lg">
+            <a href="/contact" class="text-teal-400 mt-6 inline-block font-family-matter text-xl font-semibold group">
 				<div class="flex flex-row items-center">
-					<div>Request an appointment</div>
-					<div class="ml-4"> 
+					<div>Request appointment</div>
+					<div class="ml-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1"> 
 						<svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M15 1.5L19 5.5M19 5.5L15 9.5M19 5.5H1" stroke="#1AD2D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>

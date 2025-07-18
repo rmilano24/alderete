@@ -7,6 +7,7 @@
 	let overlayOpen = false;
 	let scrollY = 0;
 	let menuOpen = false;
+	let mobileDropdownOpen = false; // New variable for mobile dropdown state
 
 	function toggleMenu() {
 		menuOpen = !menuOpen;
@@ -41,6 +42,11 @@
 		}, 100);
 	}
 
+	// New function to toggle mobile dropdown
+	function toggleMobileDropdown() {
+		mobileDropdownOpen = !mobileDropdownOpen;
+	}
+
 	$: {
 		if (typeof window !== 'undefined') {
 			if (overlayOpen) {
@@ -68,31 +74,32 @@
 		class="rounded-2xl flex h-[77px] max-md:h-[55px] w-full -z-50 {menuOpen ? '' : 'glass border border-white/20 shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)]'}"
 	>
 		<div id="logo" class="w-48 m-7 max-md:m-4 mt-[26px] max-md:mt-[20px] flex-none z-100]">
-			<a href="/"><img class="max-md:max-w-[126px]" src={logo} alt="Alderete DDS" /></a>
+			<a href="/" on:click={() => { menuOpen = false; overlayOpen = false; }}><img class="max-md:max-w-[126px]" src={logo} alt="Alderete DDS" /></a>
 		</div>
 
 		<div class="grow border-l max-[1082px]:border-0 border-white/20">
 
 			<nav class="flex flex-row ml-8 mt-[26px]">
 				<ul class="flex flex-row max-[1082px]:hidden">
-					<li class="uppercase font-bold"><a href="/about-us">About us</a></li>
-					<li class="ml-12 max-xl:ml-8 uppercase font-bold"><a href="/services">Services</a></li>
+					<li class="uppercase font-bold"><a class="nav-underline" href="/about-us">About us</a></li>
+					<li class="ml-12 max-xl:ml-8 uppercase font-bold"><a class="nav-underline" href="/services">Services</a></li>
 					<li class="ml-12 max-xl:ml-8 uppercase font-bold">
 						<div class="relative" on:mouseenter={handleMouseEnter} on:mouseleave={handleMouseLeave}>
-							<a href="#" class="flex items-center">Patient Resources
+							<a href="#" class="flex items-center">
+								<span class="nav-underline">Patient Resources</span>
 								<svg class="ml-2"  width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path fill-rule="evenodd" clip-rule="evenodd" d="M5.9998 1.7998C6.15893 1.7998 6.31155 1.86302 6.42407 1.97554C6.53659 2.08806 6.5998 2.24067 6.5998 2.3998V5.3998H9.5998C9.75893 5.3998 9.91155 5.46302 10.0241 5.57554C10.1366 5.68806 10.1998 5.84067 10.1998 5.9998C10.1998 6.15893 10.1366 6.31155 10.0241 6.42407C9.91155 6.53659 9.75893 6.5998 9.5998 6.5998H6.5998V9.5998C6.5998 9.75893 6.53659 9.91155 6.42407 10.0241C6.31155 10.1366 6.15893 10.1998 5.9998 10.1998C5.84067 10.1998 5.68806 10.1366 5.57554 10.0241C5.46302 9.91155 5.3998 9.75893 5.3998 9.5998V6.5998H2.3998C2.24067 6.5998 2.08806 6.53659 1.97554 6.42407C1.86302 6.31155 1.7998 6.15893 1.7998 5.9998C1.7998 5.84067 1.86302 5.68806 1.97554 5.57554C2.08806 5.46302 2.24067 5.3998 2.3998 5.3998H5.3998V2.3998C5.3998 2.24067 5.46302 2.08806 5.57554 1.97554C5.68806 1.86302 5.84067 1.7998 5.9998 1.7998Z" fill="white"/>
 								</svg>	
 							</a>
 							{#if showDropdown}
-								<ul class="absolute left-[-20px] mt-1 w-48 glass text-white rounded-lg shadow-lg z-50 py-2 rounded-2xl border border-white/20 min-w-54">
-									<li><a href="/patient-resources/payment-and-insurance" class="block px-4 py-2">Payment + Insurance</a></li>
-									<li><a href="/patient-resources/forms" class="block px-4 py-2">Forms</a></li>
+								<ul class="absolute left-[-20px] mt-3 w-48 glass text-white rounded-lg shadow-lg z-50 py-2 rounded-2xl border border-white/20 min-w-54">
+									<li><a href="/patient-resources/payment-and-insurance" class="block px-4 py-2"><span class="nav-underline">Payment + Insurance</span></a></li>
+									<li><a href="/patient-resources/forms" class="block px-4 py-2"><span class="nav-underline">Forms</span></a></li>
 								</ul>
 							{/if}
 						</div>
 					</li>
-					<li class="ml-12 max-xl:ml-8 uppercase font-bold"><a href="/contact">Contact</a></li>
+					<li class="ml-12 max-xl:ml-8 uppercase font-bold"><a class="nav-underline" href="/contact">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -131,15 +138,30 @@
 	<nav class="overlay-menu pl-6 min-[768px]:pl-14">
   
 	  <ul class="text-left">
-		<li class="font-family-reckless text-4xl tracking-tight"><a class="nav-links" href="/about-us" on:click={() => { menuOpen = false; overlayOpen = false; }}>About us</a></li>
-		<li class="mt-6 font-family-reckless text-4xl tracking-tight"><a class="nav-links" href="/services" on:click={() => { menuOpen = false; overlayOpen = false; }}>Services</a></li>
-		<li class="mt-6 font-family-reckless text-4xl tracking-tight"><a class="nav-links" href="/services" on:click={() => { menuOpen = false; overlayOpen = false; }}>Patient Resources</a></li>
-		<li class="mt-6 font-family-reckless text-4xl tracking-tight"><a class="nav-links" href="/contact" on:click={() => { menuOpen = false; overlayOpen = false; }}>Contact</a></li>
+		<li class="font-family-reckless text-4xl tracking-tight"><a class="nav-links nav-underline" href="/about-us" on:click={() => { menuOpen = false; overlayOpen = false; }}>About us</a></li>
+		<li class="mt-6 font-family-reckless text-4xl tracking-tight"><a class="nav-links nav-underline" href="/services" on:click={() => { menuOpen = false; overlayOpen = false; }}>Services</a></li>
+		<li class="mt-6 font-family-reckless text-4xl tracking-tight">
+			<div class="relative">
+				<button on:click={toggleMobileDropdown} class="flex items-center">
+					<span class="nav-underline">Patient Resources</span>
+					<svg class="ml-2 transition-transform duration-200 {mobileDropdownOpen ? 'rotate-45' : ''}" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M5.9998 1.7998C6.15893 1.7998 6.31155 1.86302 6.42407 1.97554C6.53659 2.08806 6.5998 2.24067 6.5998 2.3998V5.3998H9.5998C9.75893 5.3998 9.91155 5.46302 10.0241 5.57554C10.1366 5.68806 10.1998 5.84067 10.1998 5.9998C10.1998 6.15893 10.1366 6.31155 10.0241 6.42407C9.91155 6.53659 9.75893 6.5998 9.5998 6.5998H6.5998V9.5998C6.5998 9.75893 6.53659 9.91155 6.42407 10.0241C6.31155 10.1366 6.15893 10.1998 5.9998 10.1998C5.84067 10.1998 5.68806 10.1366 5.57554 10.0241C5.46302 9.91155 5.3998 9.75893 5.3998 9.5998V6.5998H2.3998C2.24067 6.5998 2.08806 6.53659 1.97554 6.42407C1.86302 6.31155 1.7998 6.15893 1.7998 5.9998C1.7998 5.84067 1.86302 5.68806 1.97554 5.57554C2.08806 5.46302 2.24067 5.3998 2.3998 5.3998H5.3998V2.3998C5.3998 2.24067 5.46302 2.08806 5.57554 1.97554C5.68806 1.86302 5.84067 1.7998 5.9998 1.7998Z" fill="white"/>
+					</svg>	
+				</button>
+				{#if mobileDropdownOpen}
+					<div class="mt-4 ml-4 space-y-4">
+						<div><a href="/patient-resources/payment-and-insurance" class="nav-underline text-2xl" on:click={() => { menuOpen = false; overlayOpen = false; mobileDropdownOpen = false; }}>Payment + Insurance</a></div>
+						<div><a href="/patient-resources/forms" class="nav-underline text-2xl" on:click={() => { menuOpen = false; overlayOpen = false; mobileDropdownOpen = false; }}>Forms</a></div>
+					</div>
+				{/if}
+			</div>
+		</li>
+		<li class="mt-6 font-family-reckless text-4xl tracking-tight"><a class="nav-links nav-underline" href="/contact" on:click={() => { menuOpen = false; overlayOpen = false; }}>Contact</a></li>
 		<li>
-			<a href="/contact" on:click={() => { menuOpen = false; overlayOpen = false; }} class="text-white font-family-matter font-semibold mt-12 inline-block">
+			<a href="/contact" class="text-white mt-12 inline-block font-family-matter font-semibold group">
 				<div class="flex flex-row items-center">
 					<div>Request appointment</div>
-					<div class="ml-4"> 
+					<div class="ml-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1"> 
 						<svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M15 1.5L19 5.5M19 5.5L15 9.5M19 5.5H1" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
@@ -255,6 +277,93 @@
   visibility: visible;
 }
 
+.nav-underline {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+}
 
+.nav-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.nav-underline:hover::after,
+.nav-underline:focus::after {
+  width: 100%;
+}
+
+/* Special handling for flex links with icons */
+.nav-underline.flex::after {
+  width: calc(100% - 20px); /* Adjust based on icon width */
+}
+
+/* Special handling for dropdown links - underline only under text */
+.nav-underline.dropdown-link {
+  display: inline-block !important;
+  position: relative;
+}
+
+.nav-underline.dropdown-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.nav-underline.dropdown-link:hover::after,
+.nav-underline.dropdown-link:focus::after {
+  width: fit-content;
+}
+
+/* Special handling for dropdown links - underline only under text */
+.nav-underline.block {
+  display: inline-block !important;
+  position: relative;
+}
+
+.nav-underline.block::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.nav-underline.block:hover::after,
+.nav-underline.block:focus::after {
+  width: 100%;
+}
+
+/* Handle spans inside dropdown links */
+.block .nav-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.block .nav-underline:hover::after,
+.block .nav-underline:focus::after {
+  width: 100%;
+}
 
 </style>

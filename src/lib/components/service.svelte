@@ -12,16 +12,16 @@
             <span class="block text-teal-100">{number}</span>
             <h2 class="text-3xl font-reckless mt-1 text-teal-100">{service}</h2>
             <p class="text-teal-100 text-xl mt-5 max-w-3/4">{servicetext}</p>
-            <a href="/about-us" class="text-teal-400 mt-12 inline-block">
-                <div class="flex flex-row items-center">
-                    <div>Request appointment</div>
-                    <div class="ml-4"> 
-                        <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15 1.5L19 5.5M19 5.5L15 9.5M19 5.5H1" stroke="#1AD2D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                </div>
-            </a>
+            <a href="/contact" class="text-teal-400 mt-12 inline-block font-family-matter font-semibold group">
+				<div class="flex flex-row items-center">
+					<div>Request appointment</div>
+					<div class="ml-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1"> 
+						<svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15 1.5L19 5.5M19 5.5L15 9.5M19 5.5H1" stroke="#1AD2D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
+				</div>
+			</a>
         </div>
         <div class="w-1/4 max-lg:w-full">
             <ul class="mt-21 text-teal-100 text-lg">
