@@ -22,7 +22,7 @@
 
 <section id="services" class="mt-30">
 
-	<div class="container px-10 max-xl:max-w-full m-auto">
+	<div class="container px-10 max-md:p-5 max-xl:max-w-full m-auto">
 
 		<h5 class="text-white uppercase text font-matter tracking-widest mb-16 after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Areas of expertise</h5>
 

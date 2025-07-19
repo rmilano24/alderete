@@ -1,6 +1,7 @@
 <script lang="ts">
 	import logo from '$lib/images/logo-alderete.svg';
 	import { onMount } from 'svelte';
+	import { page } from '$app/stores';
 	
 	let showDropdown = false;
 	let hideTimeout: ReturnType<typeof setTimeout>;
@@ -81,25 +82,25 @@
 
 			<nav class="flex flex-row ml-8 mt-[26px]">
 				<ul class="flex flex-row max-[1082px]:hidden">
-					<li class="uppercase font-bold"><a class="nav-underline" href="/about-us">About us</a></li>
-					<li class="ml-12 max-xl:ml-8 uppercase font-bold"><a class="nav-underline" href="/services">Services</a></li>
+					<li class="uppercase font-bold"><a class="nav-underline {($page.url.pathname === '/about-us') ? 'active' : ''}" href="/about-us">About us</a></li>
+					<li class="ml-12 max-xl:ml-8 uppercase font-bold"><a class="nav-underline {($page.url.pathname === '/services') ? 'active' : ''}" href="/services">Services</a></li>
 					<li class="ml-12 max-xl:ml-8 uppercase font-bold">
 						<div class="relative" on:mouseenter={handleMouseEnter} on:mouseleave={handleMouseLeave}>
 							<a href="#" class="flex items-center">
-								<span class="nav-underline">Patient Resources</span>
+								<span class="nav-underline {($page.url.pathname.startsWith('/patient-resources')) ? 'active' : ''}">Patient Resources</span>
 								<svg class="ml-2"  width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path fill-rule="evenodd" clip-rule="evenodd" d="M5.9998 1.7998C6.15893 1.7998 6.31155 1.86302 6.42407 1.97554C6.53659 2.08806 6.5998 2.24067 6.5998 2.3998V5.3998H9.5998C9.75893 5.3998 9.91155 5.46302 10.0241 5.57554C10.1366 5.68806 10.1998 5.84067 10.1998 5.9998C10.1998 6.15893 10.1366 6.31155 10.0241 6.42407C9.91155 6.53659 9.75893 6.5998 9.5998 6.5998H6.5998V9.5998C6.5998 9.75893 6.53659 9.91155 6.42407 10.0241C6.31155 10.1366 6.15893 10.1998 5.9998 10.1998C5.84067 10.1998 5.68806 10.1366 5.57554 10.0241C5.46302 9.91155 5.3998 9.75893 5.3998 9.5998V6.5998H2.3998C2.24067 6.5998 2.08806 6.53659 1.97554 6.42407C1.86302 6.31155 1.7998 6.15893 1.7998 5.9998C1.7998 5.84067 1.86302 5.68806 1.97554 5.57554C2.08806 5.46302 2.24067 5.3998 2.3998 5.3998H5.3998V2.3998C5.3998 2.24067 5.46302 2.08806 5.57554 1.97554C5.68806 1.86302 5.84067 1.7998 5.9998 1.7998Z" fill="white"/>
 								</svg>	
 							</a>
 							{#if showDropdown}
 								<ul class="absolute left-[-20px] mt-3 w-48 glass text-white rounded-lg shadow-lg z-50 py-2 rounded-2xl border border-white/20 min-w-54">
-									<li><a href="/patient-resources/payment-and-insurance" class="block px-4 py-2"><span class="nav-underline">Payment + Insurance</span></a></li>
-									<li><a href="/patient-resources/forms" class="block px-4 py-2"><span class="nav-underline">Forms</span></a></li>
+									<li><a href="/patient-resources/payment-and-insurance" class="block px-4 py-2 {($page.url.pathname === '/patient-resources/payment-and-insurance') ? 'active' : ''}"><span class="nav-underline">Payment + Insurance</span></a></li>
+									<li><a href="/patient-resources/forms" class="block px-4 py-2 {($page.url.pathname === '/patient-resources/forms') ? 'active' : ''}"><span class="nav-underline">Forms</span></a></li>
 								</ul>
 							{/if}
 						</div>
 					</li>
-					<li class="ml-12 max-xl:ml-8 uppercase font-bold"><a class="nav-underline" href="/contact">Contact</a></li>
+					<li class="ml-12 max-xl:ml-8 uppercase font-bold"><a class="nav-underline {($page.url.pathname === '/contact') ? 'active' : ''}" href="/contact">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -364,6 +365,12 @@
 .block .nav-underline:hover::after,
 .block .nav-underline:focus::after {
   width: 100%;
+}
+
+.nav-underline.active::after {
+  width: 100% !important;
+  background: #fff !important;
+  height: 1px !important;
 }
 
 </style>

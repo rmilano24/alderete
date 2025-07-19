@@ -15,7 +15,7 @@
 
 <section id="payment-insurance" class="mt-24">
 
-	<div class="container px-10 max-xl:max-w-full m-auto">
+	<div class="container px-10 max-md:p-5 max-xl:max-w-full m-auto">
 
 		<div class="grid grid-cols-1 gap-16">
 
