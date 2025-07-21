@@ -87,9 +87,9 @@
   </button>
   
   <!-- Your existing modal content -->
-  <div class="grid grid-cols-2 max-lg:grid-cols-1 gap-4 !p-0 !m-0">
-				<div class="p-24 left-col max-lg:order-2">
-					<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Owner and General Dentist</h5>
+  <div class="grid grid-cols-2 max-md:grid-cols-1 gap-4 !p-0 !m-0">
+				<div class="p-24 max-lg:p-12 max-md:p-5 left-col max-md:order-2">
+					<h5 class="text-white uppercase text font-matter tracking-widest before:bg-white before:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Owner and General Dentist</h5>
 					<h1 class="text-5xl text-teal-100 font-reckless mt-8">Dr. Jim Alderete</h1>
 					<p class="text-teal-100 mt-8 text-lg">Dr Jim Alderete grew up in Santa Clara, attended Bellarmine College Preparatory, and graduated from UC Santa Barbara where he played Division 1 baseball for the Gauchos. He completed his DDS degree from the University of Pacific, Arthur A. Dugoni School of Dentistry in 2006.  Upon completion, Dr. Alderete served as an active duty US Naval Officer for 6 years where he completed a residency program in General Dentistry at Camp Pendleton Naval Hospital.</p> 
 					<p class="text-teal-100 mt-8 text-lg">
@@ -124,11 +124,11 @@
 					</ul>
 		
 				</div>
-				<div class="h-screen max-lg:h-[60vh] max-lg:order-1 bg-top bg-cover bg-no-repeat right-col" style="background-image: url('{jimlg}')">
+				<div class="h-screen max-md:h-[60vh] max-md:order-1 bg-top bg-cover bg-no-repeat right-col" style="background-image: url('{jimlg}')">
 					<div class="flex flex-col h-full">
-						<div id="credentials" class="glass rounded-2xl border border-white/20 mt-auto m-6">
+						<div id="credentials" class="glass rounded-2xl border border-white/20 mt-auto m-6 max-md:hidden">
 							<h5 class="text-white uppercase text font-matter tracking-widest border-b  border-white/20 px-6 py-4">Credentials</h5>
-							<div class="grid grid-cols-4 gap-12 p-6 pb-2">
+							<div class="grid grid-cols-4 gap-12 max-xl:gap-8 max-lg:gap-4 p-6 pb-2">
 								<div class="seal">
 									<img src={belermine} alt="Belermine Preparatory School">
 								</div>
