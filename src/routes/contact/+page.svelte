@@ -1,5 +1,40 @@
 <script lang="ts">
 	import home_hero from '$lib/images/bg_home-hero.jpg';
+	let success = false;
+	let error = false;
+	let loading = false;
+
+	async function handleSubmit(event: Event) {
+		event.preventDefault();
+		loading = true;
+		error = false;
+		success = false;
+
+		const form = event.target as HTMLFormElement;
+		const formData = new FormData(form);
+		const endpoint = "https://formsubmit.co/ryan@nmbl.digital";
+
+		try {
+			const response = await fetch(endpoint, {
+				method: "POST",
+				body: formData,
+				headers: {
+					'Accept': 'application/json'
+				}
+			});
+
+			if (response.ok) {
+				success = true;
+				form.reset();
+			} else {
+				error = true;
+			}
+		} catch (e) {
+			error = true;
+		} finally {
+			loading = false;
+		}
+	}
 </script>
 
 <svelte:head>
@@ -21,8 +56,8 @@
 
 <!-- Contact Form using Formsubmit -->
 <div class="container mx-auto px-10 max-md:px-5 max-w-2xl mt-16 mb-20">
-	<form action="https://formsubmit.co/rmilano24@gmail.com" method="POST" class="glass rounded-2xl border border-white/20 shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] p-10 flex flex-col gap-6">
-		<input type="hidden" name="_next" value="/contact?submitted=1" />
+	<form action="https://formsubmit.co/ryan@nmbl.digital" method="POST" class="glass rounded-2xl border border-white/20 shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] p-10 flex flex-col gap-6">
+		<input type="hidden" name="_next" value="https://flowbite-svelte-starter-six.vercel.app/thank-you" />
 		<input type="hidden" name="_captcha" value="false" />
 		<div class="flex flex-col gap-2">
 			<label for="name" class="text-white font-matter uppercase tracking-widest">Name</label>
