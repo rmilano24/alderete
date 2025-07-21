@@ -1,6 +1,5 @@
 <script lang="ts">
 	import home_hero from '$lib/images/bg_home-hero.jpg';
-	import HeroInner from '$lib/components/hero-inner.svelte';
 </script>
 
 <svelte:head>
@@ -8,7 +7,22 @@
 	<meta name="description" content="Jim Alderete DDS | Dentist in Santa Cruz, Ca" />
 </svelte:head>
 
-<HeroInner eyebrow="Call us or fill out the form below" header="Request appointment" text="At our office you'll find a friendly and professional staff, each dedicated to providing your family with quality care and personal attention. They are trained professionals with many years of experience, and a desire to share their knowledge so that you may achieve a healthy, attractive and comfortable mouth." />
+<section id="hero">
+	<div class="grid grid-cols-2 gap-4 max-lg:grid-cols-1">
+		<div class="p-24 mt-40 max-lg:p-12 max-lg:mt-24">
+			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Call us or fill out the form below</h5>
+			<h1 class="text-5xl text-teal-100 font-reckless mt-8">Request appointment</h1>
+
+			<form action=""></form>
+			
+		</div>
+		<div class="relative h-[900px] bg-center bg-cover bg-no-repeat rounded-bl-4xl" style="background-image: url('{home_hero}')">
+			<div class="absolute inset-0 bg-black/10 pointer-events-none z-0 rounded-bl-4xl"></div>
+		</div>
+	  </div>
+</section>
+
+
 
 <div id="cta-boxes" class="mt-30 max-lg:mt-14 container px-10 max-md:px-5 max-xl:max-w-full mx-auto">
 	<div class="grid grid-cols-3 max-[1120px]:grid-cols-2 max-md:grid-cols-1  gap-8 container mx-auto mb-30 max-lg:mb-14">
