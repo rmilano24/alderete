@@ -2,25 +2,30 @@
 	import logo from '$lib/images/logo-alderete.svg';
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
+	import { menuOpen } from '$lib/stores/menuOpen';
 	
 	let showDropdown = false;
 	let hideTimeout: ReturnType<typeof setTimeout>;
 	let overlayOpen = false;
 	let scrollY = 0;
-	let menuOpen = false;
+	// let menuOpen = false; // Now using store
 	let mobileDropdownOpen = false; // New variable for mobile dropdown state
 
 	function toggleMenu() {
-		menuOpen = !menuOpen;
-		overlayOpen = menuOpen; // Use the existing overlayOpen variable to control scroll
+		menuOpen.update((v) => {
+			overlayOpen = !v;
+			return !v;
+		});
 	}
 
 	// Handle window resize to close mobile menu when screen becomes wider
 	function handleResize() {
-		if (window.innerWidth > 1081 && menuOpen) {
-			menuOpen = false;
-			overlayOpen = false;
-		}
+		menuOpen.subscribe((isOpen) => {
+			if (window.innerWidth > 1081 && isOpen) {
+				menuOpen.set(false);
+				overlayOpen = false;
+			}
+		});
 	}
 
 	onMount(() => {
@@ -67,15 +72,15 @@
 			}
 		}
 	}
+
+	$: headerBarClass = `rounded-2xl flex h-[77px] max-md:h-[55px] w-full -z-50${!$menuOpen ? ' glass border border-white/20 shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)]' : ''}`;
 </script>
 
 <header class="rounded-2xl fixed w-full p-8 max-md:p-3 z-50">
 
-	<div
-		class="rounded-2xl flex h-[77px] max-md:h-[55px] w-full -z-50 {menuOpen ? '' : 'glass border border-white/20 shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)]'}"
-	>
+	<div class={headerBarClass}>
 		<div id="logo" class="w-48 m-7 max-md:m-4 mt-[26px] max-md:mt-[20px] flex-none z-100]">
-			<a href="/" on:click={() => { menuOpen = false; overlayOpen = false; }}><img class="max-md:max-w-[126px]" src={logo} alt="Alderete DDS" /></a>
+			<a href="/" on:click={() => { menuOpen.set(false); overlayOpen = false; }}><img class="max-md:max-w-[126px]" src={logo} alt="Alderete DDS" /></a>
 		</div>
 
 		<div class="grow border-l max-[1082px]:border-0 border-white/20">
@@ -126,7 +131,7 @@
 
 <!-- START MOBILE NAV -->
 
-<div class="menu" class:open={menuOpen}>
+<div class="menu" class:open={$menuOpen}>
 	<button on:click={toggleMenu} class="menu-link">
 	  <span class="hamburger-icon">
 		<span class="hamburger-bar hamburger-bar-1"></span>
@@ -135,12 +140,12 @@
 	</button>
   </div>
   
-  <div class="menu-overlay glass" class:open={menuOpen}>
+  <div class="menu-overlay glass" class:open={$menuOpen}>
 	<nav class="overlay-menu pl-6 min-[768px]:pl-14">
   
 	  <ul class="text-left">
-		<li class="font-family-reckless text-4xl tracking-tight"><a class="nav-links nav-underline" href="/about-us" on:click={() => { menuOpen = false; overlayOpen = false; }}>About us</a></li>
-		<li class="mt-6 font-family-reckless text-4xl tracking-tight"><a class="nav-links nav-underline" href="/services" on:click={() => { menuOpen = false; overlayOpen = false; }}>Services</a></li>
+		<li class="font-family-reckless text-4xl tracking-tight"><a class="nav-links nav-underline" href="/about-us" on:click={() => { menuOpen.set(false); overlayOpen = false; }}>About us</a></li>
+		<li class="mt-6 font-family-reckless text-4xl tracking-tight"><a class="nav-links nav-underline" href="/services" on:click={() => { menuOpen.set(false); overlayOpen = false; }}>Services</a></li>
 		<li class="mt-6 font-family-reckless text-4xl tracking-tight">
 			<div class="relative">
 				<button on:click={toggleMobileDropdown} class="flex items-center">
@@ -151,13 +156,13 @@
 				</button>
 				{#if mobileDropdownOpen}
 					<div class="mt-4 ml-4 space-y-4">
-						<div><a href="/patient-resources/payment-and-insurance" class="nav-underline text-2xl" on:click={() => { menuOpen = false; overlayOpen = false; mobileDropdownOpen = false; }}>Payment + Insurance</a></div>
-						<div><a href="/patient-resources/forms" class="nav-underline text-2xl" on:click={() => { menuOpen = false; overlayOpen = false; mobileDropdownOpen = false; }}>Forms</a></div>
+						<div><a href="/patient-resources/payment-and-insurance" class="nav-underline text-2xl" on:click={() => { menuOpen.set(false); overlayOpen = false; mobileDropdownOpen = false; }}>Payment + Insurance</a></div>
+						<div><a href="/patient-resources/forms" class="nav-underline text-2xl" on:click={() => { menuOpen.set(false); overlayOpen = false; mobileDropdownOpen = false; }}>Forms</a></div>
 					</div>
 				{/if}
 			</div>
 		</li>
-		<li class="mt-6 font-family-reckless text-4xl tracking-tight"><a class="nav-links nav-underline" href="/contact" on:click={() => { menuOpen = false; overlayOpen = false; }}>Contact</a></li>
+		<li class="mt-6 font-family-reckless text-4xl tracking-tight"><a class="nav-links nav-underline" href="/contact" on:click={() => { menuOpen.set(false); overlayOpen = false; }}>Contact</a></li>
 		<li>
 			<a href="/contact" class="text-white mt-12 inline-block font-family-matter font-semibold group">
 				<div class="flex flex-row items-center">
