@@ -204,35 +204,51 @@
 		</a>  
 	</div>
 
+	<Modal 
+  size="xl" 
+  bind:open={defaultModal2} 
+  class="bg-primary-400 w-full h-full max-w-none !rounded-none max-h-screen !p-0 !m-0"
+>
+  <!-- Custom close button -->
+  <button 
+    class="absolute top-4 right-4 z-50 text-white p-4 rounded-full glass border border-white/20 transition-colors duration-200 cursor-pointer"
+    on:click={() => defaultModal2 = false}
+  >
+    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+    </svg>
+  </button>
+  
+  <!-- Your existing modal content -->
+  <div class="grid grid-cols-2 max-md:grid-cols-1 gap-4 !p-0 !m-0">
+				<div class="p-24 max-lg:p-12 max-md:p-5 left-col max-md:order-2">
+					<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Periodontics & Oral Surgery</h5>
+					<h1 class="text-5xl text-teal-100 font-reckless mt-8">Dr. Ryan Reyes</h1>
+					<p class="text-teal-100 mt-8 text-lg">Dr. Ryan Reyes is a native of the San Francisco Bay area. In addition to periodontal specialty services, Dr. Reyes also provides treatment for Dental Implants and Oral Surgery. For the past 11 years, Dr. Reyes has been providing surgical services to the dental offices in the great bay area. Dr. Reyes has an experienced surgical support team who travels with him, who focuses on providing the highest quality treatment and outcomes within the comfort of the patients own dental office. Dr. Reyes' surgical support team is there for his patients from the initial consultation through post treatment care, available to assist his patients 24 hours a day. Dr. Reyes strongly believes in innovative techniques that increase his patient's comfort. He is a pinhole certified periodontist, which is a scalpel free procedure to correct gum recession. Dr. Reyes stays abreast of the latest innovations in Periodontics and Oral Surgery by attending numerous advanced continuing education courses.
+					</p> 
+					<p class="text-teal-100 mt-8 text-lg">
+						Prior to dental school, Dr. Reyes was a Veterinary Assistant, as he has a love for animals. Outside the dental office, Dr. Reyes enjoys yoga and holistic medicine. When he is not seeing patients, you can often find him in the water surfing, enjoying everything the beautiful California beach have to offer.</p>
 
-	<Modal size="xl" bind:open={defaultModal2} class="bg-primary-400 w-full h-full max-w-none !rounded-none max-h-screen">
-		<!-- Custom close button -->
-		<button 
-			class="absolute top-4 right-4 z-50 text-white p-4 rounded-full glass border border-white/20 transition-colors duration-200 cursor-pointer"
-			on:click={() => defaultModal2 = false}
-		>
-			<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-			</svg>
-		</button>
+
+					
+
 		
-		<div class="grid grid-cols-2 gap-4 ">
-			<div class="p-24">
-				<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Periodontics & Oral Surgery</h5>
-				<h1 class="text-5xl text-teal-100 font-reckless mt-8">Dr. Ryan Reyes</h1>
-				<p class="text-teal-100 mt-8 text-lg">Dr. Ryan Reyes is a native of the San Francisco Bay area. In addition to periodontal specialty services, Dr. Reyes also provides treatment for Dental Implants and Oral Surgery. For the past 11 years, Dr. Reyes has been providing surgical services to the dental offices in the great bay area. Dr. Reyes has an experienced surgical support team who travels with him, who focuses on providing the highest quality treatment and outcomes within the comfort of the patients own dental office. Dr. Reyes' surgical support team is there for his patients from the initial consultation through post treatment care, available to assist his patients 24 hours a day. Dr. Reyes strongly believes in innovative techniques that increase his patient's comfort. He is a pinhole certified periodontist, which is a scalpel free procedure to correct gum recession. Dr. Reyes stays abreast of the latest innovations in Periodontics and Oral Surgery by attending numerous advanced continuing education courses.
-				</p> 
-				<p class="text-teal-100 mt-8 text-lg">
-					Prior to dental school, Dr. Reyes was a Veterinary Assistant, as he has a love for animals. Outside the dental office, Dr. Reyes enjoys yoga and holistic medicine. When he is not seeing patients, you can often find him in the water surfing, enjoying everything the beautiful California beach have to offer.</p>
-	
-	
-			</div>
-			<div class="h-screen bg-center bg-cover bg-no-repeat" style="background-image: url('{ryan}')">
-				
-			</div>
-		  </div>
-		  
-		</Modal>
+					
+		
+				</div>
+				<div class="h-screen max-md:h-[60vh] max-md:order-1 bg-top bg-cover bg-no-repeat right-col" style="background-image: url('{ryan}')">
+					<div class="flex flex-col h-full">
+						
+					
+
+					</div>
+				</div>
+			  </div>
+			  
+			</Modal>
+
+
+
 
 </section>
 
