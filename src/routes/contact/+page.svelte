@@ -12,9 +12,6 @@
 		<div class="p-24 mt-40 max-lg:p-12 max-lg:mt-24">
 			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Call us or fill out the form below</h5>
 			<h1 class="text-5xl text-teal-100 font-reckless mt-8">Request appointment</h1>
-
-			<form action=""></form>
-			
 		</div>
 		<div class="relative h-[900px] bg-center bg-cover bg-no-repeat rounded-bl-4xl" style="background-image: url('{home_hero}')">
 			<div class="absolute inset-0 bg-black/10 pointer-events-none z-0 rounded-bl-4xl"></div>
@@ -22,6 +19,30 @@
 	  </div>
 </section>
 
+<!-- Contact Form using Formsubmit -->
+<div class="container mx-auto px-10 max-md:px-5 max-w-2xl mt-16 mb-20">
+	<form action="https://formsubmit.co/ryan@nmbl.digital" method="POST" class="glass rounded-2xl border border-white/20 shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] p-10 flex flex-col gap-6">
+		<input type="hidden" name="_next" value="/contact?submitted=1" />
+		<input type="hidden" name="_captcha" value="false" />
+		<div class="flex flex-col gap-2">
+			<label for="name" class="text-white font-matter uppercase tracking-widest">Name</label>
+			<input id="name" name="name" type="text" required class="rounded px-4 py-2 bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none" placeholder="Your Name" />
+		</div>
+		<div class="flex flex-col gap-2">
+			<label for="email" class="text-white font-matter uppercase tracking-widest">Email</label>
+			<input id="email" name="email" type="email" required class="rounded px-4 py-2 bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none" placeholder="you@email.com" />
+		</div>
+		<div class="flex flex-col gap-2">
+			<label for="phone" class="text-white font-matter uppercase tracking-widest">Phone</label>
+			<input id="phone" name="phone" type="tel" class="rounded px-4 py-2 bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none" placeholder="(optional)" />
+		</div>
+		<div class="flex flex-col gap-2">
+			<label for="message" class="text-white font-matter uppercase tracking-widest">Message</label>
+			<textarea id="message" name="message" rows="5" required class="rounded px-4 py-2 bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none" placeholder="How can we help you?"></textarea>
+		</div>
+		<button type="submit" class="mt-4 bg-teal-600 hover:bg-teal-700 text-white font-matter uppercase tracking-widest py-3 px-8 rounded shadow transition">Send Message</button>
+	</form>
+</div>
 
 
 <div id="cta-boxes" class="mt-30 max-lg:mt-14 container px-10 max-md:px-5 max-xl:max-w-full mx-auto">
