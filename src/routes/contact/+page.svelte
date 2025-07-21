@@ -21,7 +21,7 @@
 
 <!-- Contact Form using Formsubmit -->
 <div class="container mx-auto px-10 max-md:px-5 max-w-2xl mt-16 mb-20">
-	<form action="https://formsubmit.co/ryan@nmbl.digital" method="POST" class="glass rounded-2xl border border-white/20 shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] p-10 flex flex-col gap-6">
+	<form action="https://formsubmit.co/rmilano24@gmail.com" method="POST" class="glass rounded-2xl border border-white/20 shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] p-10 flex flex-col gap-6">
 		<input type="hidden" name="_next" value="/contact?submitted=1" />
 		<input type="hidden" name="_captcha" value="false" />
 		<div class="flex flex-col gap-2">
