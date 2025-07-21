@@ -41,7 +41,7 @@
 				</div>
 			</div>	
 			
-			<div class="border-b border-primary-300 pb-16">
+			<div class="border-primary-300 pb-16">
 				<div class="flex flex-row max-lg:flex-col justify-between">
 					<div class="w-3/4 max-lg:w-full pr-64 max-lg:pr-0">
 						<h5 class="text-white uppercase text font-matter tracking-widest mb-16 after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">CareCredit® FOR making payments:</h5>

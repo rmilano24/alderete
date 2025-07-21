@@ -33,6 +33,7 @@
 	import Value from '$lib/components/value.svelte';
 	import BottomCta from '$lib/components/bottom-cta.svelte';
 	import HeroInner from '$lib/components/hero-inner.svelte';
+	import Seperator from '$lib/components/seperator.svelte';
 </script>
 
 <svelte:head>
@@ -291,7 +292,7 @@
 	}
 </style>
 
-  
+<Seperator />  
 
 <section id="values">
 

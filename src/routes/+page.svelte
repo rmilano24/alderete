@@ -10,6 +10,7 @@
 
 	import Expertise from '$lib/components/expertise.svelte';
 	import BottomCta from '$lib/components/bottom-cta.svelte';
+  import Seperator from '$lib/components/seperator.svelte';
 
   import { onMount } from "svelte";
   import { gsap } from "gsap";
@@ -48,7 +49,7 @@
 
 <section id="get-to-know-us" class="mt-24 max-lg:mt-12 max-md:mt-0">
 
-	<div class="container grid grid-cols-2 max-lg:grid-cols-1 gap-24  max-xl:gap-12 mx-auto px-10 max-md:p-5 max-xl:max-w-full pb-30">
+	<div class="container grid grid-cols-2 max-lg:grid-cols-1 gap-24  max-xl:gap-12 mx-auto px-10 max-md:p-5 max-xl:max-w-full">
 
 		<div class="grid relative rounded-4xl"> <!-- Container with grid and relative positioning -->
 			<img src={jim} alt="Description of image" class="col-start-1 row-start-1 rounded-4xl"> <!-- Image as first grid item -->
@@ -85,9 +86,12 @@
 </section>
 
 
+<Seperator />
+
+
 <section id="expertise">
 
-	<div class="container mx-auto px-10 max-md:p-5 max-xl:max-w-full border-t border-primary-300 pt-30">
+	<div class="container mx-auto px-10 max-md:p-5 max-xl:max-w-full">
 
 		<h5 class="text-white uppercase text font-matter tracking-widest mb-16 after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Our Areas of Expertise</h5>
 
