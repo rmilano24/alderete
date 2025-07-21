@@ -23,13 +23,13 @@
 				</div>
 
 				<div class="flex gap-4">
-					<div class="flex flex-col gap-2 pr-2">
+					<div class="flex flex-col gap-1 pr-2">
 						<div>
 							<h5 class="text-white uppercase text font-matter tracking-widest">Phone:</h5>
 						</div>
 						<div class="text-xl"> <a href="tel:+18314323231">831.432.3231</a></div>
 					</div>
-					<div class="flex flex-col gap-2 border-l border-white/20 pl-4">
+					<div class="flex flex-col gap-1 border-l border-white/20 pl-4">
 						<div>
 							<h5 class="text-white uppercase text font-matter tracking-widest">Fax:</h5>
 						</div>
