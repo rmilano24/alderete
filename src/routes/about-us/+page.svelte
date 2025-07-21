@@ -30,7 +30,6 @@
 	import ucsb from '$lib/images/about/seals/seal-ucsb.png';
 	import uop from '$lib/images/about/seals/seal-uop.png';
 	import navy from '$lib/images/about/seals/seal-navy.png';
-
 	import Value from '$lib/components/value.svelte';
 	import BottomCta from '$lib/components/bottom-cta.svelte';
 	import HeroInner from '$lib/components/hero-inner.svelte';
@@ -87,8 +86,8 @@
   </button>
   
   <!-- Your existing modal content -->
-  <div class="grid grid-cols-2 gap-4 !p-0 !m-0">
-				<div class="p-24 left-col">
+  <div class="grid grid-cols-2 max-lg:grid-cols-1 gap-4 !p-0 !m-0">
+				<div class="p-24 left-col max-lg:order-2">
 					<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Owner and General Dentist</h5>
 					<h1 class="text-5xl text-teal-100 font-reckless mt-8">Dr. Jim Alderete</h1>
 					<p class="text-teal-100 mt-8 text-lg">Dr Jim Alderete grew up in Santa Clara, attended Bellarmine College Preparatory, and graduated from UC Santa Barbara where he played Division 1 baseball for the Gauchos. He completed his DDS degree from the University of Pacific, Arthur A. Dugoni School of Dentistry in 2006.  Upon completion, Dr. Alderete served as an active duty US Naval Officer for 6 years where he completed a residency program in General Dentistry at Camp Pendleton Naval Hospital.</p> 
@@ -124,7 +123,7 @@
 					</ul>
 		
 				</div>
-				<div class="h-screen bg-center bg-cover bg-no-repeat right-col" style="background-image: url('{jimlg}')">
+				<div class="h-screen max-lg:h-[60vh] max-lg:order-1 bg-center bg-cover bg-no-repeat right-col" style="background-image: url('{jimlg}')">
 					<div class="flex flex-col h-full">
 						<div id="credentials" class="glass rounded-2xl border border-white/20 mt-auto m-6">
 							<h5 class="text-white uppercase text font-matter tracking-widest border-b  border-white/20 px-6 py-4">Credentials</h5>
@@ -292,10 +291,7 @@
 	}
 </style>
 
-
-
   
-<div class="container seperator mx-auto px-10 max-md:p-5 max-xl:max-w-full max-xl:mx-12 border-b border-primary-300 h-[1px] my-30 "></div>
 
 <section id="values">
 
