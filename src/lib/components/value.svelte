@@ -5,7 +5,7 @@
   
 </script>
 
-<div class="border-b border-primary-300 pb-16 last:border-b-0">
+<div class="border-b border-primary-300 pb-16 last:border-b-0 last:pb-0">
     <div class="flex flex-row max-md:flex-col justify-between">
         <div class="w-1/2 max-md:w-full">
             <span class="block text-teal-100 max-md:text-sm">{number}</span>

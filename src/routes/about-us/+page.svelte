@@ -46,11 +46,15 @@
 
 
 
-  <section id="get-to-know-us" class="mt-24">
+  <section id="get-to-know-us" class="mt-24 max-md:mt-14">
 
+	<div class="container px-10 max-md:p-5 max-xl:max-w-full mx-auto">
+		<h5 class="text-white uppercase text font-matter tracking-widest mb-12 max-md:mb-4 after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Meet the Dentists</h5>
+	</div>
 
 
 	<div class="container px-10 max-md:p-5 max-xl:max-w-full grid grid-cols-2 max-md:grid-cols-1 gap-24 max-lg:gap-12 mx-auto">
+		
 		<a
   href=""
   role="button"
@@ -89,7 +93,7 @@
   <!-- Your existing modal content -->
   <div class="grid grid-cols-2 max-md:grid-cols-1 gap-4 !p-0 !m-0">
 				<div class="p-24 max-lg:p-12 max-md:p-5 left-col max-md:order-2">
-					<h5 class="text-white uppercase text font-matter tracking-widest before:bg-white before:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Owner and General Dentist</h5>
+					<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Owner and General Dentist</h5>
 					<h1 class="text-5xl text-teal-100 font-reckless mt-8">Dr. Jim Alderete</h1>
 					<p class="text-teal-100 mt-8 text-lg">Dr Jim Alderete grew up in Santa Clara, attended Bellarmine College Preparatory, and graduated from UC Santa Barbara where he played Division 1 baseball for the Gauchos. He completed his DDS degree from the University of Pacific, Arthur A. Dugoni School of Dentistry in 2006.  Upon completion, Dr. Alderete served as an active duty US Naval Officer for 6 years where he completed a residency program in General Dentistry at Camp Pendleton Naval Hospital.</p> 
 					<p class="text-teal-100 mt-8 text-lg">
@@ -97,35 +101,60 @@
 					<p class="text-teal-100 mt-8 text-lg">
 					In his free time Dr. Alderete enjoys fishing, hiking the redwoods with his family, and coaching youth sports.
 					</p>
+
+
+					<div id="credentials" class="glass rounded-2xl border border-white/20 min-md:hidden mt-5">
+						<h5 class="text-white uppercase text font-matter tracking-widest border-b  border-white/20 px-6 py-4">Credentials</h5>
+						<div class="grid grid-cols-4 max-sm:grid-cols-2 gap-5 max-sm:gap-8 p-6">
+							<div class="seal">
+								<img src={belermine} alt="Belermine Preparatory School">
+							</div>
+							<div class="seal">
+								<img src={ucsb} alt="University California Santa Barbara">
+							</div>
+							<div class="seal">
+								<img src={uop} alt="University of Pacific">
+							</div>
+							<div class="seal">
+								<img src={navy} alt="Navy">
+							</div>
+						</div>
+					</div>
+
 		
 					<h5 class="mt-10 text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Affiliates</h5>
 		
-					<ul class="mt-4 text-teal-100 text-lg">
-						<li>
-							<svg class="inline mr-2" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<ul class="mt-4 text-teal-100 text-lg pb-5">
+						<li class="mt-6 first:mt-0 flex items-start leading-tight">
+							<svg class="mr-4 flex-shrink-0 mt-[2px]" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M8.293 1.26788C8.48053 1.08041 8.73484 0.975098 9 0.975098C9.26516 0.975098 9.51947 1.08041 9.707 1.26788L15.707 7.26788C15.8945 7.45541 15.9998 7.70972 15.9998 7.97488C15.9998 8.24005 15.8945 8.49436 15.707 8.68188L9.707 14.6819C9.5184 14.864 9.2658 14.9648 9.0036 14.9626C8.7414 14.9603 8.49059 14.8551 8.30518 14.6697C8.11977 14.4843 8.0146 14.2335 8.01233 13.9713C8.01005 13.7091 8.11084 13.4565 8.293 13.2679L12.586 8.97488H1C0.734784 8.97488 0.48043 8.86953 0.292893 8.68199C0.105357 8.49445 0 8.2401 0 7.97488C0 7.70967 0.105357 7.45531 0.292893 7.26778C0.48043 7.08024 0.734784 6.97488 1 6.97488H12.586L8.293 2.68188C8.10553 2.49436 8.00021 2.24005 8.00021 1.97488C8.00021 1.70972 8.10553 1.45541 8.293 1.26788Z" fill="#1AD2D4"/>
-								</svg>
-							American Dental Association</li>
-						<li class="mt-2">
-							<svg class="inline mr-2" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							</svg>
+							<span>American Dental Association</span>
+						</li>
+						<li class="mt-6 flex items-start leading-tight">
+							<svg class="mr-4 flex-shrink-0 mt-[2px]" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M8.293 1.26788C8.48053 1.08041 8.73484 0.975098 9 0.975098C9.26516 0.975098 9.51947 1.08041 9.707 1.26788L15.707 7.26788C15.8945 7.45541 15.9998 7.70972 15.9998 7.97488C15.9998 8.24005 15.8945 8.49436 15.707 8.68188L9.707 14.6819C9.5184 14.864 9.2658 14.9648 9.0036 14.9626C8.7414 14.9603 8.49059 14.8551 8.30518 14.6697C8.11977 14.4843 8.0146 14.2335 8.01233 13.9713C8.01005 13.7091 8.11084 13.4565 8.293 13.2679L12.586 8.97488H1C0.734784 8.97488 0.48043 8.86953 0.292893 8.68199C0.105357 8.49445 0 8.2401 0 7.97488C0 7.70967 0.105357 7.45531 0.292893 7.26778C0.48043 7.08024 0.734784 6.97488 1 6.97488H12.586L8.293 2.68188C8.10553 2.49436 8.00021 2.24005 8.00021 1.97488C8.00021 1.70972 8.10553 1.45541 8.293 1.26788Z" fill="#1AD2D4"/>
-								</svg>
-							California Dental Association </li>
-						<li class="mt-2">
-							<svg class="inline mr-2" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							</svg>
+							<span>California Dental Association</span>
+						</li>
+						<li class="mt-6 flex items-start leading-tight">
+							<svg class="mr-4 flex-shrink-0 mt-[2px]" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M8.293 1.26788C8.48053 1.08041 8.73484 0.975098 9 0.975098C9.26516 0.975098 9.51947 1.08041 9.707 1.26788L15.707 7.26788C15.8945 7.45541 15.9998 7.70972 15.9998 7.97488C15.9998 8.24005 15.8945 8.49436 15.707 8.68188L9.707 14.6819C9.5184 14.864 9.2658 14.9648 9.0036 14.9626C8.7414 14.9603 8.49059 14.8551 8.30518 14.6697C8.11977 14.4843 8.0146 14.2335 8.01233 13.9713C8.01005 13.7091 8.11084 13.4565 8.293 13.2679L12.586 8.97488H1C0.734784 8.97488 0.48043 8.86953 0.292893 8.68199C0.105357 8.49445 0 8.2401 0 7.97488C0 7.70967 0.105357 7.45531 0.292893 7.26778C0.48043 7.08024 0.734784 6.97488 1 6.97488H12.586L8.293 2.68188C8.10553 2.49436 8.00021 2.24005 8.00021 1.97488C8.00021 1.70972 8.10553 1.45541 8.293 1.26788Z" fill="#1AD2D4"/>
-								</svg>
-							Monterey Bay Dental Society</li>
-						<li class="mt-2">
-							<svg class="inline mr-2" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							</svg>
+							<span>Monterey Bay Dental Society</span>
+						</li>
+						<li class="mt-6 flex items-start leading-tight">
+							<svg class="mr-4 flex-shrink-0 mt-[2px]" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M8.293 1.26788C8.48053 1.08041 8.73484 0.975098 9 0.975098C9.26516 0.975098 9.51947 1.08041 9.707 1.26788L15.707 7.26788C15.8945 7.45541 15.9998 7.70972 15.9998 7.97488C15.9998 8.24005 15.8945 8.49436 15.707 8.68188L9.707 14.6819C9.5184 14.864 9.2658 14.9648 9.0036 14.9626C8.7414 14.9603 8.49059 14.8551 8.30518 14.6697C8.11977 14.4843 8.0146 14.2335 8.01233 13.9713C8.01005 13.7091 8.11084 13.4565 8.293 13.2679L12.586 8.97488H1C0.734784 8.97488 0.48043 8.86953 0.292893 8.68199C0.105357 8.49445 0 8.2401 0 7.97488C0 7.70967 0.105357 7.45531 0.292893 7.26778C0.48043 7.08024 0.734784 6.97488 1 6.97488H12.586L8.293 2.68188C8.10553 2.49436 8.00021 2.24005 8.00021 1.97488C8.00021 1.70972 8.10553 1.45541 8.293 1.26788Z" fill="#1AD2D4"/>
-								</svg>
-							2019, 2024 Santa Cruz County Best Dentist <br> <span class="text-sm ml-7">(Readers Choice Awards Santa Cruz Sentinel)</span></li>
+							</svg>
+							<span>2019, 2024 Santa Cruz County Best Dentist <br> <span class="text-sm">(Readers Choice Awards Santa Cruz Sentinel)</span></span>
+						</li>
 					</ul>
 		
 				</div>
 				<div class="h-screen max-md:h-[60vh] max-md:order-1 bg-top bg-cover bg-no-repeat right-col" style="background-image: url('{jimlg}')">
 					<div class="flex flex-col h-full">
+						
 						<div id="credentials" class="glass rounded-2xl border border-white/20 mt-auto m-6 max-md:hidden">
 							<h5 class="text-white uppercase text font-matter tracking-widest border-b  border-white/20 px-6 py-4">Credentials</h5>
 							<div class="grid grid-cols-4 gap-12 max-xl:gap-8 max-lg:gap-4 p-6 pb-2">
@@ -143,6 +172,7 @@
 								</div>
 							</div>
 						</div>
+
 					</div>
 				</div>
 			  </div>
@@ -270,6 +300,12 @@
 	.left-col {
 		overflow-y: auto;
 		max-height: 100vh;
+	}
+
+	@media (max-width: 767px) {
+		.left-col {
+			overflow-y: visible;
+		}
 	}
 	
 	/* Prevent right column from scrolling */

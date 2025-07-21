@@ -20,7 +20,7 @@
 <HeroInner eyebrow="What we’re good at" header="Our services" text="You want your smile to be the best it can be, and we are here to help. Dr Alderete and his caring, friendly team of dental professionals are committed to providing a comfortable dental experience. Our goal is to provide dental care for you and your family in a compassionate, caring and professional environment." />
 
 
-<section id="services" class="mt-30">
+<section id="services" class="mt-30 max-md:mt-14">
 
 	<div class="container px-10 max-md:p-5 max-xl:max-w-full m-auto">
 

@@ -13,7 +13,7 @@
 <HeroInner eyebrow="We’ll find a way to work with you" header="Payments and insurance" text="<b>Our Office Manager will work with you to create an individualized plan to meet your specific needs.</b> <br><br>Our fees are based on the quality materials we use and our experience performing your treatment. To facilitate our goals, we have developed the following financial options: VISA, MasterCard, CareCredit, personal check and cash. We will assist you in getting the dental care you want, and fit it into your budget. Whether you have dental insurance or not, let us help you find a way to get the <b>smile you dream of.</b>" />
 
 
-<section id="payment-insurance" class="mt-24">
+<section id="payment-insurance" class="mt-24 max-md:mt-14">
 
 	<div class="container px-10 max-md:p-5 max-xl:max-w-full m-auto">
 

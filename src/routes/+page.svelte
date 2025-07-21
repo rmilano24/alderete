@@ -135,7 +135,7 @@
 	
 </section>
 
-<section id="gallery" class="container mx-auto mt-3 mb-24 px-10 max-md:p-5 max-xl:max-w-full">
+<section id="gallery" class="container mx-auto mt-3 mb-24 max-md:mb-0 px-10 max-md:p-5 max-xl:max-w-full">
 	<div class="grid grid-cols-3 max-md:grid-cols-1 gap-8 max-lg:gap-6 max-md:gap-y-5 max-md:gap-x-0">
 		<div><img class="rounded-4xl max-md:rounded-2xl" src={awards} alt="Alderete DDS" /></div>
 		<div class="col-span-2"><img class="rounded-4xl max-md:rounded-2xl" src={garden} alt="Alderete DDS" /></div>
