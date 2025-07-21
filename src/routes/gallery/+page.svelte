@@ -24,8 +24,7 @@
 		<div><img class="rounded-4xl max-md:rounded-2xl" src={awards} alt="Alderete DDS" /></div>
 	</div>
 
-	<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px] mb-12 mt-24">Explore our office</h5>
-
+	<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px] mb-12 mt-24">Advanced equipment</h5>
 
 	<div class="grid grid-cols-3 max-md:grid-cols-1 gap-8 max-lg:gap-6 max-md:gap-y-5 max-md:gap-x-0">
 		<div><img class="rounded-4xl max-md:rounded-2xl" src={awards} alt="Alderete DDS" /></div>

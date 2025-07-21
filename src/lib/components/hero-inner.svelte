@@ -13,7 +13,7 @@
 			<p class="text-teal-100 mt-8 text-lg leading-[32px]">{@html text}</p> 
 		</div>
 		<div class="relative h-[900px] bg-center bg-cover bg-no-repeat rounded-bl-4xl" style="background-image: url('{home_hero}')">
-			<div class="absolute inset-0 bg-black/10 pointer-events-none z-0 rounded-bl-4xl"></div>
+			
 		</div>
 	  </div>
 </section>
