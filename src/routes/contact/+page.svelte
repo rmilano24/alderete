@@ -11,19 +11,34 @@
 <HeroInner eyebrow="Call us or fill out the form below" header="Request appointment" text="At our office you'll find a friendly and professional staff, each dedicated to providing your family with quality care and personal attention. They are trained professionals with many years of experience, and a desire to share their knowledge so that you may achieve a healthy, attractive and comfortable mouth." />
 
 <div id="cta-boxes" class="mt-30 max-lg:mt-14 container px-10 max-md:px-5 max-xl:max-w-full mx-auto">
-	<div class="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1  gap-8 container mx-auto mb-30 max-lg:mb-14">
+	<div class="grid grid-cols-3 max-[1120px]:grid-cols-2 max-md:grid-cols-1  gap-8 container mx-auto mb-30 max-lg:mb-14">
 
 		<div>
-			<a target="_blank" href="tel:18314323231">
+			
 			<div class="glass rounded-2xl border border-white/20 shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] flex flex-col justify-between p-8 w-full h-56">
 				<div>
 					<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M1 4.55556C1 3.61256 1.3746 2.70819 2.0414 2.0414C2.70819 1.3746 3.61256 1 4.55556 1H10.3867C10.7596 1.00028 11.1231 1.11786 11.4255 1.33609C11.728 1.55432 11.9541 1.86214 12.072 2.216L14.7351 10.2036C14.87 10.6095 14.8541 11.0505 14.6902 11.4456C14.5262 11.8407 14.2253 12.1635 13.8427 12.3547L9.83022 14.3636C11.797 18.7165 15.2835 22.203 19.6364 24.1698L21.6453 20.1573C21.8365 19.7747 22.1593 19.4738 22.5544 19.3098C22.9495 19.1459 23.3905 19.13 23.7964 19.2649L31.784 21.928C32.1381 22.046 32.4462 22.2724 32.6644 22.5752C32.8827 22.878 33.0001 23.2418 33 23.6151V29.4444C33 30.3874 32.6254 31.2918 31.9586 31.9586C31.2918 32.6254 30.3874 33 29.4444 33H27.6667C12.9396 33 1 21.0604 1 6.33333V4.55556Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 					</svg>
 				</div>
-				<div class="text-xl">831.432.3231</div>
+
+				<div class="flex gap-4">
+					<div class="flex flex-col gap-2 pr-2">
+						<div class="text-sm">
+							<h5 class="text-white uppercase text font-matter tracking-widest">Phone:</h5>
+						</div>
+						<div class="text-xl"> <a href="tel:+18314323231">831.432.3231</a></div>
+					</div>
+					<div class="flex flex-col gap-2 border-l border-white/20 pl-4">
+						<div class="text-sm">
+							<h5 class="text-white uppercase text font-matter tracking-widest">Fax:</h5>
+						</div>
+						<div class="text-xl"> <a href="tel:+18316620889">831.662.0889</a></div>
+					</div>
+				</div>
+
 			</div>
-			</a>
+			
 		</div>
 		<div>
 			<a target="_blank" href="https://www.google.com/maps/place/2820+Daubenbiss+Ave,+Soquel,+CA+95073/@36.987048,-121.9580871,16z/data=!3m1!4b1!4m6!3m5!1s0x808e157cb0b7d091:0x835af43a238a0650!8m2!3d36.987048!4d-121.9580871!16s%2Fg%2F11b8v7vzjt?entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D">
