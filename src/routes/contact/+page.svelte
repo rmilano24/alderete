@@ -63,9 +63,21 @@
 			<label for="name" class="text-white font-matter uppercase tracking-widest">Name</label>
 			<input id="name" name="name" type="text" required class="rounded px-4 py-2 bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none" placeholder="Your Name" />
 		</div>
+		
 		<div class="flex flex-col gap-2">
 			<label for="email" class="text-white font-matter uppercase tracking-widest">Email</label>
 			<input id="email" name="email" type="email" required class="rounded px-4 py-2 bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none" placeholder="you@email.com" />
+		</div>
+		<div class="flex flex-col gap-2">
+			<label for="reason" class="text-white font-matter uppercase tracking-widest">Reason for Contact</label>
+			<select id="reason" name="reason" required class="rounded px-4 py-2 bg-white/10 border border-white/20 text-white focus:outline-none">
+				<option value="" disabled selected>Select a reason</option>
+				<option value="option1">Dummy Option 1</option>
+				<option value="option2">Dummy Option 2</option>
+				<option value="option3">Dummy Option 3</option>
+				<option value="option4">Dummy Option 4</option>
+				<option value="option5">Dummy Option 5</option>
+			</select>
 		</div>
 		<div class="flex flex-col gap-2">
 			<label for="phone" class="text-white font-matter uppercase tracking-widest">Phone</label>
