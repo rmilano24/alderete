@@ -140,8 +140,8 @@
 		<div><img class="rounded-4xl max-md:rounded-2xl" src={awards} alt="Alderete DDS" /></div>
 		<div class="col-span-2"><img class="rounded-4xl max-md:rounded-2xl" src={garden} alt="Alderete DDS" /></div>
 		<div class="col-span-2"><img class="rounded-4xl max-md:rounded-2xl" src={roomleft} alt="Alderete DDS" /></div>
-		<div class="glass border border-white/20 rounded-4xl max-md:rounded-2xl flex items-center justify-center max-md:py-12 max-md:w-full">
-			<a class="flex items-center font-reckless justify-center w-full h-full text-center text-4xl max-[1150px]:text-3xl max-lg:text-2xl max-md:text-3xl" href="/gallery">
+		<div class="glass border border-white/20 rounded-4xl max-md:rounded-2xl flex items-center justify-center max-md:py-16 max-md:w-full max-md:relative">
+			<a class="flex items-center font-reckless justify-center w-full h-full text-center text-4xl max-[1150px]:text-3xl max-lg:text-2xl max-md:text-3xl max-md:absolute max-md:inset-0" href="/gallery">
 				<span class="italic mr-2 ">Explore</span>our office
 			</a>
 		</div>
