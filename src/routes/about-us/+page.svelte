@@ -124,7 +124,7 @@
 					</ul>
 		
 				</div>
-				<div class="h-screen max-lg:h-[60vh] max-lg:order-1 bg-center bg-cover bg-no-repeat right-col" style="background-image: url('{jimlg}')">
+				<div class="h-screen max-lg:h-[60vh] max-lg:order-1 bg-top bg-cover bg-no-repeat right-col" style="background-image: url('{jimlg}')">
 					<div class="flex flex-col h-full">
 						<div id="credentials" class="glass rounded-2xl border border-white/20 mt-auto m-6">
 							<h5 class="text-white uppercase text font-matter tracking-widest border-b  border-white/20 px-6 py-4">Credentials</h5>
