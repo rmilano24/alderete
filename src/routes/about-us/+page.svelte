@@ -34,6 +34,15 @@
 	import BottomCta from '$lib/components/bottom-cta.svelte';
 	import HeroInner from '$lib/components/hero-inner.svelte';
 	import Seperator from '$lib/components/seperator.svelte';
+
+// Update the $effect to lock scroll if either modal is open
+$effect(() => {
+  if (defaultModal || defaultModal2) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
+});
 </script>
 
 <svelte:head>
