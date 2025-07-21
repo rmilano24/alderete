@@ -44,34 +44,34 @@
 
 <section id="hero">
 	<div class="grid grid-cols-2 gap-4 max-lg:grid-cols-1">
-		<div class="p-24 mt-40 max-lg:p-12 max-lg:mt-24">
+		<div class="p-24 max-lg:p-12 mt-24 max-lg:mt-32 max-md:mt-24 max-md:p-5">
 			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Call us or fill out the form below</h5>
 			<h1 class="text-5xl text-teal-100 font-reckless mt-8">Request appointment</h1>
 
 			<!-- Contact Form using Formsubmit -->
-			<form action="https://formsubmit.co/ryan@nmbl.digital" method="POST" class="flex flex-col gap-6">
+			<form action="https://formsubmit.co/ryan@nmbl.digital" method="POST" class="flex flex-col gap-6 mt-12">
 				<input type="hidden" name="_next" value="https://flowbite-svelte-starter-six.vercel.app/thank-you" />
 				<input type="hidden" name="_captcha" value="false" />
 				<div class="flex flex-col gap-2">
-					<input id="name" name="name" type="text" required class="rounded px-4 py-2 bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none" placeholder="Full name" />
+					<input id="name" name="name" type="text" required class="py-4 border-b border-[#195B71] text-white text-lg placeholder:text-primary-100 focus:outline-none" placeholder="Full name" />
 				</div>
 				
 				<div class="flex flex-col gap-2">
-					<input id="email" name="email" type="email" required class="rounded px-4 py-2 bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none" placeholder="Email" />
+					<input id="email" name="email" type="email" required class="py-4 border-b border-[#195B71] text-white text-lg placeholder:text-primary-100 focus:outline-none" placeholder="Email" />
 				</div>
 				
 				<div class="flex flex-col gap-2">
-					<input id="phone" name="phone" type="tel" class="rounded px-4 py-2 bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none" placeholder="Phone number" />
+					<input id="phone" name="phone" type="tel" class="py-4 border-b border-[#195B71] text-white text-lg placeholder:text-primary-100 focus:outline-none" placeholder="Phone number" />
 				</div>
 
 				<div class="flex flex-col gap-2">
-					<input id="datetime" name="datetime" type="tel" class="rounded px-4 py-2 bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none" placeholder="Preferred dates & times" />
+					<input id="datetime" name="datetime" type="tel" class="py-4 border-b border-[#195B71] text-white text-lg placeholder:text-primary-100 focus:outline-none" placeholder="Preferred dates & times" />
 				</div>
 
 				<div class="flex flex-col gap-2">
-					<textarea id="message" name="message" rows="2" required class="rounded px-4 py-2 bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none" placeholder="What can we help you with?"></textarea>
+					<textarea id="message" name="message" rows="2" required class="py-4 border-b border-[#195B71] text-white text-lg placeholder:text-primary-100 focus:outline-none" placeholder="What can we help you with?"></textarea>
 				</div>
-				<button type="submit" class="mt-4 bg-teal-600 hover:bg-teal-700 text-white font-matter uppercase tracking-widest py-3 px-8 rounded shadow transition">Send</button>
+				<button type="submit" class="mt-4 max-w-32 bg-primary-200 hover:opacity-80 text-primary-400 font-matter py-4 px-8 rounded-full shadow transition">Send</button>
 			</form>
 
 		</div>
