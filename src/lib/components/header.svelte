@@ -246,7 +246,7 @@
 
 .hamburger-bar {
   background-color: #ffffff;
-  height: 1.5px;
+  height: 2px;
   width: 100%;
   border-radius: 2px;
   position: absolute;
