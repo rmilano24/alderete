@@ -44,7 +44,7 @@
 
 <section id="hero">
 	<div class="grid grid-cols-2 gap-4 max-lg:grid-cols-1">
-		<div class="p-24 max-lg:p-12 mt-24 max-lg:mt-32 max-md:mt-24 max-md:p-5">
+		<div class="p-24 pb-0 max-lg:p-12 mt-24 max-lg:mt-32 max-md:mt-24 max-md:p-5">
 			<h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Call us or fill out the form below</h5>
 			<h1 class="text-5xl text-teal-100 font-reckless mt-8">Request appointment</h1>
 
