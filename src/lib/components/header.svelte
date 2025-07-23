@@ -285,7 +285,7 @@
   left: 0;
   text-align: center;
   transition: opacity 0.2s ease-in-out;
-  z-index: 1;
+  z-index: 20;
   opacity: 0;
   visibility: hidden;
   display: flex;
