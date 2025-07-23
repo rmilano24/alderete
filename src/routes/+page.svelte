@@ -53,7 +53,7 @@
     <div class="flex ml-4 mb-4 max-md:ml-0 max-md:mb-0">
       <div bind:this={heroTextDiv} class="glass rounded-2xl border border-white/20 p-8 mr-6 max-md:mr-0 max-w-[545px] max-md:min-w-full shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)]" class:hidden={$menuOpen}>
         <h5 class="text-white uppercase text font-matter tracking-widest after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">A trusted santa cruz dentist, since 2009</h5>
-        <h1 class="text-6xl max-[809px]:text-5xl text-white font-reckless-light mt-5 max-w-xl leading-[68px] max-[809px]:leading-[56px] max-md:max-w">Exceptional care for <span class="italic">all ages</span></h1>
+        <h1 class="text-6xl max-[809px]:text-4xl text-white font-reckless-light mt-5 max-md:mt-3 max-w-xl leading-[68px] max-[809px]:leading-[42px]">Exceptional care for <span class="italic">all ages</span></h1>
       </div>
       <div bind:this={phoneDiv} class="max-md:hidden glass rounded-2xl border border-white/20 min-w-64 shadow-[0_4px_100px_0px_rgba(0,0,0,0.6)] flex flex-col justify-between p-8" class:hidden={$menuOpen}>
           <div>
