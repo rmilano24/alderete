@@ -1,5 +1,5 @@
 <script lang="ts">
-	import hero from '$lib/images/gallery/hero-gallery-min.jpg';
+	import hero from '$lib/images/hero-gallery-min.jpg';
 	import garden from '$lib/images/gallery/garden.jpg';
 	import roomleft from '$lib/images/gallery/patient-room-left.jpg';
 	import awards from '$lib/images/gallery/readers-choice-award.jpg';
