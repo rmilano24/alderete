@@ -1,16 +1,16 @@
 <script lang="ts">
-	import home_hero from '$lib/images/bg_home-hero.jpg';
+	import hero from '$lib/images/hero-payments-min.jpg';
 	import creditcare from '$lib/images/credit-care.png';
 	import HeroInner from '$lib/components/hero-inner.svelte';
 </script>
 
 <svelte:head>
-	<title>NMBL | Branding and Design Studio in Santa Cruz, California</title>
-	<meta name="description" content="NMBL | UX Design, Branding, Web Design & Development Studio in Santa Cruz | San Francisco Bay Area" />
+	<title>Payment and Insurance | Jim Alderete DDS | Dentist and Periodontist in Santa Cruz, Ca</title>
+	<meta name="description" content="Jim Alderete DDS | Our Services: Restorative & Cosmetic Dentistry, Periodontics, Orthodontics, Digital x-rays and Panorex x-rays | Santa Cruz, Ca" />
 </svelte:head>
 
 
-<HeroInner eyebrow="We’ll find a way to work with you" header="Payments and insurance" text="<b>Our Office Manager will work with you to create an individualized plan to meet your specific needs.</b> <br><br>Our fees are based on the quality materials we use and our experience performing your treatment. To facilitate our goals, we have developed the following financial options: VISA, MasterCard, CareCredit, personal check and cash. We will assist you in getting the dental care you want, and fit it into your budget. Whether you have dental insurance or not, let us help you find a way to get the <b>smile you dream of.</b>" />
+<HeroInner eyebrow="We’ll find a way to work with you" header="Payments and insurance" text="<b>Our Office Manager will work with you to create an individualized plan to meet your specific needs.</b> <br><br>Our fees are based on the quality materials we use and our experience performing your treatment. To facilitate our goals, we have developed the following financial options: VISA, MasterCard, CareCredit, personal check and cash. We will assist you in getting the dental care you want, and fit it into your budget. Whether you have dental insurance or not, let us help you find a way to get the <b>smile you dream of.</b>" hero="{hero}"/>
 
 
 <section id="payment-insurance" class="mt-24 max-md:mt-14">

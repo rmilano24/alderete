@@ -1,8 +1,8 @@
 <script>
-    import home_hero from '$lib/images/bg_home-hero.jpg';
 	export let eyebrow = "Get to know us"
     export let header = "About us"
 	export let text = "At our office you'll find a friendly and professional staff, each dedicated to providing your family with quality care and personal attention. They are trained professionals with many years of experience, and a desire to share their knowledge so that you may achieve a healthy, attractive and comfortable mouth."
+	export let hero = ""
  </script>
 
 <section id="hero">
@@ -12,7 +12,7 @@
 			<h1 class="text-5xl text-teal-100 font-reckless mt-8">{header}</h1>
 			<p class="text-teal-100 mt-8 text-lg leading-[32px]">{@html text}</p> 
 		</div>
-		<div class="relative h-[900px] bg-center bg-cover bg-no-repeat rounded-bl-4xl" style="background-image: url('{home_hero}')">
+		<div class="relative h-[900px] bg-center bg-cover bg-no-repeat rounded-bl-4xl" style="background-image: url('{hero}')">
 			
 		</div>
 	  </div>

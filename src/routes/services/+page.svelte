@@ -1,7 +1,7 @@
 <script lang="ts">
 	import HeroInner from '$lib/components/hero-inner.svelte';
 	import Service from '$lib/components/service.svelte';
-	import home_hero from '$lib/images/bg_home-hero.jpg';
+	import service_hero from '$lib/images/hero-service-min.jpg';
 	import cta from '$lib/images/cta-explore.jpg';
 	import BottomCta from '$lib/components/bottom-cta.svelte';
 	const restorativeDentistry = ["Tooth Colored Composite Fillings", "Professional Tooth Bleaching", "Crowns & Bridges Including Porcelain Veneers", "Implant Restorations", "Dentures", "Night guards", "Sleep Apnea Devices"];
@@ -11,11 +11,11 @@
 </script>
 
 <svelte:head>
-	<title>Jim Alderete DDS | Dentist in Santa Cruz, Ca</title>
-	<meta name="description" content="Jim Alderete DDS | Dentist in Santa Cruz, Ca" />
+	<title>Our Services | Jim Alderete DDS | Restorative & Cosmetic Dentistry, Periodontics, Orthodontics, Digital x-rays and Panorex x-rays</title>
+	<meta name="description" content="Jim Alderete DDS | Our Services: Restorative & Cosmetic Dentistry, Periodontics, Orthodontics, Digital x-rays and Panorex x-rays | Santa Cruz, Ca" />
 </svelte:head>
 
-<HeroInner eyebrow="What we’re good at" header="Our services" text="You want your smile to be the best it can be, and we are here to help. Dr Alderete and his caring, friendly team of dental professionals are committed to providing a comfortable dental experience. Our goal is to provide dental care for you and your family in a compassionate, caring and professional environment." />
+<HeroInner eyebrow="What we’re good at" header="Our services" text="You want your smile to be the best it can be, and we are here to help. Dr Alderete and his caring, friendly team of dental professionals are committed to providing a comfortable dental experience. Our goal is to provide dental care for you and your family in a compassionate, caring and professional environment." hero="{service_hero}"/>
 
 
 <section id="services" class="mt-30 max-md:mt-14">

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import home_hero from '$lib/images/bg_home-hero.jpg';
+	import hero from '$lib/images/hero-contact-min.jpg';
 	let success = false;
 	let error = false;
 	let loading = false;
@@ -38,8 +38,8 @@
 </script>
 
 <svelte:head>
-	<title>Jim Alderete DDS | Dentist in Santa Cruz, Ca</title>
-	<meta name="description" content="Jim Alderete DDS | Dentist in Santa Cruz, Ca" />
+	<title>Contact | Jim Alderete DDS | We're located in Soquel, CA</title>
+	<meta name="description" content="Jim Alderete DDS | Our Services: Restorative & Cosmetic Dentistry, Periodontics, Orthodontics, Digital x-rays and Panorex x-rays | Santa Cruz, Ca" />
 </svelte:head>
 
 <section id="hero">
@@ -75,7 +75,7 @@
 			</form>
 
 		</div>
-		<div class="relative h-[900px] bg-center bg-cover bg-no-repeat rounded-bl-4xl" style="background-image: url('{home_hero}')">
+		<div class="relative h-[900px] bg-center bg-cover bg-no-repeat rounded-bl-4xl" style="background-image: url('{hero}')">
 		</div>
 	  </div>
 </section>

@@ -22,6 +22,7 @@
 		}, 10);
 	}
 
+	import hero from '$lib/images/bg_home-hero.jpg';
 	import jim from '$lib/images/jim-alderete.jpg';
 	import ryan from '$lib/images/about/ryan-reyes.jpg';
 	import cta from '$lib/images/cta-explore.jpg';
@@ -46,12 +47,12 @@ $effect(() => {
 </script>
 
 <svelte:head>
-	<title>Jim Alderete DDS | Dentist in Santa Cruz, Ca</title>
-	<meta name="description" content="Jim Alderete DDS | Dentist in Santa Cruz, Ca" />
+	<title>About Us | Jim Alderete DDS | Dentist and Periodontist in Santa Cruz, Ca</title>
+	<meta name="description" content="Jim Alderete DDS | Dentist and Periodontist in Santa Cruz, Ca" />
 </svelte:head>
 
 
-<HeroInner />
+<HeroInner hero="{hero}"/>
 
 
 

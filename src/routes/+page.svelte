@@ -41,8 +41,8 @@
 
 </script>
 <svelte:head>
-	<title>Jim Alderete DDS | Dentist in Santa Cruz, Ca | Periodontist, Dental Implants</title>
-	<meta name="description" content="Jim Alderete DDS | Dentist in Santa Cruz, Ca | Periodontist" />
+	<title>Jim Alderete DDS | Dentist and Periodontist in Santa Cruz, Ca</title>
+	<meta name="description" content="im Alderete DDS | Dentist and Periodontist in Santa Cruz, Ca" />
 </svelte:head>
 
 
