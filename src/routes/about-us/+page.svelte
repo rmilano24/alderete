@@ -321,7 +321,7 @@ $effect(() => {
 	}
 </style>
 
-<Seperator />  
+<!-- <Seperator />  
 
 <section id="values">
 
@@ -342,7 +342,7 @@ $effect(() => {
 	</div>
 
 	
-</section>
+</section> -->
 
 
 <section id="cta" class="relative mt-30 max-md:mt-13 h-[724px] max-lg:h-[500px] bg-cover flex items-center justify-center" style="background-image: url('{cta}')">
