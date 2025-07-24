@@ -28,12 +28,11 @@
 
 			<Service serviceitems={restorativeDentistry} />
 
-			<Service number="02" service="Periodontics" servicetext="Short text about Cosmetic Dentistry. We can use AI to help us generate content. A little more text would look better here as a brief description." serviceitems={Periodontics} />
+			<Service number="02" service="Periodontics" servicetext="Our periodontics specializes in preventing, diagnosing, and treating gum disease and other conditions affecting the tissues that support your teeth." serviceitems={Periodontics} />
 
-			<Service number="03" service="Orthodontics" servicetext="Short text about Surgical & Endodontic Services. We can use AI to help us generate content. A little more text would look better here as a brief description." serviceitems={Orthodontics} />
+			<Service number="03" service="Orthodontics" servicetext="We provide orthodontic treatment to straighten teeth and correct bite issues using aligners and retainers to improve both function and appearance." serviceitems={Orthodontics} />
 
-			<Service number="04" service="Digital x-rays and Panorex x-rays" servicetext="Short text about Digital x-rays and Panorex x-rays. We can use AI to help us generate content. A little more text would look better here as a brief description." serviceitems={Endodontics} />		
-		
+			<Service number="04" service="Digital x-rays and Panorex x-rays" servicetext="Our team uses digital x-rays and panorex x-rays to quickly capture detailed images of your teeth and jaw with less radiation, allowing me to diagnose problems more accurately and efficiently." serviceitems={Endodontics} />
 				</div>
 			</div>	
 	
