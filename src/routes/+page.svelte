@@ -41,8 +41,8 @@
 
 </script>
 <svelte:head>
-	<title>Jim Alderete DDS | Dentist in Santa Cruz, Ca</title>
-	<meta name="description" content="Jim Alderete DDS | Dentist in Santa Cruz, Ca" />
+	<title>Jim Alderete DDS | Dentist in Santa Cruz, Ca | Periodontist, Dental Implants</title>
+	<meta name="description" content="Jim Alderete DDS | Dentist in Santa Cruz, Ca | Periodontist" />
 </svelte:head>
 
 
@@ -115,21 +115,16 @@
 
 		<h5 class="text-white uppercase text font-matter tracking-widest mb-16 after:bg-white after:content-[''] after:inline-block after:h-0.5 after:ml-6 after:w-8 after:relative after:bottom-[5px]">Our Areas of Expertise</h5>
 
-		<div class="grid grid-flow-col max-lg:grid-flow-row grid-rows-4 max-lg:grid-cols-1 gap-16 max-md:gap-6">
+		<div class="grid grid-cols-2 max-lg:grid-cols-1 gap-16 max-md:gap-6">
 
-			<Expertise number="01" skill="Family & General Dentistry"/>
+			<Expertise number="01" skill="Restorative & Cosmetic Dentistry"/>
 
-			<Expertise number="02" skill="Restorative Dentistry"/>
+			<Expertise number="02" skill="Periodontics"/>
 
-			<Expertise number="03" skill="Cosmetic Dentistry"/>
+			<Expertise number="03" skill="Orthodontics"/>
 
-			<Expertise number="04" skill="Periodontal Services" noBorder={true}/>
-
-			<Expertise number="05" skill="Surgical & Endodontic Services"/>
-
-			<Expertise number="06" skill="Digital x-rays and Panorex x-rays"/>
-
-			<Expertise number="07" skill="Intra-oral Camera" neverBorder={true}/>
+			<Expertise number="04" skill="Endodontics"/>
+			
 
 		  </div>
 	</div>
@@ -137,7 +132,7 @@
 	
 </section>
 
-<section id="gallery" class="container mx-auto mt-3 mb-24 max-md:mb-0 px-10 max-md:p-5 max-xl:max-w-full">
+<section id="gallery" class="container mx-auto mt-3 mb-24 max-md:mb-0 px-10 max-md:p-5 max-xl:max-w-full mt-30  max-md:mt-8">
 	<div class="grid grid-cols-3 max-md:grid-cols-1 gap-8 max-lg:gap-6 max-md:gap-y-5 max-md:gap-x-0">
 		<div><img class="rounded-4xl max-md:rounded-2xl" src={awards} alt="Alderete DDS" /></div>
 		<div class="col-span-2"><img class="rounded-4xl max-md:rounded-2xl" src={garden} alt="Alderete DDS" /></div>

@@ -1,8 +1,8 @@
 <script>
    export let number = "01"
-   export let service = "Restorative Dentistry"
+   export let service = "Restorative & Cosmetic Dentistry"
    export let servicetext = "Short text about creating good vibes. We can use AI to help us generate content. A little more text would look better here."  
-   export let serviceitem = "Tooth Colored Composite Fillings"  
+   export let serviceitem = "Tooth colored composite fillings"  
    export let serviceitems = [];
 </script>
 

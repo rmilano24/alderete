@@ -9,7 +9,7 @@
   neverBorder
     ? ''
     : noBorder
-      ? 'border-b border-primary-300 lg:border-b-0'
+      ? 'border-b border-primary-300'
       : 'border-b border-primary-300'
 }`}>
   <span class="block max-md:text-sm text-teal-100">{number}</span>
