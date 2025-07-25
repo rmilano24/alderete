@@ -116,7 +116,7 @@ $effect(() => {
 					<p class="text-teal-100 mt-8 text-lg">
 						In 2012 Dr. Alderete entered his private practice, returning to the community of Santa Cruz he has enjoyed since childhood with the skill and integrity gained from the Navy.  Together with his caring staff they take pride in providing quality dental care at the highest level. </p>
 					<p class="text-teal-100 mt-8 text-lg">
-					In his free time Dr. Alderete enjoys fishing, hiking the redwoods with his family, and coaching youth sports.
+					In his free time, Dr. Alderete enjoys fishing, hiking the redwoods with his family, and coaching youth sports.
 					</p>
 
 
