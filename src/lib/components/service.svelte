@@ -11,7 +11,7 @@
         <div class="w-3/4 max-lg:w-full">
             <span class="block text-teal-100 max-md:text-sm">{number}</span>
             <h2 class="text-3xl font-reckless mt-1 text-teal-100">{service}</h2>
-            <p class="text-teal-100 text-xl mt-5 max-w-3/4 max-lg:max-w-full">{servicetext}</p>
+            <p class="text-teal-100 text-lg mt-5 max-w-3/4 max-lg:max-w-full">{servicetext}</p>
             <a href="/contact" class="text-teal-400 mt-12 inline-block font-family-matter font-semibold group max-lg:hidden">
 				<div class="flex flex-row items-center">
 					<div>Request appointment</div>

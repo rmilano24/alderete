@@ -43,6 +43,6 @@
 	<div class="relative glass rounded-2xl border max-w-[830px] border-white/20 flex w-4xl flex-col items-center text-center py-16 px-24 mx-5 max-lg:px-12 max-sm:px-8 z-10">
 		<div><h1 class="text-6xl max-lg:text-4xl font-reckless tracking-tight">Our modern equipment ensures <span class="italic">optimal results.</span></h1></div>
 		<div class="mt-6"><p class="text-lg">We're always staying up to date with the latest in technology.</p></div>
-		<div class="mt-8"><a class="glass rounded-2xl border border-white/20 p-4 block font-bold" href="/gallery">Explore our office</a></div>
+		<div class="mt-8"><a class="glass rounded-2xl border border-white/20 p-4 block font-bold transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-white/20 hover:to-[#B6F3F2]/60 hover:border-white/40" href="/gallery">Explore our office</a></div>
 	  </div>
 </section>

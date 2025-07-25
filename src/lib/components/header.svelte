@@ -120,7 +120,7 @@
 						831.432.3231
 					</a>
 				</li>
-				<li class="inline-block ml-6 max-[1082px]:hidden"><a class="glass rounded-2xl border border-white/20 p-4 block font-bold" href="/contact">Request appointment</a></li>
+				<li class="inline-block ml-6 max-[1082px]:hidden"><a class="glass rounded-2xl border border-white/20 p-4 block font-bold transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-white/20 hover:to-[#B6F3F2]/60 hover:border-white/40" href="/contact">Request appointment</a></li>
 			</ul>
 		</div>
 	</div>
@@ -151,7 +151,7 @@
   <div class="menu-overlay glass" class:open={$menuOpen}>
 	<nav class="overlay-menu pl-6 min-[768px]:pl-14">
   
-	  <ul class="text-left">
+	  <ul class="text-lgeft">
 		<li class="font-family-reckless text-4xl tracking-tight"><a class="nav-links nav-underline" href="/about-us" on:click={() => { menuOpen.set(false); overlayOpen = false; }}>About us</a></li>
 		<li class="mt-6 font-family-reckless text-4xl tracking-tight"><a class="nav-links nav-underline" href="/services" on:click={() => { menuOpen.set(false); overlayOpen = false; }}>Services</a></li>
 		<li class="mt-6 font-family-reckless text-4xl tracking-tight">

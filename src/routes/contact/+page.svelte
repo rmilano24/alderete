@@ -39,7 +39,7 @@
 
 <svelte:head>
 	<title>Contact | Jim Alderete DDS | We're located in Soquel, CA</title>
-	<meta name="description" content="Jim Alderete DDS | Our Services: Restorative & Cosmetic Dentistry, Periodontics, Orthodontics, Digital x-rays and Panorex x-rays | Santa Cruz, Ca" />
+	<meta name="description" content="Jim Alderete DDS | We're located in Soquel, CA" />
 </svelte:head>
 
 <section id="hero">
@@ -53,25 +53,25 @@
 				<input type="hidden" name="_next" value="https://flowbite-svelte-starter-six.vercel.app/thank-you" />
 				<input type="hidden" name="_captcha" value="false" />
 				<div class="flex flex-col gap-2">
-					<input id="name" name="name" type="text" required class="py-4 border-b border-[#195B71] text-white text-lg placeholder:text-primary-100 focus:outline-none" placeholder="Full name" />
+					<input id="name" name="name" type="text" required class="py-4 border-b border-[#195B71] text-white text-lg placeholder:text-primary-100 focus:outline-none autocomplete-off" placeholder="Full name" />
 				</div>
 				
 				<div class="flex flex-col gap-2">
-					<input id="email" name="email" type="email" required class="py-4 border-b border-[#195B71] text-white text-lg placeholder:text-primary-100 focus:outline-none" placeholder="Email" />
+					<input id="email" name="email" type="email" required class="py-4 border-b border-[#195B71] text-white text-lg placeholder:text-primary-100 focus:outline-none autocomplete-off" placeholder="Email" />
 				</div>
 				
 				<div class="flex flex-col gap-2">
-					<input id="phone" name="phone" type="tel" class="py-4 border-b border-[#195B71] text-white text-lg placeholder:text-primary-100 focus:outline-none" placeholder="Phone number" />
+					<input id="phone" name="phone" type="tel" class="py-4 border-b border-[#195B71] text-white text-lg placeholder:text-primary-100 focus:outline-none autocomplete-off" placeholder="Phone number" />
 				</div>
 
 				<div class="flex flex-col gap-2">
-					<input id="datetime" name="datetime" type="tel" class="py-4 border-b border-[#195B71] text-white text-lg placeholder:text-primary-100 focus:outline-none" placeholder="Preferred dates & times" />
+					<input id="datetime" name="datetime" type="tel" class="py-4 border-b border-[#195B71] text-white text-lg placeholder:text-primary-100 focus:outline-none autocomplete-off" placeholder="Preferred dates & times" />
 				</div>
 
 				<div class="flex flex-col gap-2">
 					<textarea id="message" name="message" rows="2" required class="py-4 border-b border-[#195B71] text-white text-lg placeholder:text-primary-100 focus:outline-none" placeholder="What can we help you with?"></textarea>
 				</div>
-				<button type="submit" class="mt-4 max-w-32 bg-primary-200 hover:opacity-80 text-primary-400 font-matter py-4 px-8 rounded-full shadow transition">Send</button>
+				<button type="submit" class="mt-4 max-w-32 bg-primary-200 text-primary-400 font-matter py-4 px-8 rounded-full transition-all duration-300 ease-in-out hover:bg-teal-300 font-semibold">Send</button>
 			</form>
 
 		</div>
@@ -122,7 +122,7 @@
 						</svg>
 						
 				</div>
-				<div class="text-xl leading-tight">2820 Daubenbiss Ave <br> Soquel, CA 95073</div>
+				<div class="text-lg leading-tight">2820 Daubenbiss Ave <br> Soquel, CA 95073</div>
 			</div>
 		</a>
 		</div>
@@ -141,3 +141,35 @@
 
 	  </div>
 </div>
+
+<style>
+	/* Override browser autofill styles */
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus,
+	input:-webkit-autofill:active,
+	input:-webkit-autofill:focus-visible {
+		-webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+		-webkit-text-fill-color: white !important;
+		background-color: transparent !important;
+		background-clip: content-box !important;
+		transition: background-color 5000s ease-in-out 0s !important;
+	}
+	
+	/* For Firefox */
+	input:-moz-autofill,
+	input:-moz-autofill:focus {
+		background-color: transparent !important;
+		color: white !important;
+		background-image: none !important;
+	}
+	
+	/* Additional specificity for all input types */
+	input[type="text"]:-webkit-autofill,
+	input[type="email"]:-webkit-autofill,
+	input[type="tel"]:-webkit-autofill {
+		-webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+		-webkit-text-fill-color: white !important;
+		background-color: transparent !important;
+	}
+</style>
