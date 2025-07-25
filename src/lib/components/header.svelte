@@ -151,7 +151,7 @@
   <div class="menu-overlay glass" class:open={$menuOpen}>
 	<nav class="overlay-menu pl-6 min-[768px]:pl-14">
   
-	  <ul class="text-lgeft">
+	  <ul class="text-left">
 		<li class="font-family-reckless text-4xl tracking-tight"><a class="nav-links nav-underline" href="/about-us" on:click={() => { menuOpen.set(false); overlayOpen = false; }}>About us</a></li>
 		<li class="mt-6 font-family-reckless text-4xl tracking-tight"><a class="nav-links nav-underline" href="/services" on:click={() => { menuOpen.set(false); overlayOpen = false; }}>Services</a></li>
 		<li class="mt-6 font-family-reckless text-4xl tracking-tight">
