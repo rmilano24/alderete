@@ -74,12 +74,12 @@ $effect(() => {
     removeModalPadding();
   }}
 >
-		<div class="grid relative rounded-4xl"> <!-- Container with grid and relative positioning -->
+		<div class="grid relative rounded-4xl group"> <!-- Container with grid and relative positioning -->
 			<img src={jim} alt="Description of image" class="col-start-1 row-start-1 rounded-4xl"> <!-- Image as first grid item -->
 			<div class="col-start-1 row-start-1 flex justify-center items-end"> <!-- Text as second grid item -->
 				<div class="flex w-full glass rounded-2xl border border-white/20 m-4 p-8 flex-col relative">
 
-					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-6 right-6">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-6 right-6 opacity-100 max-md:opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200">
 						<path d="M7 3H3C2.46957 3 1.96086 3.21071 1.58579 3.58579C1.21071 3.96086 1 4.46957 1 5V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H13C13.5304 17 14.0391 16.7893 14.4142 16.4142C14.7893 16.0391 15 15.5304 15 15V11M11 1H17M17 1V7M17 1L7 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 					</svg>
 						
@@ -209,12 +209,12 @@ $effect(() => {
 			}}
 		  >
 		  
-		<div class="grid relative rounded-4xl"> <!-- Container with grid and relative positioning -->
+		<div class="grid relative rounded-4xl group"> <!-- Container with grid and relative positioning -->
 			<img src={ryan} alt="Description of image" class="col-start-1 row-start-1 rounded-4xl"> <!-- Image as first grid item -->
 			<div class="col-start-1 row-start-1 flex justify-center items-end"> <!-- Text as second grid item -->
 				<div class="flex w-full glass rounded-2xl border border-white/20 m-4 p-8 flex-col relative">
 
-					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-6 right-6">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-6 right-6 opacity-100 max-md:opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200">
 						<path d="M7 3H3C2.46957 3 1.96086 3.21071 1.58579 3.58579C1.21071 3.96086 1 4.46957 1 5V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H13C13.5304 17 14.0391 16.7893 14.4142 16.4142C14.7893 16.0391 15 15.5304 15 15V11M11 1H17M17 1V7M17 1L7 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 					</svg>
 
